@@ -10,4 +10,8 @@
 
 @interface ObjcConverter : NSObject
 
+- (instancetype)initWithConfig:(NSString *)file;
+
+- (NSString *)convert:(NSString *)text;
+
 @end

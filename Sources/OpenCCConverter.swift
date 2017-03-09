@@ -11,12 +11,15 @@ import OpenCCBridge
 
 public class OpenCCConverter {
     
+    let converter: ObjcConverter
+    
     public init() {
-        
+        let config = Bundle(for: OpenCCConverter.self).path(forResource: "s2t", ofType: "json")!
+        converter = ObjcConverter(config: config)
     }
     
     public func convert(_ text: String) -> String {
-        return text
+        return converter.convert(text)
     }
     
 }
