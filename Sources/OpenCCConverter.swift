@@ -45,8 +45,20 @@ extension OpenCCConverter {
         public static let TWIdiom = Options(rawValue: 1 << 10)
         
         var config: String {
+            var options = self
+            
+            if options.contains([.traditionalize, .simplify]) {
+                options.remove(.simplify)
+            }
+            if options.contains([.HKStandard, .TWStandard]) {
+                options.remove([.HKStandard, .TWStandard])
+            }
+            if options.contains(.TWIdiom), !options.contains(.TWStandard) {
+                options.remove(.TWIdiom)
+            }
+            
             let name: String
-            switch self {
+            switch options {
             case [.traditionalize]:
                 name = "s2t"
             case [.simplify]:
