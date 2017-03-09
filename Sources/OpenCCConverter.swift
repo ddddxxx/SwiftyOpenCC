@@ -13,7 +13,7 @@ public class OpenCCConverter {
     
     let converter: ObjcConverter
     
-    public init(option: Option) {
+    public init(option: Options) {
         let config = option.config
         converter = ObjcConverter(config: config)
     }
@@ -26,7 +26,7 @@ public class OpenCCConverter {
 
 extension OpenCCConverter {
     
-    public struct Option: OptionSet {
+    public struct Options: OptionSet {
         
         public let rawValue: Int
         
@@ -34,15 +34,15 @@ extension OpenCCConverter {
             self.rawValue = rawValue
         }
         
-        public static let traditionalize    = Option(rawValue: 1 << 0)
+        public static let traditionalize = Options(rawValue: 1 << 0)
         
-        public static let simplify          = Option(rawValue: 1 << 1)
+        public static let simplify = Options(rawValue: 1 << 1)
         
-        public static let TWStandard        = Option(rawValue: 1 << 5)
+        public static let TWStandard = Options(rawValue: 1 << 5)
         
-        public static let HKStandard        = Option(rawValue: 1 << 6)
+        public static let HKStandard = Options(rawValue: 1 << 6)
         
-        public static let TWIdiom           = Option(rawValue: 1 << 10)
+        public static let TWIdiom = Options(rawValue: 1 << 10)
         
         var config: String {
             let name: String
