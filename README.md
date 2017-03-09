@@ -11,6 +11,24 @@ Swift port of [OpenCC](https://github.com/BYVoid/OpenCC/tree/7fdaa43f1c548cc53ab
 - Xcode 8+
 - Swift 3.0+
 
+## Installation
+
+### [Carthage](https://github.com/Carthage/Carthage)
+
+<del>Add the project to your `Cartfile`:</del>
+
+Carthage unable to build OpenCC submodule. I'm working on this.
+
+<!--
+```
+github "XQS6LB3A/SwiftyOpenCC"
+```
+-->
+
+### Manual
+
+Download latest [release](https://github.com/XQS6LB3A/SwiftyOpenCC/releases), copy appropriate binary into your project.
+
 ## Usage
 
 ```swift
