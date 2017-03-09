@@ -34,7 +34,7 @@ Download latest [release](https://github.com/XQS6LB3A/SwiftyOpenCC/releases), co
 ```swift
 import OpenCC
 ```
-```
+```swift
 let converter = OpenCCConverter(option: [.traditionalize])
 converter.convert("忧郁的台湾乌龟")
 // 憂鬱的臺灣烏龜
