@@ -656,6 +656,7 @@
 				BB1FE5711E711B3A008F3F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB1FE57C1E711B51008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC iOS" */ = {
 			isa = XCConfigurationList;
@@ -664,6 +665,7 @@
 				BB1FE57E1E711B51008F3F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB1FE5891E711B60008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC tvOS" */ = {
 			isa = XCConfigurationList;
@@ -672,6 +674,7 @@
 				BB1FE58B1E711B60008F3F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
