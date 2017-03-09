@@ -780,6 +780,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE56F1E711B3A008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC macOS" */;
 			buildPhases = (
+				BB445D771E714F260092FBD0 /* Run Script */,
 				BB1FE5641E711B3A008F3F82 /* Sources */,
 				BB1FE5651E711B3A008F3F82 /* Frameworks */,
 				BB1FE5661E711B3A008F3F82 /* Headers */,
@@ -798,6 +799,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE57C1E711B51008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC iOS" */;
 			buildPhases = (
+				BB445D781E714FE30092FBD0 /* ShellScript */,
 				BB1FE5721E711B50008F3F82 /* Sources */,
 				BB1FE5731E711B50008F3F82 /* Frameworks */,
 				BB1FE5741E711B50008F3F82 /* Headers */,
@@ -816,6 +818,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE5891E711B60008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC tvOS" */;
 			buildPhases = (
+				BB445D791E714FEE0092FBD0 /* ShellScript */,
 				BB1FE57F1E711B60008F3F82 /* Sources */,
 				BB1FE5801E711B60008F3F82 /* Frameworks */,
 				BB1FE5811E711B60008F3F82 /* Headers */,
@@ -1043,6 +1046,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB445D771E714F260092FBD0 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd OpenCC\nmake";
+		};
+		BB445D781E714FE30092FBD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd OpenCC\nmake";
+		};
+		BB445D791E714FEE0092FBD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd OpenCC\nmake";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB1FE5641E711B3A008F3F82 /* Sources */ = {
@@ -1688,6 +1734,7 @@
 				BB445D6D1E7133EE0092FBD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
