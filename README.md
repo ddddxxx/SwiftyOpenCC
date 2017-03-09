@@ -1,6 +1,7 @@
 # SwiftyOpenCC
 
 ![platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS%20%7C%20tvOS-lightgrey.svg)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Swift port of [OpenCC](https://github.com/BYVoid/OpenCC/tree/7fdaa43f1c548cc53ab9c7b59a697851060f4f46)
 
@@ -21,3 +22,6 @@ converter.convert("忧郁的台湾乌龟")
 // 憂鬱的臺灣烏龜
 ```
 
+## License
+
+SwiftyOpenCC is available under the MIT license. See the [LICENSE file](LICENSE).
