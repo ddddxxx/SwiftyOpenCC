@@ -264,6 +264,7 @@
 		BB445D501E7132800092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
 		BB445D671E7133EE0092FBD0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB445D661E7133EE0092FBD0 /* Tests.swift */; };
 		BB445D691E7133EE0092FBD0 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1FE5691E711B3A008F3F82 /* OpenCC.framework */; };
+		BB445D7C1E715C280092FBD0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB445D7B1E715C280092FBD0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,6 +384,9 @@
 		BB445D641E7133EE0092FBD0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB445D661E7133EE0092FBD0 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		BB445D681E7133EE0092FBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB445D7B1E715C280092FBD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB445D7D1E715C3B0092FBD0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BB445D7E1E715D510092FBD0 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +425,7 @@
 		BB1FE55D1E711AF4008F3F82 = {
 			isa = PBXGroup;
 			children = (
+				BB445D7A1E715C1C0092FBD0 /* Metadata */,
 				BB445C121E712E360092FBD0 /* OpenCC */,
 				BB1FE58C1E711B94008F3F82 /* Sources */,
 				BB445D651E7133EE0092FBD0 /* Tests */,
@@ -662,6 +667,16 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		BB445D7A1E715C1C0092FBD0 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				BB445D7B1E715C280092FBD0 /* README.md */,
+				BB445D7D1E715C3B0092FBD0 /* LICENSE */,
+				BB445D7E1E715D510092FBD0 /* .travis.yml */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -780,6 +795,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE56F1E711B3A008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC macOS" */;
 			buildPhases = (
+				BB445D771E714F260092FBD0 /* Run Script */,
 				BB1FE5641E711B3A008F3F82 /* Sources */,
 				BB1FE5651E711B3A008F3F82 /* Frameworks */,
 				BB1FE5661E711B3A008F3F82 /* Headers */,
@@ -798,6 +814,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE57C1E711B51008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC iOS" */;
 			buildPhases = (
+				BB445D781E714FE30092FBD0 /* ShellScript */,
 				BB1FE5721E711B50008F3F82 /* Sources */,
 				BB1FE5731E711B50008F3F82 /* Frameworks */,
 				BB1FE5741E711B50008F3F82 /* Headers */,
@@ -816,6 +833,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE5891E711B60008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC tvOS" */;
 			buildPhases = (
+				BB445D791E714FEE0092FBD0 /* ShellScript */,
 				BB1FE57F1E711B60008F3F82 /* Sources */,
 				BB1FE5801E711B60008F3F82 /* Frameworks */,
 				BB1FE5811E711B60008F3F82 /* Headers */,
@@ -1044,6 +1062,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB445D771E714F260092FBD0 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd OpenCC\nmake";
+		};
+		BB445D781E714FE30092FBD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd OpenCC\nmake";
+		};
+		BB445D791E714FEE0092FBD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd OpenCC\nmake";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB1FE5641E711B3A008F3F82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1051,6 +1112,7 @@
 			files = (
 				BB445C631E7130B20092FBD0 /* Dict.cpp in Sources */,
 				BB445C741E7130B20092FBD0 /* Segmentation.cpp in Sources */,
+				BB445D7C1E715C280092FBD0 /* README.md in Sources */,
 				BB445C611E7130B20092FBD0 /* DartsDict.cpp in Sources */,
 				BB445C721E7130B20092FBD0 /* PhraseExtract.cpp in Sources */,
 				BB1FE5BB1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */,
@@ -1206,7 +1268,7 @@
 				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "ddddxxx.OpenCC-macOS";
@@ -1268,7 +1330,7 @@
 				INFOPLIST_FILE = "Sources/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "ddddxxx.OpenCC-macOS";
 				PRODUCT_NAME = OpenCC;
@@ -1332,7 +1394,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1394,7 +1456,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "ddddxxx.OpenCC-iOS";
@@ -1472,7 +1534,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1531,7 +1593,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1688,6 +1750,7 @@
 				BB445D6D1E7133EE0092FBD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
