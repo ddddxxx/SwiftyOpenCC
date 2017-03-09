@@ -1,5 +1,8 @@
-//: Playground - noun: a place where people can play
-
 import Cocoa
+import OpenCC
 
-var str = "Hello, playground"
+let str = "Hello, playground"
+
+let converter = OpenCCConverter()
+
+converter.convert(str)
