@@ -44,22 +44,27 @@ extension OpenCCConverter {
         
         public static let TWIdiom = Options(rawValue: 1 << 10)
         
-        var config: String {
+        func normalizing() -> Options {
             var options = self
-            
             if options.contains([.traditionalize, .simplify]) {
                 options.remove(.simplify)
             }
             if options.contains([.HKStandard, .TWStandard]) {
                 options.remove([.HKStandard, .TWStandard])
             }
-            if options.contains(.TWIdiom), !options.contains(.TWStandard) {
+            if options.contains(.TWIdiom),
+                !options.contains(.TWStandard) ||
+                    (!(options.contains(.simplify)) && !options.contains(.traditionalize)) {
                 options.remove(.TWIdiom)
             }
-            
+            return options
+        }
+        
+        var config: String {
+            let options = normalizing()
             let name: String
             switch options {
-            case [.traditionalize]:
+            case [.traditionalize], []:
                 name = "s2t"
             case [.simplify]:
                 name = "t2s"
