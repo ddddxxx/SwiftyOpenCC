@@ -264,6 +264,7 @@
 		BB445D501E7132800092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
 		BB445D671E7133EE0092FBD0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB445D661E7133EE0092FBD0 /* Tests.swift */; };
 		BB445D691E7133EE0092FBD0 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1FE5691E711B3A008F3F82 /* OpenCC.framework */; };
+		BB445D7C1E715C280092FBD0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB445D7B1E715C280092FBD0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,6 +384,8 @@
 		BB445D641E7133EE0092FBD0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB445D661E7133EE0092FBD0 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		BB445D681E7133EE0092FBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB445D7B1E715C280092FBD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB445D7D1E715C3B0092FBD0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +424,7 @@
 		BB1FE55D1E711AF4008F3F82 = {
 			isa = PBXGroup;
 			children = (
+				BB445D7A1E715C1C0092FBD0 /* Metadata */,
 				BB445C121E712E360092FBD0 /* OpenCC */,
 				BB1FE58C1E711B94008F3F82 /* Sources */,
 				BB445D651E7133EE0092FBD0 /* Tests */,
@@ -660,6 +664,15 @@
 				BB445D681E7133EE0092FBD0 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		BB445D7A1E715C1C0092FBD0 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				BB445D7B1E715C280092FBD0 /* README.md */,
+				BB445D7D1E715C3B0092FBD0 /* LICENSE */,
+			);
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1097,6 +1110,7 @@
 			files = (
 				BB445C631E7130B20092FBD0 /* Dict.cpp in Sources */,
 				BB445C741E7130B20092FBD0 /* Segmentation.cpp in Sources */,
+				BB445D7C1E715C280092FBD0 /* README.md in Sources */,
 				BB445C611E7130B20092FBD0 /* DartsDict.cpp in Sources */,
 				BB445C721E7130B20092FBD0 /* PhraseExtract.cpp in Sources */,
 				BB1FE5BB1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */,
