@@ -9,6 +9,13 @@
 import Foundation
 import OpenCCBridge
 
+/// The `OpenCCConverter` class is used to represent and apply conversion 
+/// between Traditional Chinese and Simplified Chinese to Unicode strings.
+/// An instance of this class is an immutable representation of a compiled 
+/// conversion pattern. 
+/// The `OpenCCConverter` supporting character-level conversion, phrase-level 
+/// conversion, variant conversion and regional idioms among Mainland China, 
+/// Taiwan and HongKong
 public class OpenCCConverter {
     
     let converter: ObjcConverter
@@ -26,6 +33,8 @@ public class OpenCCConverter {
 
 extension OpenCCConverter {
     
+    /// These constants define the Chinese Converter options.
+    /// These constants are used to initialize `OpenCCConverter`.
     public struct Options: OptionSet {
         
         public let rawValue: Int
@@ -34,16 +43,41 @@ extension OpenCCConverter {
             self.rawValue = rawValue
         }
         
+        /// Conversion direction.
+        /// not compatible with `.simplify`.
+        ///
+        /// If direction is conflictive, using `.traditionalize`.
         public static let traditionalize = Options(rawValue: 1 << 0)
         
+        /// Conversion direction.
+        /// not compatible with `.traditionalize`.
+        ///
+        /// If direction is conflictive, using `.traditionalize`.
         public static let simplify = Options(rawValue: 1 << 1)
         
+        /// Use Taiwan standard.
+        /// not compatible with `.HKStandard`.
+        ///
+        /// If standard is absent or conflictive, using OpenCC standard.
         public static let TWStandard = Options(rawValue: 1 << 5)
         
+        /// Use HongKong standard.
+        /// not compatible with `.TWStandard`.
+        ///
+        /// If standard is absent or conflictive, using OpenCC standard.
         public static let HKStandard = Options(rawValue: 1 << 6)
         
+        /// Taiwanese idiom conversion.
+        /// Both available in traditionalization and simplification.
+        ///
+        /// Only effective with direction and `.TWStandard`.
         public static let TWIdiom = Options(rawValue: 1 << 10)
         
+        /// Use text format dictionary.
+        /// Text dictionary is smaller than default ocd dictionary, and
+        /// therefore consume less memory, But MUCH slower.
+        ///
+        /// 50x slower than default ocd dictionary!!!
         public static let textDict = Options(rawValue: 1 << 15)
         
         func normalizing() -> Options {
