@@ -1,7 +1,10 @@
 # Swifty Open Chinese Convert
 
+[![Build Status](https://travis-ci.org/XQS6LB3A/SwiftyOpenCC.svg?branch=master)](https://travis-ci.org/XQS6LB3A/SwiftyOpenCC)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?)](https://github.com/Carthage/Carthage)
 ![platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS%20%7C%20tvOS-lightgrey.svg)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![codebeat badge](https://codebeat.co/badges/556efead-e22c-4804-b557-5036aa5c0209)](https://codebeat.co/projects/github-com-xqs6lb3a-swiftyopencc-master)
 
 Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC/tree/7fdaa43f1c548cc53ab9c7b59a697851060f4f46)
 
@@ -23,10 +26,6 @@ Carthage unable to build OpenCC submodule. I'm working on this.
 github "XQS6LB3A/SwiftyOpenCC"
 ```
 
-### Manual
-
-Download latest [release](https://github.com/XQS6LB3A/SwiftyOpenCC/releases), copy appropriate binary into your project.
-
 ## Usage
 
 ### Quick Start
@@ -42,7 +41,7 @@ converter.convert("str")
 
 ### Documentation
 
-[CocoaDocs](http://XQS6LB3A.github.io/SwiftyOpenCC)
+[Github Pages](http://XQS6LB3A.github.io/SwiftyOpenCC)
 
 %100 Documented
 
