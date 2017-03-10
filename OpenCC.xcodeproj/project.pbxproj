@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BB445E291E723E0C0092FBD0 /* OpenCC Doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BB445E2C1E723E0C0092FBD0 /* Build configuration list for PBXAggregateTarget "OpenCC Doc" */;
+			buildPhases = (
+				BB445E2D1E723E140092FBD0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "OpenCC Doc";
+			productName = "OpenCC Doc";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BB1FE56E1E711B3A008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB1FE58D1E711CAD008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -963,6 +977,11 @@
 						DevelopmentTeam = KCY8NMTG34;
 						ProvisioningStyle = Automatic;
 					};
+					BB445E291E723E0C0092FBD0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KCY8NMTG34;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = BB1FE5611E711AF4008F3F82 /* Build configuration list for PBXProject "OpenCC" */;
@@ -981,6 +1000,7 @@
 				BB1FE5761E711B50008F3F82 /* OpenCC iOS */,
 				BB1FE5831E711B60008F3F82 /* OpenCC tvOS */,
 				BB445D631E7133EE0092FBD0 /* Tests */,
+				BB445E291E723E0C0092FBD0 /* OpenCC Doc */,
 			);
 		};
 /* End PBXProject section */
@@ -1156,6 +1176,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB445E2D1E723E140092FBD0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "jazzy \\\n--clean \\\n--author ddddxxx \\\n--github_url https://github.com/XQS6LB3A/SwiftyOpenCC \\\n--module-version 0.0.2 \\\n--module OpenCC \\\n--output Docs \\";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB1FE5641E711B3A008F3F82 /* Sources */ = {
@@ -1756,6 +1792,22 @@
 			};
 			name = Release;
 		};
+		BB445E2A1E723E0C0092FBD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KCY8NMTG34;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB445E2B1E723E0C0092FBD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KCY8NMTG34;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1803,6 +1855,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BB445E2C1E723E0C0092FBD0 /* Build configuration list for PBXAggregateTarget "OpenCC Doc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB445E2A1E723E0C0092FBD0 /* Debug */,
+				BB445E2B1E723E0C0092FBD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
