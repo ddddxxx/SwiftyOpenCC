@@ -42,7 +42,7 @@ converter.convert("str")
 
 ### Documentation
 
-[CocoaDocs](Docs/index.html)
+[CocoaDocs](http://XQS6LB3A.github.io/SwiftyOpenCC)
 
 %100 Documented
 
