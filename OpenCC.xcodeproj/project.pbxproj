@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		BB445E291E723E0C0092FBD0 /* OpenCC Doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BB445E2C1E723E0C0092FBD0 /* Build configuration list for PBXAggregateTarget "OpenCC Doc" */;
+			buildPhases = (
+				BB445E2D1E723E140092FBD0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "OpenCC Doc";
+			productName = "OpenCC Doc";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		BB1FE56E1E711B3A008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB1FE58D1E711CAD008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -142,48 +156,6 @@
 		BB445CD51E7130B30092FBD0 /* UTF8StringSlice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445C0C1E712E200092FBD0 /* UTF8StringSlice.hpp */; };
 		BB445CD71E7130B30092FBD0 /* UTF8Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445C0E1E712E200092FBD0 /* UTF8Util.cpp */; };
 		BB445CD81E7130B30092FBD0 /* UTF8Util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445C0F1E712E200092FBD0 /* UTF8Util.hpp */; };
-		BB445CD91E7130D30092FBD0 /* HKVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3C1E712F3F0092FBD0 /* HKVariants.ocd */; };
-		BB445CDA1E7130D30092FBD0 /* HKVariantsPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3D1E712F3F0092FBD0 /* HKVariantsPhrases.ocd */; };
-		BB445CDB1E7130D30092FBD0 /* HKVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3E1E712F3F0092FBD0 /* HKVariantsRev.ocd */; };
-		BB445CDC1E7130D30092FBD0 /* HKVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3F1E712F3F0092FBD0 /* HKVariantsRevPhrases.ocd */; };
-		BB445CDD1E7130D30092FBD0 /* JPVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C401E712F3F0092FBD0 /* JPVariants.ocd */; };
-		BB445CDE1E7130D30092FBD0 /* STCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C411E712F3F0092FBD0 /* STCharacters.ocd */; };
-		BB445CDF1E7130D30092FBD0 /* STPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C421E712F3F0092FBD0 /* STPhrases.ocd */; };
-		BB445CE01E7130D30092FBD0 /* TSCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C431E712F3F0092FBD0 /* TSCharacters.ocd */; };
-		BB445CE11E7130D30092FBD0 /* TSPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C441E712F3F0092FBD0 /* TSPhrases.ocd */; };
-		BB445CE21E7130D30092FBD0 /* TWPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C451E712F3F0092FBD0 /* TWPhrases.ocd */; };
-		BB445CE31E7130D30092FBD0 /* TWPhrasesRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C461E712F3F0092FBD0 /* TWPhrasesRev.ocd */; };
-		BB445CE41E7130D30092FBD0 /* TWVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C471E712F3F0092FBD0 /* TWVariants.ocd */; };
-		BB445CE51E7130D30092FBD0 /* TWVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C481E712F3F0092FBD0 /* TWVariantsRev.ocd */; };
-		BB445CE61E7130D30092FBD0 /* TWVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C491E712F3F0092FBD0 /* TWVariantsRevPhrases.ocd */; };
-		BB445CE71E7130D40092FBD0 /* HKVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3C1E712F3F0092FBD0 /* HKVariants.ocd */; };
-		BB445CE81E7130D40092FBD0 /* HKVariantsPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3D1E712F3F0092FBD0 /* HKVariantsPhrases.ocd */; };
-		BB445CE91E7130D40092FBD0 /* HKVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3E1E712F3F0092FBD0 /* HKVariantsRev.ocd */; };
-		BB445CEA1E7130D40092FBD0 /* HKVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3F1E712F3F0092FBD0 /* HKVariantsRevPhrases.ocd */; };
-		BB445CEB1E7130D40092FBD0 /* JPVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C401E712F3F0092FBD0 /* JPVariants.ocd */; };
-		BB445CEC1E7130D40092FBD0 /* STCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C411E712F3F0092FBD0 /* STCharacters.ocd */; };
-		BB445CED1E7130D40092FBD0 /* STPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C421E712F3F0092FBD0 /* STPhrases.ocd */; };
-		BB445CEE1E7130D40092FBD0 /* TSCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C431E712F3F0092FBD0 /* TSCharacters.ocd */; };
-		BB445CEF1E7130D40092FBD0 /* TSPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C441E712F3F0092FBD0 /* TSPhrases.ocd */; };
-		BB445CF01E7130D40092FBD0 /* TWPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C451E712F3F0092FBD0 /* TWPhrases.ocd */; };
-		BB445CF11E7130D40092FBD0 /* TWPhrasesRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C461E712F3F0092FBD0 /* TWPhrasesRev.ocd */; };
-		BB445CF21E7130D40092FBD0 /* TWVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C471E712F3F0092FBD0 /* TWVariants.ocd */; };
-		BB445CF31E7130D40092FBD0 /* TWVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C481E712F3F0092FBD0 /* TWVariantsRev.ocd */; };
-		BB445CF41E7130D40092FBD0 /* TWVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C491E712F3F0092FBD0 /* TWVariantsRevPhrases.ocd */; };
-		BB445CF51E7130D40092FBD0 /* HKVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3C1E712F3F0092FBD0 /* HKVariants.ocd */; };
-		BB445CF61E7130D40092FBD0 /* HKVariantsPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3D1E712F3F0092FBD0 /* HKVariantsPhrases.ocd */; };
-		BB445CF71E7130D40092FBD0 /* HKVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3E1E712F3F0092FBD0 /* HKVariantsRev.ocd */; };
-		BB445CF81E7130D40092FBD0 /* HKVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3F1E712F3F0092FBD0 /* HKVariantsRevPhrases.ocd */; };
-		BB445CF91E7130D40092FBD0 /* JPVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C401E712F3F0092FBD0 /* JPVariants.ocd */; };
-		BB445CFA1E7130D40092FBD0 /* STCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C411E712F3F0092FBD0 /* STCharacters.ocd */; };
-		BB445CFB1E7130D40092FBD0 /* STPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C421E712F3F0092FBD0 /* STPhrases.ocd */; };
-		BB445CFC1E7130D40092FBD0 /* TSCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C431E712F3F0092FBD0 /* TSCharacters.ocd */; };
-		BB445CFD1E7130D40092FBD0 /* TSPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C441E712F3F0092FBD0 /* TSPhrases.ocd */; };
-		BB445CFE1E7130D40092FBD0 /* TWPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C451E712F3F0092FBD0 /* TWPhrases.ocd */; };
-		BB445CFF1E7130D40092FBD0 /* TWPhrasesRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C461E712F3F0092FBD0 /* TWPhrasesRev.ocd */; };
-		BB445D001E7130D40092FBD0 /* TWVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C471E712F3F0092FBD0 /* TWVariants.ocd */; };
-		BB445D011E7130D40092FBD0 /* TWVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C481E712F3F0092FBD0 /* TWVariantsRev.ocd */; };
-		BB445D021E7130D40092FBD0 /* TWVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445C491E712F3F0092FBD0 /* TWVariantsRevPhrases.ocd */; };
 		BB445D031E7130D90092FBD0 /* HKVariants.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C231E712EB90092FBD0 /* HKVariants.txt */; };
 		BB445D041E7130D90092FBD0 /* HKVariantsPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C241E712EB90092FBD0 /* HKVariantsPhrases.txt */; };
 		BB445D051E7130D90092FBD0 /* HKVariantsRevPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C251E712EB90092FBD0 /* HKVariantsRevPhrases.txt */; };
@@ -223,36 +195,6 @@
 		BB445D271E7130DB0092FBD0 /* TWPhrasesOther.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C2D1E712EB90092FBD0 /* TWPhrasesOther.txt */; };
 		BB445D281E7130DB0092FBD0 /* TWVariants.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C2E1E712EB90092FBD0 /* TWVariants.txt */; };
 		BB445D291E7130DB0092FBD0 /* TWVariantsRevPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C2F1E712EB90092FBD0 /* TWVariantsRevPhrases.txt */; };
-		BB445D2A1E7130E00092FBD0 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C321E712ED40092FBD0 /* hk2s.json */; };
-		BB445D2B1E7130E00092FBD0 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C331E712ED40092FBD0 /* s2hk.json */; };
-		BB445D2C1E7130E00092FBD0 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C341E712ED40092FBD0 /* s2t.json */; };
-		BB445D2D1E7130E00092FBD0 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C351E712ED40092FBD0 /* s2tw.json */; };
-		BB445D2E1E7130E00092FBD0 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C361E712ED40092FBD0 /* s2twp.json */; };
-		BB445D2F1E7130E00092FBD0 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C371E712ED40092FBD0 /* t2hk.json */; };
-		BB445D301E7130E00092FBD0 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C381E712ED40092FBD0 /* t2s.json */; };
-		BB445D311E7130E00092FBD0 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C391E712ED40092FBD0 /* t2tw.json */; };
-		BB445D321E7130E00092FBD0 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3A1E712ED40092FBD0 /* tw2s.json */; };
-		BB445D331E7130E00092FBD0 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3B1E712ED40092FBD0 /* tw2sp.json */; };
-		BB445D341E7130E00092FBD0 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C321E712ED40092FBD0 /* hk2s.json */; };
-		BB445D351E7130E00092FBD0 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C331E712ED40092FBD0 /* s2hk.json */; };
-		BB445D361E7130E00092FBD0 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C341E712ED40092FBD0 /* s2t.json */; };
-		BB445D371E7130E00092FBD0 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C351E712ED40092FBD0 /* s2tw.json */; };
-		BB445D381E7130E00092FBD0 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C361E712ED40092FBD0 /* s2twp.json */; };
-		BB445D391E7130E00092FBD0 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C371E712ED40092FBD0 /* t2hk.json */; };
-		BB445D3A1E7130E00092FBD0 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C381E712ED40092FBD0 /* t2s.json */; };
-		BB445D3B1E7130E00092FBD0 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C391E712ED40092FBD0 /* t2tw.json */; };
-		BB445D3C1E7130E00092FBD0 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3A1E712ED40092FBD0 /* tw2s.json */; };
-		BB445D3D1E7130E00092FBD0 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3B1E712ED40092FBD0 /* tw2sp.json */; };
-		BB445D3E1E7130E10092FBD0 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C321E712ED40092FBD0 /* hk2s.json */; };
-		BB445D3F1E7130E10092FBD0 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C331E712ED40092FBD0 /* s2hk.json */; };
-		BB445D401E7130E10092FBD0 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C341E712ED40092FBD0 /* s2t.json */; };
-		BB445D411E7130E10092FBD0 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C351E712ED40092FBD0 /* s2tw.json */; };
-		BB445D421E7130E10092FBD0 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C361E712ED40092FBD0 /* s2twp.json */; };
-		BB445D431E7130E10092FBD0 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C371E712ED40092FBD0 /* t2hk.json */; };
-		BB445D441E7130E10092FBD0 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C381E712ED40092FBD0 /* t2s.json */; };
-		BB445D451E7130E10092FBD0 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C391E712ED40092FBD0 /* t2tw.json */; };
-		BB445D461E7130E10092FBD0 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3A1E712ED40092FBD0 /* tw2s.json */; };
-		BB445D471E7130E10092FBD0 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3B1E712ED40092FBD0 /* tw2sp.json */; };
 		BB445D481E71327F0092FBD0 /* OpenCCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD21E712CEF0092FBD0 /* OpenCCBridge.h */; };
 		BB445D491E71327F0092FBD0 /* ObjcConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE5BE1E712A9E008F3F82 /* ObjcConverter.h */; };
 		BB445D4A1E71327F0092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
@@ -265,6 +207,108 @@
 		BB445D671E7133EE0092FBD0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB445D661E7133EE0092FBD0 /* Tests.swift */; };
 		BB445D691E7133EE0092FBD0 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1FE5691E711B3A008F3F82 /* OpenCC.framework */; };
 		BB445D7C1E715C280092FBD0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB445D7B1E715C280092FBD0 /* README.md */; };
+		BB445DB41E72310D0092FBD0 /* hk2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */; };
+		BB445DB51E72310D0092FBD0 /* hk2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */; };
+		BB445DB61E72310D0092FBD0 /* hk2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */; };
+		BB445DB71E72310D0092FBD0 /* s2hk_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAB1E72310D0092FBD0 /* s2hk_txt.json */; };
+		BB445DB81E72310D0092FBD0 /* s2hk_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAB1E72310D0092FBD0 /* s2hk_txt.json */; };
+		BB445DB91E72310D0092FBD0 /* s2hk_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAB1E72310D0092FBD0 /* s2hk_txt.json */; };
+		BB445DBA1E72310D0092FBD0 /* s2t_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAC1E72310D0092FBD0 /* s2t_txt.json */; };
+		BB445DBB1E72310D0092FBD0 /* s2t_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAC1E72310D0092FBD0 /* s2t_txt.json */; };
+		BB445DBC1E72310D0092FBD0 /* s2t_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAC1E72310D0092FBD0 /* s2t_txt.json */; };
+		BB445DBD1E72310D0092FBD0 /* s2tw_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAD1E72310D0092FBD0 /* s2tw_txt.json */; };
+		BB445DBE1E72310D0092FBD0 /* s2tw_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAD1E72310D0092FBD0 /* s2tw_txt.json */; };
+		BB445DBF1E72310D0092FBD0 /* s2tw_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAD1E72310D0092FBD0 /* s2tw_txt.json */; };
+		BB445DC01E72310D0092FBD0 /* s2twp_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAE1E72310D0092FBD0 /* s2twp_txt.json */; };
+		BB445DC11E72310D0092FBD0 /* s2twp_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAE1E72310D0092FBD0 /* s2twp_txt.json */; };
+		BB445DC21E72310D0092FBD0 /* s2twp_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAE1E72310D0092FBD0 /* s2twp_txt.json */; };
+		BB445DC31E72310D0092FBD0 /* t2hk_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAF1E72310D0092FBD0 /* t2hk_txt.json */; };
+		BB445DC41E72310D0092FBD0 /* t2hk_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAF1E72310D0092FBD0 /* t2hk_txt.json */; };
+		BB445DC51E72310D0092FBD0 /* t2hk_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAF1E72310D0092FBD0 /* t2hk_txt.json */; };
+		BB445DC61E72310D0092FBD0 /* t2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB01E72310D0092FBD0 /* t2s_txt.json */; };
+		BB445DC71E72310D0092FBD0 /* t2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB01E72310D0092FBD0 /* t2s_txt.json */; };
+		BB445DC81E72310D0092FBD0 /* t2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB01E72310D0092FBD0 /* t2s_txt.json */; };
+		BB445DC91E72310D0092FBD0 /* t2tw_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB11E72310D0092FBD0 /* t2tw_txt.json */; };
+		BB445DCA1E72310D0092FBD0 /* t2tw_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB11E72310D0092FBD0 /* t2tw_txt.json */; };
+		BB445DCB1E72310D0092FBD0 /* t2tw_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB11E72310D0092FBD0 /* t2tw_txt.json */; };
+		BB445DCC1E72310D0092FBD0 /* tw2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB21E72310D0092FBD0 /* tw2s_txt.json */; };
+		BB445DCD1E72310D0092FBD0 /* tw2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB21E72310D0092FBD0 /* tw2s_txt.json */; };
+		BB445DCE1E72310D0092FBD0 /* tw2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB21E72310D0092FBD0 /* tw2s_txt.json */; };
+		BB445DCF1E72310D0092FBD0 /* tw2sp_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB31E72310D0092FBD0 /* tw2sp_txt.json */; };
+		BB445DD01E72310D0092FBD0 /* tw2sp_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB31E72310D0092FBD0 /* tw2sp_txt.json */; };
+		BB445DD11E72310D0092FBD0 /* tw2sp_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DB31E72310D0092FBD0 /* tw2sp_txt.json */; };
+		BB445DE11E7231910092FBD0 /* HKVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD31E7231910092FBD0 /* HKVariants.ocd */; };
+		BB445DE21E7231910092FBD0 /* HKVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD31E7231910092FBD0 /* HKVariants.ocd */; };
+		BB445DE31E7231910092FBD0 /* HKVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD31E7231910092FBD0 /* HKVariants.ocd */; };
+		BB445DE41E7231910092FBD0 /* HKVariantsPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD41E7231910092FBD0 /* HKVariantsPhrases.ocd */; };
+		BB445DE51E7231910092FBD0 /* HKVariantsPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD41E7231910092FBD0 /* HKVariantsPhrases.ocd */; };
+		BB445DE61E7231910092FBD0 /* HKVariantsPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD41E7231910092FBD0 /* HKVariantsPhrases.ocd */; };
+		BB445DE71E7231910092FBD0 /* HKVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD51E7231910092FBD0 /* HKVariantsRev.ocd */; };
+		BB445DE81E7231910092FBD0 /* HKVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD51E7231910092FBD0 /* HKVariantsRev.ocd */; };
+		BB445DE91E7231910092FBD0 /* HKVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD51E7231910092FBD0 /* HKVariantsRev.ocd */; };
+		BB445DEA1E7231910092FBD0 /* HKVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD61E7231910092FBD0 /* HKVariantsRevPhrases.ocd */; };
+		BB445DEB1E7231910092FBD0 /* HKVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD61E7231910092FBD0 /* HKVariantsRevPhrases.ocd */; };
+		BB445DEC1E7231910092FBD0 /* HKVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD61E7231910092FBD0 /* HKVariantsRevPhrases.ocd */; };
+		BB445DED1E7231910092FBD0 /* JPVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD71E7231910092FBD0 /* JPVariants.ocd */; };
+		BB445DEE1E7231910092FBD0 /* JPVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD71E7231910092FBD0 /* JPVariants.ocd */; };
+		BB445DEF1E7231910092FBD0 /* JPVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD71E7231910092FBD0 /* JPVariants.ocd */; };
+		BB445DF01E7231910092FBD0 /* STCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD81E7231910092FBD0 /* STCharacters.ocd */; };
+		BB445DF11E7231910092FBD0 /* STCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD81E7231910092FBD0 /* STCharacters.ocd */; };
+		BB445DF21E7231910092FBD0 /* STCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD81E7231910092FBD0 /* STCharacters.ocd */; };
+		BB445DF31E7231910092FBD0 /* STPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD91E7231910092FBD0 /* STPhrases.ocd */; };
+		BB445DF41E7231910092FBD0 /* STPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD91E7231910092FBD0 /* STPhrases.ocd */; };
+		BB445DF51E7231910092FBD0 /* STPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DD91E7231910092FBD0 /* STPhrases.ocd */; };
+		BB445DF61E7231910092FBD0 /* TSCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDA1E7231910092FBD0 /* TSCharacters.ocd */; };
+		BB445DF71E7231910092FBD0 /* TSCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDA1E7231910092FBD0 /* TSCharacters.ocd */; };
+		BB445DF81E7231910092FBD0 /* TSCharacters.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDA1E7231910092FBD0 /* TSCharacters.ocd */; };
+		BB445DF91E7231910092FBD0 /* TSPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDB1E7231910092FBD0 /* TSPhrases.ocd */; };
+		BB445DFA1E7231910092FBD0 /* TSPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDB1E7231910092FBD0 /* TSPhrases.ocd */; };
+		BB445DFB1E7231910092FBD0 /* TSPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDB1E7231910092FBD0 /* TSPhrases.ocd */; };
+		BB445DFC1E7231910092FBD0 /* TWPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDC1E7231910092FBD0 /* TWPhrases.ocd */; };
+		BB445DFD1E7231910092FBD0 /* TWPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDC1E7231910092FBD0 /* TWPhrases.ocd */; };
+		BB445DFE1E7231910092FBD0 /* TWPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDC1E7231910092FBD0 /* TWPhrases.ocd */; };
+		BB445DFF1E7231910092FBD0 /* TWPhrasesRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDD1E7231910092FBD0 /* TWPhrasesRev.ocd */; };
+		BB445E001E7231910092FBD0 /* TWPhrasesRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDD1E7231910092FBD0 /* TWPhrasesRev.ocd */; };
+		BB445E011E7231910092FBD0 /* TWPhrasesRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDD1E7231910092FBD0 /* TWPhrasesRev.ocd */; };
+		BB445E021E7231910092FBD0 /* TWVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDE1E7231910092FBD0 /* TWVariants.ocd */; };
+		BB445E031E7231910092FBD0 /* TWVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDE1E7231910092FBD0 /* TWVariants.ocd */; };
+		BB445E041E7231910092FBD0 /* TWVariants.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDE1E7231910092FBD0 /* TWVariants.ocd */; };
+		BB445E051E7231910092FBD0 /* TWVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDF1E7231910092FBD0 /* TWVariantsRev.ocd */; };
+		BB445E061E7231910092FBD0 /* TWVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDF1E7231910092FBD0 /* TWVariantsRev.ocd */; };
+		BB445E071E7231910092FBD0 /* TWVariantsRev.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DDF1E7231910092FBD0 /* TWVariantsRev.ocd */; };
+		BB445E081E7231910092FBD0 /* TWVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DE01E7231910092FBD0 /* TWVariantsRevPhrases.ocd */; };
+		BB445E091E7231910092FBD0 /* TWVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DE01E7231910092FBD0 /* TWVariantsRevPhrases.ocd */; };
+		BB445E0A1E7231910092FBD0 /* TWVariantsRevPhrases.ocd in Resources */ = {isa = PBXBuildFile; fileRef = BB445DE01E7231910092FBD0 /* TWVariantsRevPhrases.ocd */; };
+		BB445E0B1E7231C30092FBD0 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C321E712ED40092FBD0 /* hk2s.json */; };
+		BB445E0C1E7231C30092FBD0 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C331E712ED40092FBD0 /* s2hk.json */; };
+		BB445E0D1E7231C30092FBD0 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C341E712ED40092FBD0 /* s2t.json */; };
+		BB445E0E1E7231C30092FBD0 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C351E712ED40092FBD0 /* s2tw.json */; };
+		BB445E0F1E7231C30092FBD0 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C361E712ED40092FBD0 /* s2twp.json */; };
+		BB445E101E7231C30092FBD0 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C371E712ED40092FBD0 /* t2hk.json */; };
+		BB445E111E7231C30092FBD0 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C381E712ED40092FBD0 /* t2s.json */; };
+		BB445E121E7231C30092FBD0 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C391E712ED40092FBD0 /* t2tw.json */; };
+		BB445E131E7231C30092FBD0 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3A1E712ED40092FBD0 /* tw2s.json */; };
+		BB445E141E7231C30092FBD0 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3B1E712ED40092FBD0 /* tw2sp.json */; };
+		BB445E151E7231C30092FBD0 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C321E712ED40092FBD0 /* hk2s.json */; };
+		BB445E161E7231C30092FBD0 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C331E712ED40092FBD0 /* s2hk.json */; };
+		BB445E171E7231C30092FBD0 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C341E712ED40092FBD0 /* s2t.json */; };
+		BB445E181E7231C30092FBD0 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C351E712ED40092FBD0 /* s2tw.json */; };
+		BB445E191E7231C30092FBD0 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C361E712ED40092FBD0 /* s2twp.json */; };
+		BB445E1A1E7231C30092FBD0 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C371E712ED40092FBD0 /* t2hk.json */; };
+		BB445E1B1E7231C30092FBD0 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C381E712ED40092FBD0 /* t2s.json */; };
+		BB445E1C1E7231C30092FBD0 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C391E712ED40092FBD0 /* t2tw.json */; };
+		BB445E1D1E7231C30092FBD0 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3A1E712ED40092FBD0 /* tw2s.json */; };
+		BB445E1E1E7231C30092FBD0 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3B1E712ED40092FBD0 /* tw2sp.json */; };
+		BB445E1F1E7231C40092FBD0 /* hk2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C321E712ED40092FBD0 /* hk2s.json */; };
+		BB445E201E7231C40092FBD0 /* s2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C331E712ED40092FBD0 /* s2hk.json */; };
+		BB445E211E7231C40092FBD0 /* s2t.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C341E712ED40092FBD0 /* s2t.json */; };
+		BB445E221E7231C40092FBD0 /* s2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C351E712ED40092FBD0 /* s2tw.json */; };
+		BB445E231E7231C40092FBD0 /* s2twp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C361E712ED40092FBD0 /* s2twp.json */; };
+		BB445E241E7231C40092FBD0 /* t2hk.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C371E712ED40092FBD0 /* t2hk.json */; };
+		BB445E251E7231C40092FBD0 /* t2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C381E712ED40092FBD0 /* t2s.json */; };
+		BB445E261E7231C40092FBD0 /* t2tw.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C391E712ED40092FBD0 /* t2tw.json */; };
+		BB445E271E7231C40092FBD0 /* tw2s.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3A1E712ED40092FBD0 /* tw2s.json */; };
+		BB445E281E7231C40092FBD0 /* tw2sp.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445C3B1E712ED40092FBD0 /* tw2sp.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -367,26 +411,36 @@
 		BB445C391E712ED40092FBD0 /* t2tw.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = t2tw.json; sourceTree = "<group>"; };
 		BB445C3A1E712ED40092FBD0 /* tw2s.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tw2s.json; sourceTree = "<group>"; };
 		BB445C3B1E712ED40092FBD0 /* tw2sp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tw2sp.json; sourceTree = "<group>"; };
-		BB445C3C1E712F3F0092FBD0 /* HKVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = HKVariants.ocd; path = OpenCC/build/rel/data/HKVariants.ocd; sourceTree = "<group>"; };
-		BB445C3D1E712F3F0092FBD0 /* HKVariantsPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = HKVariantsPhrases.ocd; path = OpenCC/build/rel/data/HKVariantsPhrases.ocd; sourceTree = "<group>"; };
-		BB445C3E1E712F3F0092FBD0 /* HKVariantsRev.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = HKVariantsRev.ocd; path = OpenCC/build/rel/data/HKVariantsRev.ocd; sourceTree = "<group>"; };
-		BB445C3F1E712F3F0092FBD0 /* HKVariantsRevPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = HKVariantsRevPhrases.ocd; path = OpenCC/build/rel/data/HKVariantsRevPhrases.ocd; sourceTree = "<group>"; };
-		BB445C401E712F3F0092FBD0 /* JPVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = JPVariants.ocd; path = OpenCC/build/rel/data/JPVariants.ocd; sourceTree = "<group>"; };
-		BB445C411E712F3F0092FBD0 /* STCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = STCharacters.ocd; path = OpenCC/build/rel/data/STCharacters.ocd; sourceTree = "<group>"; };
-		BB445C421E712F3F0092FBD0 /* STPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = STPhrases.ocd; path = OpenCC/build/rel/data/STPhrases.ocd; sourceTree = "<group>"; };
-		BB445C431E712F3F0092FBD0 /* TSCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TSCharacters.ocd; path = OpenCC/build/rel/data/TSCharacters.ocd; sourceTree = "<group>"; };
-		BB445C441E712F3F0092FBD0 /* TSPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TSPhrases.ocd; path = OpenCC/build/rel/data/TSPhrases.ocd; sourceTree = "<group>"; };
-		BB445C451E712F3F0092FBD0 /* TWPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TWPhrases.ocd; path = OpenCC/build/rel/data/TWPhrases.ocd; sourceTree = "<group>"; };
-		BB445C461E712F3F0092FBD0 /* TWPhrasesRev.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TWPhrasesRev.ocd; path = OpenCC/build/rel/data/TWPhrasesRev.ocd; sourceTree = "<group>"; };
-		BB445C471E712F3F0092FBD0 /* TWVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TWVariants.ocd; path = OpenCC/build/rel/data/TWVariants.ocd; sourceTree = "<group>"; };
-		BB445C481E712F3F0092FBD0 /* TWVariantsRev.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TWVariantsRev.ocd; path = OpenCC/build/rel/data/TWVariantsRev.ocd; sourceTree = "<group>"; };
-		BB445C491E712F3F0092FBD0 /* TWVariantsRevPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; name = TWVariantsRevPhrases.ocd; path = OpenCC/build/rel/data/TWVariantsRevPhrases.ocd; sourceTree = "<group>"; };
 		BB445D641E7133EE0092FBD0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB445D661E7133EE0092FBD0 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		BB445D681E7133EE0092FBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB445D7B1E715C280092FBD0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB445D7D1E715C3B0092FBD0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BB445D7E1E715D510092FBD0 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hk2s_txt.json; sourceTree = "<group>"; };
+		BB445DAB1E72310D0092FBD0 /* s2hk_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2hk_txt.json; sourceTree = "<group>"; };
+		BB445DAC1E72310D0092FBD0 /* s2t_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2t_txt.json; sourceTree = "<group>"; };
+		BB445DAD1E72310D0092FBD0 /* s2tw_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2tw_txt.json; sourceTree = "<group>"; };
+		BB445DAE1E72310D0092FBD0 /* s2twp_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = s2twp_txt.json; sourceTree = "<group>"; };
+		BB445DAF1E72310D0092FBD0 /* t2hk_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2hk_txt.json; sourceTree = "<group>"; };
+		BB445DB01E72310D0092FBD0 /* t2s_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2s_txt.json; sourceTree = "<group>"; };
+		BB445DB11E72310D0092FBD0 /* t2tw_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t2tw_txt.json; sourceTree = "<group>"; };
+		BB445DB21E72310D0092FBD0 /* tw2s_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tw2s_txt.json; sourceTree = "<group>"; };
+		BB445DB31E72310D0092FBD0 /* tw2sp_txt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tw2sp_txt.json; sourceTree = "<group>"; };
+		BB445DD31E7231910092FBD0 /* HKVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariants.ocd; sourceTree = "<group>"; };
+		BB445DD41E7231910092FBD0 /* HKVariantsPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariantsPhrases.ocd; sourceTree = "<group>"; };
+		BB445DD51E7231910092FBD0 /* HKVariantsRev.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariantsRev.ocd; sourceTree = "<group>"; };
+		BB445DD61E7231910092FBD0 /* HKVariantsRevPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HKVariantsRevPhrases.ocd; sourceTree = "<group>"; };
+		BB445DD71E7231910092FBD0 /* JPVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = JPVariants.ocd; sourceTree = "<group>"; };
+		BB445DD81E7231910092FBD0 /* STCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = STCharacters.ocd; sourceTree = "<group>"; };
+		BB445DD91E7231910092FBD0 /* STPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = STPhrases.ocd; sourceTree = "<group>"; };
+		BB445DDA1E7231910092FBD0 /* TSCharacters.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSCharacters.ocd; sourceTree = "<group>"; };
+		BB445DDB1E7231910092FBD0 /* TSPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TSPhrases.ocd; sourceTree = "<group>"; };
+		BB445DDC1E7231910092FBD0 /* TWPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWPhrases.ocd; sourceTree = "<group>"; };
+		BB445DDD1E7231910092FBD0 /* TWPhrasesRev.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWPhrasesRev.ocd; sourceTree = "<group>"; };
+		BB445DDE1E7231910092FBD0 /* TWVariants.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWVariants.ocd; sourceTree = "<group>"; };
+		BB445DDF1E7231910092FBD0 /* TWVariantsRev.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWVariantsRev.ocd; sourceTree = "<group>"; };
+		BB445DE01E7231910092FBD0 /* TWVariantsRevPhrases.ocd */ = {isa = PBXFileReference; lastKnownFileType = file; path = TWVariantsRevPhrases.ocd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -580,7 +634,7 @@
 			path = internal;
 			sourceTree = "<group>";
 		};
-		BB445C221E712EB90092FBD0 /* TXT */ = {
+		BB445C221E712EB90092FBD0 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
 				BB445C231E712EB90092FBD0 /* HKVariants.txt */,
@@ -597,15 +651,15 @@
 				BB445C2E1E712EB90092FBD0 /* TWVariants.txt */,
 				BB445C2F1E712EB90092FBD0 /* TWVariantsRevPhrases.txt */,
 			);
-			name = TXT;
+			name = Dictionary;
 			path = OpenCC/data/dictionary;
 			sourceTree = "<group>";
 		};
 		BB445C301E712EC10092FBD0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				BB445C4B1E712F720092FBD0 /* Dictionary */,
-				BB445C311E712ED40092FBD0 /* Config */,
+				BB445C4B1E712F720092FBD0 /* TXT */,
+				BB445DA81E722A770092FBD0 /* OCD */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -628,34 +682,13 @@
 			path = OpenCC/data/config;
 			sourceTree = "<group>";
 		};
-		BB445C4A1E712F460092FBD0 /* OCD */ = {
+		BB445C4B1E712F720092FBD0 /* TXT */ = {
 			isa = PBXGroup;
 			children = (
-				BB445C3C1E712F3F0092FBD0 /* HKVariants.ocd */,
-				BB445C3D1E712F3F0092FBD0 /* HKVariantsPhrases.ocd */,
-				BB445C3E1E712F3F0092FBD0 /* HKVariantsRev.ocd */,
-				BB445C3F1E712F3F0092FBD0 /* HKVariantsRevPhrases.ocd */,
-				BB445C401E712F3F0092FBD0 /* JPVariants.ocd */,
-				BB445C411E712F3F0092FBD0 /* STCharacters.ocd */,
-				BB445C421E712F3F0092FBD0 /* STPhrases.ocd */,
-				BB445C431E712F3F0092FBD0 /* TSCharacters.ocd */,
-				BB445C441E712F3F0092FBD0 /* TSPhrases.ocd */,
-				BB445C451E712F3F0092FBD0 /* TWPhrases.ocd */,
-				BB445C461E712F3F0092FBD0 /* TWPhrasesRev.ocd */,
-				BB445C471E712F3F0092FBD0 /* TWVariants.ocd */,
-				BB445C481E712F3F0092FBD0 /* TWVariantsRev.ocd */,
-				BB445C491E712F3F0092FBD0 /* TWVariantsRevPhrases.ocd */,
+				BB445DA91E72310D0092FBD0 /* Config */,
+				BB445C221E712EB90092FBD0 /* Dictionary */,
 			);
-			name = OCD;
-			sourceTree = "<group>";
-		};
-		BB445C4B1E712F720092FBD0 /* Dictionary */ = {
-			isa = PBXGroup;
-			children = (
-				BB445C4A1E712F460092FBD0 /* OCD */,
-				BB445C221E712EB90092FBD0 /* TXT */,
-			);
-			name = Dictionary;
+			name = TXT;
 			sourceTree = "<group>";
 		};
 		BB445D651E7133EE0092FBD0 /* Tests */ = {
@@ -675,6 +708,55 @@
 				BB445D7E1E715D510092FBD0 /* .travis.yml */,
 			);
 			name = Metadata;
+			sourceTree = "<group>";
+		};
+		BB445DA81E722A770092FBD0 /* OCD */ = {
+			isa = PBXGroup;
+			children = (
+				BB445C311E712ED40092FBD0 /* Config */,
+				BB445DD21E7231910092FBD0 /* Dictionary */,
+			);
+			name = OCD;
+			sourceTree = "<group>";
+		};
+		BB445DA91E72310D0092FBD0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */,
+				BB445DAB1E72310D0092FBD0 /* s2hk_txt.json */,
+				BB445DAC1E72310D0092FBD0 /* s2t_txt.json */,
+				BB445DAD1E72310D0092FBD0 /* s2tw_txt.json */,
+				BB445DAE1E72310D0092FBD0 /* s2twp_txt.json */,
+				BB445DAF1E72310D0092FBD0 /* t2hk_txt.json */,
+				BB445DB01E72310D0092FBD0 /* t2s_txt.json */,
+				BB445DB11E72310D0092FBD0 /* t2tw_txt.json */,
+				BB445DB21E72310D0092FBD0 /* tw2s_txt.json */,
+				BB445DB31E72310D0092FBD0 /* tw2sp_txt.json */,
+			);
+			name = Config;
+			path = Sources/Config;
+			sourceTree = "<group>";
+		};
+		BB445DD21E7231910092FBD0 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				BB445DD31E7231910092FBD0 /* HKVariants.ocd */,
+				BB445DD41E7231910092FBD0 /* HKVariantsPhrases.ocd */,
+				BB445DD51E7231910092FBD0 /* HKVariantsRev.ocd */,
+				BB445DD61E7231910092FBD0 /* HKVariantsRevPhrases.ocd */,
+				BB445DD71E7231910092FBD0 /* JPVariants.ocd */,
+				BB445DD81E7231910092FBD0 /* STCharacters.ocd */,
+				BB445DD91E7231910092FBD0 /* STPhrases.ocd */,
+				BB445DDA1E7231910092FBD0 /* TSCharacters.ocd */,
+				BB445DDB1E7231910092FBD0 /* TSPhrases.ocd */,
+				BB445DDC1E7231910092FBD0 /* TWPhrases.ocd */,
+				BB445DDD1E7231910092FBD0 /* TWPhrasesRev.ocd */,
+				BB445DDE1E7231910092FBD0 /* TWVariants.ocd */,
+				BB445DDF1E7231910092FBD0 /* TWVariantsRev.ocd */,
+				BB445DE01E7231910092FBD0 /* TWVariantsRevPhrases.ocd */,
+			);
+			name = Dictionary;
+			path = Sources/Dictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -795,7 +877,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE56F1E711B3A008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC macOS" */;
 			buildPhases = (
-				BB445D771E714F260092FBD0 /* Run Script */,
 				BB1FE5641E711B3A008F3F82 /* Sources */,
 				BB1FE5651E711B3A008F3F82 /* Frameworks */,
 				BB1FE5661E711B3A008F3F82 /* Headers */,
@@ -814,7 +895,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE57C1E711B51008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC iOS" */;
 			buildPhases = (
-				BB445D781E714FE30092FBD0 /* ShellScript */,
 				BB1FE5721E711B50008F3F82 /* Sources */,
 				BB1FE5731E711B50008F3F82 /* Frameworks */,
 				BB1FE5741E711B50008F3F82 /* Headers */,
@@ -833,7 +913,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB1FE5891E711B60008F3F82 /* Build configuration list for PBXNativeTarget "OpenCC tvOS" */;
 			buildPhases = (
-				BB445D791E714FEE0092FBD0 /* ShellScript */,
 				BB1FE57F1E711B60008F3F82 /* Sources */,
 				BB1FE5801E711B60008F3F82 /* Frameworks */,
 				BB1FE5811E711B60008F3F82 /* Headers */,
@@ -898,6 +977,11 @@
 						DevelopmentTeam = KCY8NMTG34;
 						ProvisioningStyle = Automatic;
 					};
+					BB445E291E723E0C0092FBD0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KCY8NMTG34;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = BB1FE5611E711AF4008F3F82 /* Build configuration list for PBXProject "OpenCC" */;
@@ -916,6 +1000,7 @@
 				BB1FE5761E711B50008F3F82 /* OpenCC iOS */,
 				BB1FE5831E711B60008F3F82 /* OpenCC tvOS */,
 				BB445D631E7133EE0092FBD0 /* Tests */,
+				BB445E291E723E0C0092FBD0 /* OpenCC Doc */,
 			);
 		};
 /* End PBXProject section */
@@ -925,43 +1010,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB445CE31E7130D30092FBD0 /* TWPhrasesRev.ocd in Resources */,
-				BB445CE51E7130D30092FBD0 /* TWVariantsRev.ocd in Resources */,
+				BB445DC61E72310D0092FBD0 /* t2s_txt.json in Resources */,
 				BB445D1D1E7130DB0092FBD0 /* HKVariants.txt in Resources */,
+				BB445DC01E72310D0092FBD0 /* s2twp_txt.json in Resources */,
+				BB445DC91E72310D0092FBD0 /* t2tw_txt.json in Resources */,
+				BB445E121E7231C30092FBD0 /* t2tw.json in Resources */,
+				BB445DF31E7231910092FBD0 /* STPhrases.ocd in Resources */,
 				BB445D231E7130DB0092FBD0 /* TSCharacters.txt in Resources */,
-				BB445CDB1E7130D30092FBD0 /* HKVariantsRev.ocd in Resources */,
+				BB445DF01E7231910092FBD0 /* STCharacters.ocd in Resources */,
+				BB445DE11E7231910092FBD0 /* HKVariants.ocd in Resources */,
+				BB445DB71E72310D0092FBD0 /* s2hk_txt.json in Resources */,
+				BB445E0C1E7231C30092FBD0 /* s2hk.json in Resources */,
 				BB445D1E1E7130DB0092FBD0 /* HKVariantsPhrases.txt in Resources */,
-				BB445CDA1E7130D30092FBD0 /* HKVariantsPhrases.ocd in Resources */,
-				BB445D3F1E7130E10092FBD0 /* s2hk.json in Resources */,
-				BB445CE61E7130D30092FBD0 /* TWVariantsRevPhrases.ocd in Resources */,
-				BB445D451E7130E10092FBD0 /* t2tw.json in Resources */,
-				BB445CDC1E7130D30092FBD0 /* HKVariantsRevPhrases.ocd in Resources */,
-				BB445D3E1E7130E10092FBD0 /* hk2s.json in Resources */,
 				BB445D281E7130DB0092FBD0 /* TWVariants.txt in Resources */,
+				BB445E0E1E7231C30092FBD0 /* s2tw.json in Resources */,
+				BB445E101E7231C30092FBD0 /* t2hk.json in Resources */,
 				BB445D261E7130DB0092FBD0 /* TWPhrasesName.txt in Resources */,
 				BB445D221E7130DB0092FBD0 /* STPhrases.txt in Resources */,
-				BB445CE01E7130D30092FBD0 /* TSCharacters.ocd in Resources */,
 				BB445D291E7130DB0092FBD0 /* TWVariantsRevPhrases.txt in Resources */,
-				BB445D461E7130E10092FBD0 /* tw2s.json in Resources */,
+				BB445DF91E7231910092FBD0 /* TSPhrases.ocd in Resources */,
+				BB445DF61E7231910092FBD0 /* TSCharacters.ocd in Resources */,
+				BB445DFF1E7231910092FBD0 /* TWPhrasesRev.ocd in Resources */,
 				BB445D271E7130DB0092FBD0 /* TWPhrasesOther.txt in Resources */,
-				BB445CE41E7130D30092FBD0 /* TWVariants.ocd in Resources */,
-				BB445D421E7130E10092FBD0 /* s2twp.json in Resources */,
-				BB445D431E7130E10092FBD0 /* t2hk.json in Resources */,
+				BB445E111E7231C30092FBD0 /* t2s.json in Resources */,
+				BB445E131E7231C30092FBD0 /* tw2s.json in Resources */,
+				BB445E021E7231910092FBD0 /* TWVariants.ocd in Resources */,
+				BB445DE71E7231910092FBD0 /* HKVariantsRev.ocd in Resources */,
+				BB445DEA1E7231910092FBD0 /* HKVariantsRevPhrases.ocd in Resources */,
+				BB445DCC1E72310D0092FBD0 /* tw2s_txt.json in Resources */,
+				BB445DED1E7231910092FBD0 /* JPVariants.ocd in Resources */,
+				BB445DCF1E72310D0092FBD0 /* tw2sp_txt.json in Resources */,
 				BB445D201E7130DB0092FBD0 /* JPVariants.txt in Resources */,
-				BB445D441E7130E10092FBD0 /* t2s.json in Resources */,
-				BB445CDE1E7130D30092FBD0 /* STCharacters.ocd in Resources */,
-				BB445CDF1E7130D30092FBD0 /* STPhrases.ocd in Resources */,
-				BB445D471E7130E10092FBD0 /* tw2sp.json in Resources */,
+				BB445E051E7231910092FBD0 /* TWVariantsRev.ocd in Resources */,
+				BB445DBD1E72310D0092FBD0 /* s2tw_txt.json in Resources */,
 				BB445D211E7130DB0092FBD0 /* STCharacters.txt in Resources */,
-				BB445CE21E7130D30092FBD0 /* TWPhrases.ocd in Resources */,
-				BB445D401E7130E10092FBD0 /* s2t.json in Resources */,
-				BB445CE11E7130D30092FBD0 /* TSPhrases.ocd in Resources */,
+				BB445DB41E72310D0092FBD0 /* hk2s_txt.json in Resources */,
+				BB445DBA1E72310D0092FBD0 /* s2t_txt.json in Resources */,
+				BB445E0F1E7231C30092FBD0 /* s2twp.json in Resources */,
+				BB445DFC1E7231910092FBD0 /* TWPhrases.ocd in Resources */,
 				BB445D241E7130DB0092FBD0 /* TSPhrases.txt in Resources */,
+				BB445E0D1E7231C30092FBD0 /* s2t.json in Resources */,
+				BB445DC31E72310D0092FBD0 /* t2hk_txt.json in Resources */,
 				BB445D1F1E7130DB0092FBD0 /* HKVariantsRevPhrases.txt in Resources */,
-				BB445D411E7130E10092FBD0 /* s2tw.json in Resources */,
-				BB445CD91E7130D30092FBD0 /* HKVariants.ocd in Resources */,
 				BB445D251E7130DB0092FBD0 /* TWPhrasesIT.txt in Resources */,
-				BB445CDD1E7130D30092FBD0 /* JPVariants.ocd in Resources */,
+				BB445E0B1E7231C30092FBD0 /* hk2s.json in Resources */,
+				BB445E081E7231910092FBD0 /* TWVariantsRevPhrases.ocd in Resources */,
+				BB445DE41E7231910092FBD0 /* HKVariantsPhrases.ocd in Resources */,
+				BB445E141E7231C30092FBD0 /* tw2sp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -969,43 +1064,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB445CF11E7130D40092FBD0 /* TWPhrasesRev.ocd in Resources */,
-				BB445CF31E7130D40092FBD0 /* TWVariantsRev.ocd in Resources */,
+				BB445DC71E72310D0092FBD0 /* t2s_txt.json in Resources */,
 				BB445D101E7130DA0092FBD0 /* HKVariants.txt in Resources */,
+				BB445DC11E72310D0092FBD0 /* s2twp_txt.json in Resources */,
+				BB445DCA1E72310D0092FBD0 /* t2tw_txt.json in Resources */,
+				BB445E1C1E7231C30092FBD0 /* t2tw.json in Resources */,
+				BB445DF41E7231910092FBD0 /* STPhrases.ocd in Resources */,
 				BB445D161E7130DA0092FBD0 /* TSCharacters.txt in Resources */,
-				BB445CE91E7130D40092FBD0 /* HKVariantsRev.ocd in Resources */,
+				BB445DF11E7231910092FBD0 /* STCharacters.ocd in Resources */,
+				BB445DE21E7231910092FBD0 /* HKVariants.ocd in Resources */,
+				BB445DB81E72310D0092FBD0 /* s2hk_txt.json in Resources */,
+				BB445E161E7231C30092FBD0 /* s2hk.json in Resources */,
 				BB445D111E7130DA0092FBD0 /* HKVariantsPhrases.txt in Resources */,
-				BB445CE81E7130D40092FBD0 /* HKVariantsPhrases.ocd in Resources */,
-				BB445D351E7130E00092FBD0 /* s2hk.json in Resources */,
-				BB445CF41E7130D40092FBD0 /* TWVariantsRevPhrases.ocd in Resources */,
-				BB445D3B1E7130E00092FBD0 /* t2tw.json in Resources */,
-				BB445CEA1E7130D40092FBD0 /* HKVariantsRevPhrases.ocd in Resources */,
-				BB445D341E7130E00092FBD0 /* hk2s.json in Resources */,
 				BB445D1B1E7130DA0092FBD0 /* TWVariants.txt in Resources */,
+				BB445E181E7231C30092FBD0 /* s2tw.json in Resources */,
+				BB445E1A1E7231C30092FBD0 /* t2hk.json in Resources */,
 				BB445D191E7130DA0092FBD0 /* TWPhrasesName.txt in Resources */,
 				BB445D151E7130DA0092FBD0 /* STPhrases.txt in Resources */,
-				BB445CEE1E7130D40092FBD0 /* TSCharacters.ocd in Resources */,
 				BB445D1C1E7130DA0092FBD0 /* TWVariantsRevPhrases.txt in Resources */,
-				BB445D3C1E7130E00092FBD0 /* tw2s.json in Resources */,
+				BB445DFA1E7231910092FBD0 /* TSPhrases.ocd in Resources */,
+				BB445DF71E7231910092FBD0 /* TSCharacters.ocd in Resources */,
+				BB445E001E7231910092FBD0 /* TWPhrasesRev.ocd in Resources */,
 				BB445D1A1E7130DA0092FBD0 /* TWPhrasesOther.txt in Resources */,
-				BB445CF21E7130D40092FBD0 /* TWVariants.ocd in Resources */,
-				BB445D381E7130E00092FBD0 /* s2twp.json in Resources */,
-				BB445D391E7130E00092FBD0 /* t2hk.json in Resources */,
+				BB445E1B1E7231C30092FBD0 /* t2s.json in Resources */,
+				BB445E1D1E7231C30092FBD0 /* tw2s.json in Resources */,
+				BB445E031E7231910092FBD0 /* TWVariants.ocd in Resources */,
+				BB445DE81E7231910092FBD0 /* HKVariantsRev.ocd in Resources */,
+				BB445DEB1E7231910092FBD0 /* HKVariantsRevPhrases.ocd in Resources */,
+				BB445DCD1E72310D0092FBD0 /* tw2s_txt.json in Resources */,
+				BB445DEE1E7231910092FBD0 /* JPVariants.ocd in Resources */,
+				BB445DD01E72310D0092FBD0 /* tw2sp_txt.json in Resources */,
 				BB445D131E7130DA0092FBD0 /* JPVariants.txt in Resources */,
-				BB445D3A1E7130E00092FBD0 /* t2s.json in Resources */,
-				BB445CEC1E7130D40092FBD0 /* STCharacters.ocd in Resources */,
-				BB445CED1E7130D40092FBD0 /* STPhrases.ocd in Resources */,
-				BB445D3D1E7130E00092FBD0 /* tw2sp.json in Resources */,
+				BB445E061E7231910092FBD0 /* TWVariantsRev.ocd in Resources */,
+				BB445DBE1E72310D0092FBD0 /* s2tw_txt.json in Resources */,
 				BB445D141E7130DA0092FBD0 /* STCharacters.txt in Resources */,
-				BB445CF01E7130D40092FBD0 /* TWPhrases.ocd in Resources */,
-				BB445D361E7130E00092FBD0 /* s2t.json in Resources */,
-				BB445CEF1E7130D40092FBD0 /* TSPhrases.ocd in Resources */,
+				BB445DB51E72310D0092FBD0 /* hk2s_txt.json in Resources */,
+				BB445DBB1E72310D0092FBD0 /* s2t_txt.json in Resources */,
+				BB445E191E7231C30092FBD0 /* s2twp.json in Resources */,
+				BB445DFD1E7231910092FBD0 /* TWPhrases.ocd in Resources */,
 				BB445D171E7130DA0092FBD0 /* TSPhrases.txt in Resources */,
+				BB445E171E7231C30092FBD0 /* s2t.json in Resources */,
+				BB445DC41E72310D0092FBD0 /* t2hk_txt.json in Resources */,
 				BB445D121E7130DA0092FBD0 /* HKVariantsRevPhrases.txt in Resources */,
-				BB445D371E7130E00092FBD0 /* s2tw.json in Resources */,
-				BB445CE71E7130D40092FBD0 /* HKVariants.ocd in Resources */,
 				BB445D181E7130DA0092FBD0 /* TWPhrasesIT.txt in Resources */,
-				BB445CEB1E7130D40092FBD0 /* JPVariants.ocd in Resources */,
+				BB445E151E7231C30092FBD0 /* hk2s.json in Resources */,
+				BB445E091E7231910092FBD0 /* TWVariantsRevPhrases.ocd in Resources */,
+				BB445DE51E7231910092FBD0 /* HKVariantsPhrases.ocd in Resources */,
+				BB445E1E1E7231C30092FBD0 /* tw2sp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1013,43 +1118,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB445CFF1E7130D40092FBD0 /* TWPhrasesRev.ocd in Resources */,
-				BB445D011E7130D40092FBD0 /* TWVariantsRev.ocd in Resources */,
+				BB445DC81E72310D0092FBD0 /* t2s_txt.json in Resources */,
 				BB445D031E7130D90092FBD0 /* HKVariants.txt in Resources */,
+				BB445DC21E72310D0092FBD0 /* s2twp_txt.json in Resources */,
+				BB445DCB1E72310D0092FBD0 /* t2tw_txt.json in Resources */,
+				BB445E261E7231C40092FBD0 /* t2tw.json in Resources */,
+				BB445DF51E7231910092FBD0 /* STPhrases.ocd in Resources */,
 				BB445D091E7130D90092FBD0 /* TSCharacters.txt in Resources */,
-				BB445CF71E7130D40092FBD0 /* HKVariantsRev.ocd in Resources */,
+				BB445DF21E7231910092FBD0 /* STCharacters.ocd in Resources */,
+				BB445DE31E7231910092FBD0 /* HKVariants.ocd in Resources */,
+				BB445DB91E72310D0092FBD0 /* s2hk_txt.json in Resources */,
+				BB445E201E7231C40092FBD0 /* s2hk.json in Resources */,
 				BB445D041E7130D90092FBD0 /* HKVariantsPhrases.txt in Resources */,
-				BB445CF61E7130D40092FBD0 /* HKVariantsPhrases.ocd in Resources */,
-				BB445D2B1E7130E00092FBD0 /* s2hk.json in Resources */,
-				BB445D021E7130D40092FBD0 /* TWVariantsRevPhrases.ocd in Resources */,
-				BB445D311E7130E00092FBD0 /* t2tw.json in Resources */,
-				BB445CF81E7130D40092FBD0 /* HKVariantsRevPhrases.ocd in Resources */,
-				BB445D2A1E7130E00092FBD0 /* hk2s.json in Resources */,
 				BB445D0E1E7130D90092FBD0 /* TWVariants.txt in Resources */,
+				BB445E221E7231C40092FBD0 /* s2tw.json in Resources */,
+				BB445E241E7231C40092FBD0 /* t2hk.json in Resources */,
 				BB445D0C1E7130D90092FBD0 /* TWPhrasesName.txt in Resources */,
 				BB445D081E7130D90092FBD0 /* STPhrases.txt in Resources */,
-				BB445CFC1E7130D40092FBD0 /* TSCharacters.ocd in Resources */,
 				BB445D0F1E7130D90092FBD0 /* TWVariantsRevPhrases.txt in Resources */,
-				BB445D321E7130E00092FBD0 /* tw2s.json in Resources */,
+				BB445DFB1E7231910092FBD0 /* TSPhrases.ocd in Resources */,
+				BB445DF81E7231910092FBD0 /* TSCharacters.ocd in Resources */,
+				BB445E011E7231910092FBD0 /* TWPhrasesRev.ocd in Resources */,
 				BB445D0D1E7130D90092FBD0 /* TWPhrasesOther.txt in Resources */,
-				BB445D001E7130D40092FBD0 /* TWVariants.ocd in Resources */,
-				BB445D2E1E7130E00092FBD0 /* s2twp.json in Resources */,
-				BB445D2F1E7130E00092FBD0 /* t2hk.json in Resources */,
+				BB445E251E7231C40092FBD0 /* t2s.json in Resources */,
+				BB445E271E7231C40092FBD0 /* tw2s.json in Resources */,
+				BB445E041E7231910092FBD0 /* TWVariants.ocd in Resources */,
+				BB445DE91E7231910092FBD0 /* HKVariantsRev.ocd in Resources */,
+				BB445DEC1E7231910092FBD0 /* HKVariantsRevPhrases.ocd in Resources */,
+				BB445DCE1E72310D0092FBD0 /* tw2s_txt.json in Resources */,
+				BB445DEF1E7231910092FBD0 /* JPVariants.ocd in Resources */,
+				BB445DD11E72310D0092FBD0 /* tw2sp_txt.json in Resources */,
 				BB445D061E7130D90092FBD0 /* JPVariants.txt in Resources */,
-				BB445D301E7130E00092FBD0 /* t2s.json in Resources */,
-				BB445CFA1E7130D40092FBD0 /* STCharacters.ocd in Resources */,
-				BB445CFB1E7130D40092FBD0 /* STPhrases.ocd in Resources */,
-				BB445D331E7130E00092FBD0 /* tw2sp.json in Resources */,
+				BB445E071E7231910092FBD0 /* TWVariantsRev.ocd in Resources */,
+				BB445DBF1E72310D0092FBD0 /* s2tw_txt.json in Resources */,
 				BB445D071E7130D90092FBD0 /* STCharacters.txt in Resources */,
-				BB445CFE1E7130D40092FBD0 /* TWPhrases.ocd in Resources */,
-				BB445D2C1E7130E00092FBD0 /* s2t.json in Resources */,
-				BB445CFD1E7130D40092FBD0 /* TSPhrases.ocd in Resources */,
+				BB445DB61E72310D0092FBD0 /* hk2s_txt.json in Resources */,
+				BB445DBC1E72310D0092FBD0 /* s2t_txt.json in Resources */,
+				BB445E231E7231C40092FBD0 /* s2twp.json in Resources */,
+				BB445DFE1E7231910092FBD0 /* TWPhrases.ocd in Resources */,
 				BB445D0A1E7130D90092FBD0 /* TSPhrases.txt in Resources */,
+				BB445E211E7231C40092FBD0 /* s2t.json in Resources */,
+				BB445DC51E72310D0092FBD0 /* t2hk_txt.json in Resources */,
 				BB445D051E7130D90092FBD0 /* HKVariantsRevPhrases.txt in Resources */,
-				BB445D2D1E7130E00092FBD0 /* s2tw.json in Resources */,
-				BB445CF51E7130D40092FBD0 /* HKVariants.ocd in Resources */,
 				BB445D0B1E7130D90092FBD0 /* TWPhrasesIT.txt in Resources */,
-				BB445CF91E7130D40092FBD0 /* JPVariants.ocd in Resources */,
+				BB445E1F1E7231C40092FBD0 /* hk2s.json in Resources */,
+				BB445E0A1E7231910092FBD0 /* TWVariantsRevPhrases.ocd in Resources */,
+				BB445DE61E7231910092FBD0 /* HKVariantsPhrases.ocd in Resources */,
+				BB445E281E7231C40092FBD0 /* tw2sp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1063,21 +1178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BB445D771E714F260092FBD0 /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd OpenCC\nmake";
-		};
-		BB445D781E714FE30092FBD0 /* ShellScript */ = {
+		BB445E2D1E723E140092FBD0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1088,20 +1189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd OpenCC\nmake";
-		};
-		BB445D791E714FEE0092FBD0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd OpenCC\nmake";
+			shellScript = "jazzy \\\n--clean \\\n--author ddddxxx \\\n--github_url https://github.com/XQS6LB3A/SwiftyOpenCC \\\n--module-version 0.0.2 \\\n--module OpenCC \\";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1704,6 +1792,22 @@
 			};
 			name = Release;
 		};
+		BB445E2A1E723E0C0092FBD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KCY8NMTG34;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB445E2B1E723E0C0092FBD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KCY8NMTG34;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1748,6 +1852,15 @@
 			buildConfigurations = (
 				BB445D6C1E7133EE0092FBD0 /* Debug */,
 				BB445D6D1E7133EE0092FBD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB445E2C1E723E0C0092FBD0 /* Build configuration list for PBXAggregateTarget "OpenCC Doc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB445E2A1E723E0C0092FBD0 /* Debug */,
+				BB445E2B1E723E0C0092FBD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

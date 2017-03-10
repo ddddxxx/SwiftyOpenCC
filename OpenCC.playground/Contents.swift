@@ -1,8 +1,8 @@
 import Cocoa
 import OpenCC
 
-let str = "忧郁的台湾乌龟"
+let str = "鼠标里面的硅二极管坏了，导致光标分辨率降低。"
 
-let converter = OpenCCConverter(option: [.traditionalize])
+let converter = OpenCCConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
 
-converter.convert(str)
+print(converter.convert(str))
