@@ -9,22 +9,30 @@
 import Foundation
 import OpenCCBridge
 
-/// The `OpenCCConverter` class is used to represent and apply conversion 
+/// The `OpenCCConverter` class is used to represent and apply conversion
 /// between Traditional Chinese and Simplified Chinese to Unicode strings.
-/// An instance of this class is an immutable representation of a compiled 
-/// conversion pattern. 
-/// The `OpenCCConverter` supporting character-level conversion, phrase-level 
-/// conversion, variant conversion and regional idioms among Mainland China, 
+/// An instance of this class is an immutable representation of a compiled
+/// conversion pattern.
+/// The `OpenCCConverter` supporting character-level conversion, phrase-level
+/// conversion, variant conversion and regional idioms among Mainland China,
 /// Taiwan and HongKong
 public class OpenCCConverter {
     
     let converter: ObjcConverter
     
+    /// Returns an initialized OpenCCConverter instance with the specified 
+    /// conversion option.
+    ///
+    /// - Parameter option: The convert’s option.
     public init(option: Options) {
         let config = option.config
         converter = ObjcConverter(config: config)
     }
     
+    /// Return a converted string using the convert’s current option.
+    ///
+    /// - Parameter text: The string to convert.
+    /// - Returns: A converted string using the convert’s current option.
     public func convert(_ text: String) -> String {
         return converter.convert(text)
     }
@@ -70,12 +78,12 @@ extension OpenCCConverter {
         /// Taiwanese idiom conversion.
         /// Both available in traditionalization and simplification.
         ///
-        /// Only effective with direction and `.TWStandard`.
+        /// - Precondition: Only effective with direction and `.TWStandard`.
         public static let TWIdiom = Options(rawValue: 1 << 10)
         
         /// Use text format dictionary.
         /// Text dictionary is smaller than default ocd dictionary, and
-        /// therefore consume less memory, But MUCH slower.
+        /// therefore consume less memory, But **much slower**.
         ///
         /// 50x slower than default ocd dictionary!!!
         public static let textDict = Options(rawValue: 1 << 15)
