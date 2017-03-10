@@ -24,9 +24,9 @@
 		BB1FE56E1E711B3A008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB1FE58D1E711CAD008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB1FE58E1E711CAE008F3F82 /* OpenCC.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE56C1E711B3A008F3F82 /* OpenCC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB1FE5BB1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* OpenCCConverter.swift */; };
-		BB1FE5BC1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* OpenCCConverter.swift */; };
-		BB1FE5BD1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* OpenCCConverter.swift */; };
+		BB1FE5BB1E7129E5008F3F82 /* ChineseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */; };
+		BB1FE5BC1E7129E5008F3F82 /* ChineseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */; };
+		BB1FE5BD1E7129E5008F3F82 /* ChineseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */; };
 		BB445C551E7130B20092FBD0 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BD61E712E200092FBD0 /* BinaryDict.cpp */; };
 		BB445C561E7130B20092FBD0 /* BinaryDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD71E712E200092FBD0 /* BinaryDict.hpp */; };
 		BB445C571E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD91E712E200092FBD0 /* CmdLineOutput.hpp */; };
@@ -329,7 +329,7 @@
 		BB1FE57A1E711B51008F3F82 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		BB1FE5841E711B60008F3F82 /* OpenCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1FE5871E711B60008F3F82 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Sources/Info-tvOS.plist"; sourceTree = "<group>"; };
-		BB1FE5BA1E7129E5008F3F82 /* OpenCCConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenCCConverter.swift; path = Sources/OpenCCConverter.swift; sourceTree = "<group>"; };
+		BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChineseConverter.swift; path = Sources/ChineseConverter.swift; sourceTree = "<group>"; };
 		BB1FE5BE1E712A9E008F3F82 /* ObjcConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjcConverter.h; path = Sources/ObjcConverter.h; sourceTree = "<group>"; };
 		BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjcConverter.mm; path = Sources/ObjcConverter.mm; sourceTree = "<group>"; };
 		BB1FE5C71E712BE4008F3F82 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Sources/module.modulemap; sourceTree = "<group>"; };
@@ -501,7 +501,7 @@
 		BB1FE58C1E711B94008F3F82 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BB1FE5BA1E7129E5008F3F82 /* OpenCCConverter.swift */,
+				BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */,
 				BB445BD11E712CB00092FBD0 /* Objc Bridge */,
 				BB1FE5B91E7129AB008F3F82 /* Supporting Files */,
 			);
@@ -1203,7 +1203,7 @@
 				BB445D7C1E715C280092FBD0 /* README.md in Sources */,
 				BB445C611E7130B20092FBD0 /* DartsDict.cpp in Sources */,
 				BB445C721E7130B20092FBD0 /* PhraseExtract.cpp in Sources */,
-				BB1FE5BB1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */,
+				BB1FE5BB1E7129E5008F3F82 /* ChineseConverter.swift in Sources */,
 				BB445C591E7130B20092FBD0 /* Config.cpp in Sources */,
 				BB445C7F1E7130B20092FBD0 /* UTF8Util.cpp in Sources */,
 				BB445C7A1E7130B20092FBD0 /* TextDict.cpp in Sources */,
@@ -1229,7 +1229,7 @@
 				BB445CA01E7130B20092FBD0 /* Segmentation.cpp in Sources */,
 				BB445C8D1E7130B20092FBD0 /* DartsDict.cpp in Sources */,
 				BB445C9E1E7130B20092FBD0 /* PhraseExtract.cpp in Sources */,
-				BB1FE5BC1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */,
+				BB1FE5BC1E7129E5008F3F82 /* ChineseConverter.swift in Sources */,
 				BB445C851E7130B20092FBD0 /* Config.cpp in Sources */,
 				BB445CAB1E7130B20092FBD0 /* UTF8Util.cpp in Sources */,
 				BB445CA61E7130B20092FBD0 /* TextDict.cpp in Sources */,
@@ -1255,7 +1255,7 @@
 				BB445CCC1E7130B30092FBD0 /* Segmentation.cpp in Sources */,
 				BB445CB91E7130B30092FBD0 /* DartsDict.cpp in Sources */,
 				BB445CCA1E7130B30092FBD0 /* PhraseExtract.cpp in Sources */,
-				BB1FE5BD1E7129E5008F3F82 /* OpenCCConverter.swift in Sources */,
+				BB1FE5BD1E7129E5008F3F82 /* ChineseConverter.swift in Sources */,
 				BB445CB11E7130B30092FBD0 /* Config.cpp in Sources */,
 				BB445CD71E7130B30092FBD0 /* UTF8Util.cpp in Sources */,
 				BB445CD21E7130B30092FBD0 /* TextDict.cpp in Sources */,
