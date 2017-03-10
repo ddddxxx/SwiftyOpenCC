@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "533DB5670931452C62776391BC0E9695F70C3B1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "533DB5670931452C62776391BC0E9695F70C3B1B" : 9223372036854775807,
+    "82C91FAFEE7089CE3A02C7A2060FC9668C795B5E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A65174B7-0852-45D7-B44C-13E3684D71A8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "533DB5670931452C62776391BC0E9695F70C3B1B" : "OpenCC\/",
+    "82C91FAFEE7089CE3A02C7A2060FC9668C795B5E" : "OpenCC\/OpenCC\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OpenCC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OpenCC.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/XQS6LB3A\/SwiftyOpenCC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "533DB5670931452C62776391BC0E9695F70C3B1B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BYVoid\/OpenCC",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82C91FAFEE7089CE3A02C7A2060FC9668C795B5E"
+    }
+  ]
+}
