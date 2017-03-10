@@ -35,14 +35,14 @@ Download latest [release](https://github.com/XQS6LB3A/SwiftyOpenCC/releases), co
 import OpenCC
 
 let str = "鼠标里面的硅二极管坏了，导致光标分辨率降低。"
-let converter = OpenCCConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
+let converter = ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
 converter.convert("str")
 // 滑鼠裡面的矽二極體壞了，導致游標解析度降低。
 ```
 
 ### Documentation
 
-[CocoaDocs](Docs/index.html)
+[CocoaDocs](http://XQS6LB3A.github.io/SwiftyOpenCC)
 
 %100 Documented
 

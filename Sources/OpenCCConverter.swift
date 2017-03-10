@@ -9,18 +9,18 @@
 import Foundation
 import OpenCCBridge
 
-/// The `OpenCCConverter` class is used to represent and apply conversion
+/// The `ChineseConverter` class is used to represent and apply conversion
 /// between Traditional Chinese and Simplified Chinese to Unicode strings.
 /// An instance of this class is an immutable representation of a compiled
 /// conversion pattern.
-/// The `OpenCCConverter` supporting character-level conversion, phrase-level
+/// The `ChineseConverter` supporting character-level conversion, phrase-level
 /// conversion, variant conversion and regional idioms among Mainland China,
 /// Taiwan and HongKong
-public class OpenCCConverter {
+public class ChineseConverter {
     
     let converter: ObjcConverter
     
-    /// Returns an initialized OpenCCConverter instance with the specified 
+    /// Returns an initialized `ChineseConverter` instance with the specified
     /// conversion option.
     ///
     /// - Parameter option: The convert’s option.
@@ -39,10 +39,10 @@ public class OpenCCConverter {
     
 }
 
-extension OpenCCConverter {
+extension ChineseConverter {
     
-    /// These constants define the Chinese Converter options.
-    /// These constants are used to initialize `OpenCCConverter`.
+    /// These constants define the ChineseConverter options.
+    /// These constants are used to initialize `ChineseConverter`.
     public struct Options: OptionSet {
         
         public let rawValue: Int
@@ -134,7 +134,7 @@ extension OpenCCConverter {
             if contains(.textDict) {
                 name += "_txt"
             }
-            return Bundle(for: OpenCCConverter.self).path(forResource: name, ofType: "json")!
+            return Bundle(for: ChineseConverter.self).path(forResource: name, ofType: "json")!
         }
         
     }

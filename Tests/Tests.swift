@@ -20,8 +20,8 @@ class Tests: XCTestCase {
     }
     
     func testConversion() {
-        let s2d = OpenCCConverter(option: [.traditionalize])
-        let d2s = OpenCCConverter(option: [.simplify])
+        let s2d = ChineseConverter(option: [.traditionalize])
+        let d2s = ChineseConverter(option: [.simplify])
         
         let str = "忧郁的台湾乌龟"
         let str1 = s2d.convert(str)
@@ -31,12 +31,12 @@ class Tests: XCTestCase {
     
     func testConverterCreationPerformance() {
         self.measure {
-            _ = OpenCCConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
+            _ = ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
         }
     }
     
     func testConversionPerformance() {
-        let testConverter = OpenCCConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
+        let testConverter = ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
         self.measure {
             _ = testConverter.convert(self.testText)
         }
@@ -44,12 +44,12 @@ class Tests: XCTestCase {
     
     func testTextDictionaryCreationPerformance() {
         self.measure {
-            _ = OpenCCConverter(option: [.traditionalize, .TWStandard, .TWIdiom, .textDict])
+            _ = ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom, .textDict])
         }
     }
     
     func testTextDictionaryPerformance() {
-        let testConverter = OpenCCConverter(option: [.traditionalize, .TWStandard, .TWIdiom, .textDict])
+        let testConverter = ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom, .textDict])
         self.measure {
             _ = testConverter.convert(self.testText)
         }
