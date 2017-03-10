@@ -44,6 +44,8 @@ extension OpenCCConverter {
         
         public static let TWIdiom = Options(rawValue: 1 << 10)
         
+        public static let textDict = Options(rawValue: 1 << 15)
+        
         func normalizing() -> Options {
             var options = self
             if options.contains([.traditionalize, .simplify]) {
@@ -61,8 +63,8 @@ extension OpenCCConverter {
         }
         
         var config: String {
-            let options = normalizing()
-            let name: String
+            let options = normalizing().subtracting(.textDict)
+            var name: String
             switch options {
             case [.traditionalize], []:
                 name = "s2t"
@@ -87,7 +89,9 @@ extension OpenCCConverter {
             default:
                 name = "s2t"
             }
-            
+            if contains(.textDict) {
+                name += "_txt"
+            }
             return Bundle(for: OpenCCConverter.self).path(forResource: name, ofType: "json")!
         }
         
