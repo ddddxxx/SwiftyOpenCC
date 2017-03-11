@@ -6,15 +6,12 @@
 //
 //
 
-#define OPENCC_EXPORT
-
 #import "ObjcConverter.h"
-
-#import <string>
-#import "SimpleConverter.hpp"
+#import "Converter.hpp"
+#import "Config.hpp"
 
 @interface ObjcConverter() {
-    @private opencc::SimpleConverter *converter;
+    @private opencc::ConverterPtr converter;
 }
 
 @end
@@ -23,8 +20,8 @@
 
 - (instancetype)initWithConfig:(NSString *)file {
     if (self = [super init]) {
-        const std::string *c = new std::string([file UTF8String]);
-        converter = new opencc::SimpleConverter(*c);
+        opencc::Config conf;
+        converter = conf.NewFromFile([file UTF8String]);
     }
     return self;
 }
@@ -32,10 +29,6 @@
 - (NSString *)convert:(NSString *)text {
     std::string string = converter->Convert([text UTF8String]);
     return [NSString stringWithCString:string.c_str() encoding:NSUTF8StringEncoding];
-}
-
-- (void)dealloc {
-    delete converter;
 }
 
 @end
