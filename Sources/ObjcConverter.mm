@@ -34,4 +34,8 @@
     return [NSString stringWithCString:string.c_str() encoding:NSUTF8StringEncoding];
 }
 
+- (void)dealloc {
+    delete converter;
+}
+
 @end
