@@ -1189,7 +1189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "jazzy \\\n--clean \\\n--author ddddxxx \\\n--github_url https://github.com/XQS6LB3A/SwiftyOpenCC \\\n--module-version 0.0.2 \\\n--module OpenCC \\";
+			shellScript = "jazzy \\\n--clean \\\n--author ddddxxx \\\n--github_url https://github.com/XQS6LB3A/SwiftyOpenCC \\\n--module-version 0.2.1 \\\n--module OpenCC \\";
 		};
 /* End PBXShellScriptBuildPhase section */
 
