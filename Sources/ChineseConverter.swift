@@ -1,5 +1,5 @@
 //
-//  OpenCCConverter.swift
+//  ChineseConverter.swift
 //  OpenCC
 //
 //  Created by 邓翔 on 2017/3/9.
@@ -25,8 +25,13 @@ public class ChineseConverter {
     ///
     /// - Parameter option: The convert’s option.
     public init(option: Options) {
-        let config = option.config
-        converter = ObjcConverter(config: config)
+        let configUrl = option.configUrl
+        let config = try! String(contentsOf: configUrl)
+        do {
+            converter = try ObjcConverter(config: config)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
     }
     
     /// Return a converted string using the convert’s current option.
@@ -34,7 +39,11 @@ public class ChineseConverter {
     /// - Parameter text: The string to convert.
     /// - Returns: A converted string using the convert’s current option.
     public func convert(_ text: String) -> String {
-        return converter.convert(text)
+        do {
+            return try converter.convert(text)
+        } catch let error {
+            fatalError(error.localizedDescription)
+        }
     }
     
 }
@@ -104,7 +113,7 @@ extension ChineseConverter {
             return options
         }
         
-        var config: String {
+        var configUrl: URL {
             let options = normalizing().subtracting(.textDict)
             var name: String
             switch options {
@@ -134,7 +143,8 @@ extension ChineseConverter {
             if contains(.textDict) {
                 name += "_txt"
             }
-            return Bundle(for: ChineseConverter.self).path(forResource: name, ofType: "json")!
+            let bundle = Bundle(for: ChineseConverter.self)
+            return bundle.url(forResource: name, withExtension: "json")!
         }
         
     }

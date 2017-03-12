@@ -20,8 +20,6 @@ Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC/tree/7fdaa
 
 Add the project to your `Cartfile`:
 
-Carthage unable to build OpenCC submodule. I'm working on this.
-
 ```
 github "XQS6LB3A/SwiftyOpenCC"
 ```

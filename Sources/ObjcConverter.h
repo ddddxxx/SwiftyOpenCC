@@ -10,8 +10,8 @@
 
 @interface ObjcConverter : NSObject
 
-- (instancetype)initWithConfig:(NSString *)file;
+- (instancetype _Nullable)initWithConfig:(NSString * _Nonnull)jsonConfig error:(NSError * _Nullable __autoreleasing * _Nonnull)error;
 
-- (NSString *)convert:(NSString *)text;
+- (NSString * _Nullable)convert:(NSString * _Nonnull)text error:(NSError * _Nullable __autoreleasing * _Nonnull)error;
 
 @end
