@@ -25,7 +25,8 @@ public class ChineseConverter {
     ///
     /// - Parameter option: The convert’s option.
     public init(option: Options) {
-        let config = option.config
+        let configUrl = option.configUrl
+        let config = try! String(contentsOf: configUrl)
         converter = ObjcConverter(config: config)
     }
     
@@ -104,7 +105,7 @@ extension ChineseConverter {
             return options
         }
         
-        var config: String {
+        var configUrl: URL {
             let options = normalizing().subtracting(.textDict)
             var name: String
             switch options {
@@ -134,7 +135,8 @@ extension ChineseConverter {
             if contains(.textDict) {
                 name += "_txt"
             }
-            return Bundle(for: ChineseConverter.self).path(forResource: name, ofType: "json")!
+            let bundle = Bundle(for: ChineseConverter.self)
+            return bundle.url(forResource: name, withExtension: "json")!
         }
         
     }

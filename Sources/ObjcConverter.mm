@@ -18,10 +18,11 @@
 
 @implementation ObjcConverter
 
-- (instancetype)initWithConfig:(NSString *)file {
+- (instancetype)initWithConfig:(NSString *)jsonConfig {
     if (self = [super init]) {
         opencc::Config conf;
-        converter = conf.NewFromFile([file UTF8String]);
+        NSString *configDir = [[NSBundle bundleForClass:[self class]] resourcePath];
+        converter = conf.NewFromString([jsonConfig UTF8String], [configDir UTF8String]);
     }
     return self;
 }
