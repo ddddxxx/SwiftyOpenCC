@@ -27,7 +27,11 @@ public class ChineseConverter {
     public init(option: Options) {
         let configUrl = option.configUrl
         let config = try! String(contentsOf: configUrl)
-        converter = ObjcConverter(config: config)
+        do {
+            converter = try ObjcConverter(config: config)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
     }
     
     /// Return a converted string using the convert’s current option.
@@ -35,7 +39,11 @@ public class ChineseConverter {
     /// - Parameter text: The string to convert.
     /// - Returns: A converted string using the convert’s current option.
     public func convert(_ text: String) -> String {
-        return converter.convert(text)
+        do {
+            return try converter.convert(text)
+        } catch let error {
+            fatalError(error.localizedDescription)
+        }
     }
     
 }

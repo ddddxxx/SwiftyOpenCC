@@ -18,18 +18,36 @@
 
 @implementation ObjcConverter
 
-- (instancetype)initWithConfig:(NSString *)jsonConfig {
+- (instancetype _Nullable)initWithConfig:(NSString * _Nonnull)jsonConfig error:(NSError * _Nullable __autoreleasing * _Nonnull)error {
     if (self = [super init]) {
         opencc::Config conf;
         NSString *configDir = [[NSBundle bundleForClass:[self class]] resourcePath];
-        converter = conf.NewFromString([jsonConfig UTF8String], [configDir UTF8String]);
+        try {
+            converter = conf.NewFromString([jsonConfig UTF8String], [configDir UTF8String]);
+        } catch (opencc::Exception& ex) {
+            if (error) {
+                NSString *description = [NSString stringWithCString:ex.what() encoding:NSUTF8StringEncoding];
+                NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
+                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:errorInfo];
+            }
+            return nil;
+        }
     }
     return self;
 }
 
-- (NSString *)convert:(NSString *)text {
-    std::string string = converter->Convert([text UTF8String]);
-    return [NSString stringWithCString:string.c_str() encoding:NSUTF8StringEncoding];
+- (NSString * _Nullable)convert:(NSString * _Nonnull)text error:(NSError * _Nullable __autoreleasing * _Nonnull)error {
+    try {
+        std::string string = converter->Convert([text UTF8String]);
+        return [NSString stringWithCString:string.c_str() encoding:NSUTF8StringEncoding];
+    } catch (opencc::Exception& ex) {
+        if (error) {
+            NSString *description = [NSString stringWithCString:ex.what() encoding:NSUTF8StringEncoding];
+            NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
+            *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:errorInfo];
+        }
+        return nil;
+    }
 }
 
 @end
