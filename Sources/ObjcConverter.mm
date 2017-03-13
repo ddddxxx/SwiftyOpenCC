@@ -28,28 +28,28 @@
             if (error) {
                 NSString *description = [NSString stringWithCString:ex.what() encoding:NSUTF8StringEncoding];
                 NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
-                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:OpenCCErrorCodeFileNotFound userInfo:errorInfo];
+                *error = [NSError errorWithDomain:OpenCCErrorDomain code:OpenCCErrorCodeFileNotFound userInfo:errorInfo];
             }
             return nil;
         } catch (opencc::InvalidFormat& ex) {
             if (error) {
                 NSString *description = [NSString stringWithCString:ex.what() encoding:NSUTF8StringEncoding];
                 NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
-                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:OpenCCErrorCodeInvalidFormat userInfo:errorInfo];
+                *error = [NSError errorWithDomain:OpenCCErrorDomain code:OpenCCErrorCodeInvalidFormat userInfo:errorInfo];
             }
             return nil;
         } catch (opencc::InvalidTextDictionary& ex) {
             if (error) {
                 NSString *description = [NSString stringWithCString:ex.what() encoding:NSUTF8StringEncoding];
                 NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
-                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:OpenCCErrorCodeInvalidTextDictionary userInfo:errorInfo];
+                *error = [NSError errorWithDomain:OpenCCErrorDomain code:OpenCCErrorCodeInvalidTextDictionary userInfo:errorInfo];
             }
             return nil;
         } catch (...) {
             if (error) {
                 NSString *description = @"unknown error";
                 NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
-                *error = [NSError errorWithDomain:NSCocoaErrorDomain code:OpenCCErrorCodeUnknown userInfo:errorInfo];
+                *error = [NSError errorWithDomain:OpenCCErrorDomain code:OpenCCErrorCodeUnknown userInfo:errorInfo];
             }
             return nil;
         }
@@ -65,7 +65,7 @@
         if (error) {
             NSString *description = [NSString stringWithCString:ex.what() encoding:NSUTF8StringEncoding];
             NSDictionary *errorInfo = @{NSLocalizedDescriptionKey : description};
-            *error = [NSError errorWithDomain:NSCocoaErrorDomain code:0 userInfo:errorInfo];
+            *error = [NSError errorWithDomain:OpenCCErrorDomain code:OpenCCErrorCodeUnknown userInfo:errorInfo];
         }
         return nil;
     }
