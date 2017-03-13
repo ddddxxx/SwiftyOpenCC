@@ -15,3 +15,12 @@
 - (NSString * _Nullable)convert:(NSString * _Nonnull)text error:(NSError * _Nullable __autoreleasing * _Nonnull)error;
 
 @end
+
+FOUNDATION_EXPORT NSString * _Nonnull OpenCCErrorDomain;
+
+typedef enum : NSUInteger {
+    OpenCCErrorCodeFileNotFound,
+    OpenCCErrorCodeInvalidFormat,
+    OpenCCErrorCodeInvalidTextDictionary,
+    OpenCCErrorCodeUnknown,
+} OpenCCErrorCode;

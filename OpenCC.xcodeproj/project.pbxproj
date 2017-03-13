@@ -206,7 +206,6 @@
 		BB445D501E7132800092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
 		BB445D671E7133EE0092FBD0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB445D661E7133EE0092FBD0 /* Tests.swift */; };
 		BB445D691E7133EE0092FBD0 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1FE5691E711B3A008F3F82 /* OpenCC.framework */; };
-		BB445D7C1E715C280092FBD0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB445D7B1E715C280092FBD0 /* README.md */; };
 		BB445DB41E72310D0092FBD0 /* hk2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */; };
 		BB445DB51E72310D0092FBD0 /* hk2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */; };
 		BB445DB61E72310D0092FBD0 /* hk2s_txt.json in Resources */ = {isa = PBXBuildFile; fileRef = BB445DAA1E72310D0092FBD0 /* hk2s_txt.json */; };
@@ -1189,7 +1188,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "jazzy \\\n--clean \\\n--author ddddxxx \\\n--github_url https://github.com/XQS6LB3A/SwiftyOpenCC \\\n--module-version 0.0.2 \\\n--module OpenCC \\";
+			shellScript = "jazzy \\\n--clean \\\n--author ddddxxx \\\n--github_url https://github.com/XQS6LB3A/SwiftyOpenCC \\\n--module-version 0.2.1 \\\n--module OpenCC \\";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1200,7 +1199,6 @@
 			files = (
 				BB445C631E7130B20092FBD0 /* Dict.cpp in Sources */,
 				BB445C741E7130B20092FBD0 /* Segmentation.cpp in Sources */,
-				BB445D7C1E715C280092FBD0 /* README.md in Sources */,
 				BB445C611E7130B20092FBD0 /* DartsDict.cpp in Sources */,
 				BB445C721E7130B20092FBD0 /* PhraseExtract.cpp in Sources */,
 				BB1FE5BB1E7129E5008F3F82 /* ChineseConverter.swift in Sources */,

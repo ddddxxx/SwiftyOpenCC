@@ -106,10 +106,15 @@ extension ChineseConverter {
                 options.remove([.HKStandard, .TWStandard])
             }
             if options.contains(.TWIdiom),
-                !options.contains(.TWStandard) ||
-                    (!(options.contains(.simplify)) && !options.contains(.traditionalize)) {
+                options.isDisjoint(with: .TWStandard) || options.isDisjoint(with: [.traditionalize, .simplify]) {
                 options.remove(.TWIdiom)
             }
+            
+            // FIXME: missing reverse dictionary of text format, temporary remove it to avoid crash.
+            if options.contains([.simplify, .textDict]), !options.isDisjoint(with: [.HKStandard, .TWStandard]) {
+                options.remove([.HKStandard, .TWStandard, .TWIdiom])
+            }
+            
             return options
         }
         
