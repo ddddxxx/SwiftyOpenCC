@@ -13,9 +13,15 @@ import OpenCCBridge
 /// between Traditional Chinese and Simplified Chinese to Unicode strings.
 /// An instance of this class is an immutable representation of a compiled
 /// conversion pattern.
+///
 /// The `ChineseConverter` supporting character-level conversion, phrase-level
 /// conversion, variant conversion and regional idioms among Mainland China,
 /// Taiwan and HongKong
+///
+/// `ChineseConverter` is designed to be immutable and threadsafe, so that
+/// a single instance can be used in conversion on multiple threads at once.
+/// However, the string on which it is operating should not be mutated
+/// during the course of a conversion.
 public class ChineseConverter {
     
     let converter: ObjcConverter
@@ -91,10 +97,10 @@ extension ChineseConverter {
         public static let TWIdiom = Options(rawValue: 1 << 10)
         
         /// Use text format dictionary.
-        /// Text dictionary is smaller than default ocd dictionary, and
-        /// therefore consume less memory, But **much slower**.
+        /// Text dictionary is smaller than default Datrie dictionary,
+        /// and therefore consume less memory, But **much slower**.
         ///
-        /// 50x slower than default ocd dictionary!!!
+        /// 50x slower than default Datrie dictionary!!!
         public static let textDict = Options(rawValue: 1 << 15)
         
         func normalizing() -> Options {
