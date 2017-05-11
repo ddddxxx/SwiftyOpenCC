@@ -41,7 +41,7 @@ converter.convert(str)
 
 [Github Pages](http://XQS6LB3A.github.io/SwiftyOpenCC)
 
-%100 Documented
+100% Documented
 
 ## License
 
