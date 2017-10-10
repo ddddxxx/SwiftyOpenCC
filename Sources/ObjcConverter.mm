@@ -71,6 +71,10 @@
     }
 }
 
+- (void)dealloc {
+    converter.reset();
+}
+
 @end
 
 NSString *OpenCCErrorDomain = @"ddddxxx.OpenCC";
