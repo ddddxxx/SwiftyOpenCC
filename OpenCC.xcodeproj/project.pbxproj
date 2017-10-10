@@ -195,14 +195,8 @@
 		BB445D271E7130DB0092FBD0 /* TWPhrasesOther.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C2D1E712EB90092FBD0 /* TWPhrasesOther.txt */; };
 		BB445D281E7130DB0092FBD0 /* TWVariants.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C2E1E712EB90092FBD0 /* TWVariants.txt */; };
 		BB445D291E7130DB0092FBD0 /* TWVariantsRevPhrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB445C2F1E712EB90092FBD0 /* TWVariantsRevPhrases.txt */; };
-		BB445D481E71327F0092FBD0 /* OpenCCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD21E712CEF0092FBD0 /* OpenCCBridge.h */; };
-		BB445D491E71327F0092FBD0 /* ObjcConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE5BE1E712A9E008F3F82 /* ObjcConverter.h */; };
 		BB445D4A1E71327F0092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
-		BB445D4B1E71327F0092FBD0 /* OpenCCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD21E712CEF0092FBD0 /* OpenCCBridge.h */; };
-		BB445D4C1E71327F0092FBD0 /* ObjcConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE5BE1E712A9E008F3F82 /* ObjcConverter.h */; };
 		BB445D4D1E71327F0092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
-		BB445D4E1E7132800092FBD0 /* OpenCCBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD21E712CEF0092FBD0 /* OpenCCBridge.h */; };
-		BB445D4F1E7132800092FBD0 /* ObjcConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1FE5BE1E712A9E008F3F82 /* ObjcConverter.h */; };
 		BB445D501E7132800092FBD0 /* ObjcConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */; };
 		BB445D671E7133EE0092FBD0 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB445D661E7133EE0092FBD0 /* Tests.swift */; };
 		BB445D691E7133EE0092FBD0 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1FE5691E711B3A008F3F82 /* OpenCC.framework */; };
@@ -768,14 +762,12 @@
 				BB445C571E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */,
 				BB445C761E7130B20092FBD0 /* Segments.hpp in Headers */,
 				BB445C681E7130B20092FBD0 /* DictEntry.hpp in Headers */,
-				BB445D481E71327F0092FBD0 /* OpenCCBridge.h in Headers */,
 				BB445C6C1E7130B20092FBD0 /* Export.hpp in Headers */,
 				BB445C641E7130B20092FBD0 /* Dict.hpp in Headers */,
 				BB445C771E7130B20092FBD0 /* SerializableDict.hpp in Headers */,
 				BB445C601E7130B20092FBD0 /* Converter.hpp in Headers */,
 				BB445C661E7130B20092FBD0 /* DictConverter.hpp in Headers */,
 				BB445C6F1E7130B20092FBD0 /* MaxMatchSegmentation.hpp in Headers */,
-				BB445D491E71327F0092FBD0 /* ObjcConverter.h in Headers */,
 				BB445C711E7130B20092FBD0 /* Optional.hpp in Headers */,
 				BB445C801E7130B20092FBD0 /* UTF8Util.hpp in Headers */,
 				BB445C5E1E7130B20092FBD0 /* ConversionChain.hpp in Headers */,
@@ -804,14 +796,12 @@
 				BB445C831E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */,
 				BB445CA21E7130B20092FBD0 /* Segments.hpp in Headers */,
 				BB445C941E7130B20092FBD0 /* DictEntry.hpp in Headers */,
-				BB445D4B1E71327F0092FBD0 /* OpenCCBridge.h in Headers */,
 				BB445C981E7130B20092FBD0 /* Export.hpp in Headers */,
 				BB445C901E7130B20092FBD0 /* Dict.hpp in Headers */,
 				BB445CA31E7130B20092FBD0 /* SerializableDict.hpp in Headers */,
 				BB445C8C1E7130B20092FBD0 /* Converter.hpp in Headers */,
 				BB445C921E7130B20092FBD0 /* DictConverter.hpp in Headers */,
 				BB445C9B1E7130B20092FBD0 /* MaxMatchSegmentation.hpp in Headers */,
-				BB445D4C1E71327F0092FBD0 /* ObjcConverter.h in Headers */,
 				BB445C9D1E7130B20092FBD0 /* Optional.hpp in Headers */,
 				BB445CAC1E7130B20092FBD0 /* UTF8Util.hpp in Headers */,
 				BB445C8A1E7130B20092FBD0 /* ConversionChain.hpp in Headers */,
@@ -840,14 +830,12 @@
 				BB445CAF1E7130B30092FBD0 /* CmdLineOutput.hpp in Headers */,
 				BB445CCE1E7130B30092FBD0 /* Segments.hpp in Headers */,
 				BB445CC01E7130B30092FBD0 /* DictEntry.hpp in Headers */,
-				BB445D4E1E7132800092FBD0 /* OpenCCBridge.h in Headers */,
 				BB445CC41E7130B30092FBD0 /* Export.hpp in Headers */,
 				BB445CBC1E7130B30092FBD0 /* Dict.hpp in Headers */,
 				BB445CCF1E7130B30092FBD0 /* SerializableDict.hpp in Headers */,
 				BB445CB81E7130B30092FBD0 /* Converter.hpp in Headers */,
 				BB445CBE1E7130B30092FBD0 /* DictConverter.hpp in Headers */,
 				BB445CC71E7130B30092FBD0 /* MaxMatchSegmentation.hpp in Headers */,
-				BB445D4F1E7132800092FBD0 /* ObjcConverter.h in Headers */,
 				BB445CC91E7130B30092FBD0 /* Optional.hpp in Headers */,
 				BB445CD81E7130B30092FBD0 /* UTF8Util.hpp in Headers */,
 				BB445CB61E7130B30092FBD0 /* ConversionChain.hpp in Headers */,
