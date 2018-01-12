@@ -29,7 +29,6 @@
 		BB1FE5BD1E7129E5008F3F82 /* ChineseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */; };
 		BB445C551E7130B20092FBD0 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BD61E712E200092FBD0 /* BinaryDict.cpp */; };
 		BB445C561E7130B20092FBD0 /* BinaryDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD71E712E200092FBD0 /* BinaryDict.hpp */; };
-		BB445C571E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD91E712E200092FBD0 /* CmdLineOutput.hpp */; };
 		BB445C581E7130B20092FBD0 /* Common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BDA1E712E200092FBD0 /* Common.hpp */; };
 		BB445C591E7130B20092FBD0 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BDB1E712E200092FBD0 /* Config.cpp */; };
 		BB445C5A1E7130B20092FBD0 /* Config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BDC1E712E200092FBD0 /* Config.hpp */; };
@@ -54,7 +53,6 @@
 		BB445C6D1E7130B20092FBD0 /* Lexicon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BF61E712E200092FBD0 /* Lexicon.hpp */; };
 		BB445C6E1E7130B20092FBD0 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BF71E712E200092FBD0 /* MaxMatchSegmentation.cpp */; };
 		BB445C6F1E7130B20092FBD0 /* MaxMatchSegmentation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BF81E712E200092FBD0 /* MaxMatchSegmentation.hpp */; };
-		BB445C701E7130B20092FBD0 /* opencc.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFA1E712E200092FBD0 /* opencc.h */; };
 		BB445C711E7130B20092FBD0 /* Optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFB1E712E200092FBD0 /* Optional.hpp */; };
 		BB445C721E7130B20092FBD0 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BFC1E712E200092FBD0 /* PhraseExtract.cpp */; };
 		BB445C731E7130B20092FBD0 /* PhraseExtract.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFD1E712E200092FBD0 /* PhraseExtract.hpp */; };
@@ -72,7 +70,6 @@
 		BB445C801E7130B20092FBD0 /* UTF8Util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445C0F1E712E200092FBD0 /* UTF8Util.hpp */; };
 		BB445C811E7130B20092FBD0 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BD61E712E200092FBD0 /* BinaryDict.cpp */; };
 		BB445C821E7130B20092FBD0 /* BinaryDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD71E712E200092FBD0 /* BinaryDict.hpp */; };
-		BB445C831E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD91E712E200092FBD0 /* CmdLineOutput.hpp */; };
 		BB445C841E7130B20092FBD0 /* Common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BDA1E712E200092FBD0 /* Common.hpp */; };
 		BB445C851E7130B20092FBD0 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BDB1E712E200092FBD0 /* Config.cpp */; };
 		BB445C861E7130B20092FBD0 /* Config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BDC1E712E200092FBD0 /* Config.hpp */; };
@@ -97,7 +94,6 @@
 		BB445C991E7130B20092FBD0 /* Lexicon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BF61E712E200092FBD0 /* Lexicon.hpp */; };
 		BB445C9A1E7130B20092FBD0 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BF71E712E200092FBD0 /* MaxMatchSegmentation.cpp */; };
 		BB445C9B1E7130B20092FBD0 /* MaxMatchSegmentation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BF81E712E200092FBD0 /* MaxMatchSegmentation.hpp */; };
-		BB445C9C1E7130B20092FBD0 /* opencc.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFA1E712E200092FBD0 /* opencc.h */; };
 		BB445C9D1E7130B20092FBD0 /* Optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFB1E712E200092FBD0 /* Optional.hpp */; };
 		BB445C9E1E7130B20092FBD0 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BFC1E712E200092FBD0 /* PhraseExtract.cpp */; };
 		BB445C9F1E7130B20092FBD0 /* PhraseExtract.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFD1E712E200092FBD0 /* PhraseExtract.hpp */; };
@@ -115,7 +111,6 @@
 		BB445CAC1E7130B20092FBD0 /* UTF8Util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445C0F1E712E200092FBD0 /* UTF8Util.hpp */; };
 		BB445CAD1E7130B30092FBD0 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BD61E712E200092FBD0 /* BinaryDict.cpp */; };
 		BB445CAE1E7130B30092FBD0 /* BinaryDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD71E712E200092FBD0 /* BinaryDict.hpp */; };
-		BB445CAF1E7130B30092FBD0 /* CmdLineOutput.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BD91E712E200092FBD0 /* CmdLineOutput.hpp */; };
 		BB445CB01E7130B30092FBD0 /* Common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BDA1E712E200092FBD0 /* Common.hpp */; };
 		BB445CB11E7130B30092FBD0 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BDB1E712E200092FBD0 /* Config.cpp */; };
 		BB445CB21E7130B30092FBD0 /* Config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BDC1E712E200092FBD0 /* Config.hpp */; };
@@ -140,7 +135,6 @@
 		BB445CC51E7130B30092FBD0 /* Lexicon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BF61E712E200092FBD0 /* Lexicon.hpp */; };
 		BB445CC61E7130B30092FBD0 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BF71E712E200092FBD0 /* MaxMatchSegmentation.cpp */; };
 		BB445CC71E7130B30092FBD0 /* MaxMatchSegmentation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BF81E712E200092FBD0 /* MaxMatchSegmentation.hpp */; };
-		BB445CC81E7130B30092FBD0 /* opencc.h in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFA1E712E200092FBD0 /* opencc.h */; };
 		BB445CC91E7130B30092FBD0 /* Optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFB1E712E200092FBD0 /* Optional.hpp */; };
 		BB445CCA1E7130B30092FBD0 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB445BFC1E712E200092FBD0 /* PhraseExtract.cpp */; };
 		BB445CCB1E7130B30092FBD0 /* PhraseExtract.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB445BFD1E712E200092FBD0 /* PhraseExtract.hpp */; };
@@ -317,11 +311,8 @@
 /* Begin PBXFileReference section */
 		BB1FE5691E711B3A008F3F82 /* OpenCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1FE56C1E711B3A008F3F82 /* OpenCC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenCC.h; path = Sources/OpenCC.h; sourceTree = "<group>"; };
-		BB1FE56D1E711B3A008F3F82 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-macOS.plist"; path = "Sources/Info-macOS.plist"; sourceTree = "<group>"; };
 		BB1FE5771E711B50008F3F82 /* OpenCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1FE57A1E711B51008F3F82 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "Sources/Info-iOS.plist"; sourceTree = "<group>"; };
 		BB1FE5841E711B60008F3F82 /* OpenCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB1FE5871E711B60008F3F82 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Sources/Info-tvOS.plist"; sourceTree = "<group>"; };
 		BB1FE5BA1E7129E5008F3F82 /* ChineseConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChineseConverter.swift; path = Sources/ChineseConverter.swift; sourceTree = "<group>"; };
 		BB1FE5BE1E712A9E008F3F82 /* ObjcConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjcConverter.h; path = Sources/ObjcConverter.h; sourceTree = "<group>"; };
 		BB1FE5BF1E712A9E008F3F82 /* ObjcConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ObjcConverter.mm; path = Sources/ObjcConverter.mm; sourceTree = "<group>"; };
@@ -329,7 +320,6 @@
 		BB445BD21E712CEF0092FBD0 /* OpenCCBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCCBridge.h; path = Sources/OpenCCBridge.h; sourceTree = "<group>"; };
 		BB445BD61E712E200092FBD0 /* BinaryDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryDict.cpp; path = OpenCC/src/BinaryDict.cpp; sourceTree = "<group>"; };
 		BB445BD71E712E200092FBD0 /* BinaryDict.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BinaryDict.hpp; path = OpenCC/src/BinaryDict.hpp; sourceTree = "<group>"; };
-		BB445BD91E712E200092FBD0 /* CmdLineOutput.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CmdLineOutput.hpp; path = OpenCC/src/CmdLineOutput.hpp; sourceTree = "<group>"; };
 		BB445BDA1E712E200092FBD0 /* Common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Common.hpp; path = OpenCC/src/Common.hpp; sourceTree = "<group>"; };
 		BB445BDB1E712E200092FBD0 /* Config.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Config.cpp; path = OpenCC/src/Config.cpp; sourceTree = "<group>"; };
 		BB445BDC1E712E200092FBD0 /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Config.hpp; path = OpenCC/src/Config.hpp; sourceTree = "<group>"; };
@@ -354,7 +344,6 @@
 		BB445BF61E712E200092FBD0 /* Lexicon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Lexicon.hpp; path = OpenCC/src/Lexicon.hpp; sourceTree = "<group>"; };
 		BB445BF71E712E200092FBD0 /* MaxMatchSegmentation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MaxMatchSegmentation.cpp; path = OpenCC/src/MaxMatchSegmentation.cpp; sourceTree = "<group>"; };
 		BB445BF81E712E200092FBD0 /* MaxMatchSegmentation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MaxMatchSegmentation.hpp; path = OpenCC/src/MaxMatchSegmentation.hpp; sourceTree = "<group>"; };
-		BB445BFA1E712E200092FBD0 /* opencc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = opencc.h; path = OpenCC/src/opencc.h; sourceTree = "<group>"; };
 		BB445BFB1E712E200092FBD0 /* Optional.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Optional.hpp; path = OpenCC/src/Optional.hpp; sourceTree = "<group>"; };
 		BB445BFC1E712E200092FBD0 /* PhraseExtract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseExtract.cpp; path = OpenCC/src/PhraseExtract.cpp; sourceTree = "<group>"; };
 		BB445BFD1E712E200092FBD0 /* PhraseExtract.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PhraseExtract.hpp; path = OpenCC/src/PhraseExtract.hpp; sourceTree = "<group>"; };
@@ -504,9 +493,6 @@
 		BB1FE5B91E7129AB008F3F82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB1FE56D1E711B3A008F3F82 /* Info-macOS.plist */,
-				BB1FE57A1E711B51008F3F82 /* Info-iOS.plist */,
-				BB1FE5871E711B60008F3F82 /* Info-tvOS.plist */,
 				BB1FE56C1E711B3A008F3F82 /* OpenCC.h */,
 			);
 			name = "Supporting Files";
@@ -528,7 +514,6 @@
 			children = (
 				BB445BD61E712E200092FBD0 /* BinaryDict.cpp */,
 				BB445BD71E712E200092FBD0 /* BinaryDict.hpp */,
-				BB445BD91E712E200092FBD0 /* CmdLineOutput.hpp */,
 				BB445BDA1E712E200092FBD0 /* Common.hpp */,
 				BB445BDB1E712E200092FBD0 /* Config.cpp */,
 				BB445BDC1E712E200092FBD0 /* Config.hpp */,
@@ -553,7 +538,6 @@
 				BB445BF61E712E200092FBD0 /* Lexicon.hpp */,
 				BB445BF71E712E200092FBD0 /* MaxMatchSegmentation.cpp */,
 				BB445BF81E712E200092FBD0 /* MaxMatchSegmentation.hpp */,
-				BB445BFA1E712E200092FBD0 /* opencc.h */,
 				BB445BFB1E712E200092FBD0 /* Optional.hpp */,
 				BB445BFC1E712E200092FBD0 /* PhraseExtract.cpp */,
 				BB445BFD1E712E200092FBD0 /* PhraseExtract.hpp */,
@@ -759,7 +743,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB445C571E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */,
 				BB445C761E7130B20092FBD0 /* Segments.hpp in Headers */,
 				BB445C681E7130B20092FBD0 /* DictEntry.hpp in Headers */,
 				BB445C6C1E7130B20092FBD0 /* Export.hpp in Headers */,
@@ -780,7 +763,6 @@
 				BB445C6A1E7130B20092FBD0 /* DictGroup.hpp in Headers */,
 				BB445C5A1E7130B20092FBD0 /* Config.hpp in Headers */,
 				BB445C561E7130B20092FBD0 /* BinaryDict.hpp in Headers */,
-				BB445C701E7130B20092FBD0 /* opencc.h in Headers */,
 				BB445C7B1E7130B20092FBD0 /* TextDict.hpp in Headers */,
 				BB445C751E7130B20092FBD0 /* Segmentation.hpp in Headers */,
 				BB445C731E7130B20092FBD0 /* PhraseExtract.hpp in Headers */,
@@ -793,7 +775,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB445C831E7130B20092FBD0 /* CmdLineOutput.hpp in Headers */,
 				BB445CA21E7130B20092FBD0 /* Segments.hpp in Headers */,
 				BB445C941E7130B20092FBD0 /* DictEntry.hpp in Headers */,
 				BB445C981E7130B20092FBD0 /* Export.hpp in Headers */,
@@ -814,7 +795,6 @@
 				BB445C961E7130B20092FBD0 /* DictGroup.hpp in Headers */,
 				BB445C861E7130B20092FBD0 /* Config.hpp in Headers */,
 				BB445C821E7130B20092FBD0 /* BinaryDict.hpp in Headers */,
-				BB445C9C1E7130B20092FBD0 /* opencc.h in Headers */,
 				BB445CA71E7130B20092FBD0 /* TextDict.hpp in Headers */,
 				BB445CA11E7130B20092FBD0 /* Segmentation.hpp in Headers */,
 				BB445C9F1E7130B20092FBD0 /* PhraseExtract.hpp in Headers */,
@@ -827,7 +807,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB445CAF1E7130B30092FBD0 /* CmdLineOutput.hpp in Headers */,
 				BB445CCE1E7130B30092FBD0 /* Segments.hpp in Headers */,
 				BB445CC01E7130B30092FBD0 /* DictEntry.hpp in Headers */,
 				BB445CC41E7130B30092FBD0 /* Export.hpp in Headers */,
@@ -848,7 +827,6 @@
 				BB445CC21E7130B30092FBD0 /* DictGroup.hpp in Headers */,
 				BB445CB21E7130B30092FBD0 /* Config.hpp in Headers */,
 				BB445CAE1E7130B30092FBD0 /* BinaryDict.hpp in Headers */,
-				BB445CC81E7130B30092FBD0 /* opencc.h in Headers */,
 				BB445CD31E7130B30092FBD0 /* TextDict.hpp in Headers */,
 				BB445CCD1E7130B30092FBD0 /* Segmentation.hpp in Headers */,
 				BB445CCB1E7130B30092FBD0 /* PhraseExtract.hpp in Headers */,
@@ -1339,7 +1317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INFOPLIST_FILE = OpenCC.xcodeproj/OpenCC_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -1401,7 +1379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INFOPLIST_FILE = OpenCC.xcodeproj/OpenCC_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -1466,7 +1444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = OpenCC.xcodeproj/OpenCC_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1528,7 +1506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = OpenCC.xcodeproj/OpenCC_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1594,7 +1572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INFOPLIST_FILE = OpenCC.xcodeproj/OpenCC_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1655,7 +1633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INFOPLIST_FILE = OpenCC.xcodeproj/OpenCC_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
