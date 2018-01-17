@@ -1,10 +1,20 @@
 language: objective-c
-osx_image: xcode8
+osx_image: xcode9
 
 env:
-- ACTION=test  PLATFORM=macOS   SCHEME='OpenCC macOS'   DESTINATION='platform=OS X'
-- ACTION=build PLATFORM=iOS     SCHEME='OpenCC iOS'     DESTINATION='platform=iOS Simulator,name=iPhone 6S'
-- ACTION=build PLATFORM=tvOS    SCHEME='OpenCC tvOS'    DESTINATION='platform=tvOS Simulator,name=Apple TV 1080p'
+  global:
+    - WORKSPACE="OpenCC.xcworkspace"
+    - SCHEME="OpenCC"
+  matrix:
+    - ACTION=test   PLATFORM=macOS      DESTINATION='platform=OS X'
+    - ACTION=test   PLATFORM=iOS        DESTINATION='platform=iOS Simulator,name=iPhone 8'
+    - ACTION=test   PLATFORM=tvOS       DESTINATION='platform=tvOS Simulator,name=Apple TV 4K'
+
+before_script:
+  - set -o pipefail
 
 script:
-- set -o pipefail && xcodebuild -workspace OpenCC.xcworkspace -scheme "$SCHEME" -destination "$DESTINATION" $ACTION | xcpretty
+  - xcodebuild $ACTION
+    -workspace "$WORKSPACE"
+    -scheme "$SCHEME"
+    -destination "$DESTINATION" | xcpretty
