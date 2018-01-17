@@ -6,13 +6,13 @@
 [![license](https://img.shields.io/github/license/ddddxxx/SwiftyOpenCC.svg)](LICENSE)
 [![codebeat badge](https://codebeat.co/badges/39f17620-4f1c-4a46-b3f9-8f5b248ac28f)](https://codebeat.co/projects/github-com-ddddxxx-swiftyopencc-master)
 
-Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC/tree/7fdaa43f1c548cc53ab9c7b59a697851060f4f46)
+Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC)
 
 ## Requirements
 
 - macOS 10.9+ / iOS 8.0+ / tvOS 9.0+
-- Xcode 8+
-- Swift 3.0+
+- Xcode 9+
+- Swift 4.0+
 
 ## Installation
 
