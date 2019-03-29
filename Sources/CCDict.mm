@@ -28,7 +28,7 @@
         *error = catchOpenCCException(^{
             self->_dict = opencc::SerializableDict::NewFromFile<opencc::DartsDict>(path);
         });
-        if (error) {
+        if (*error) {
             return nil;
         }
     }
