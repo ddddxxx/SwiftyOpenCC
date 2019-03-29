@@ -19,8 +19,6 @@ typedef NS_ENUM(NSInteger, OpenCCErrorCode) {
     OpenCCErrorCodeUnknown,
 };
 
-NSError* openccError(NSString *desc, OpenCCErrorCode code);
-
 NSError* _Nullable catchOpenCCException(void (^)());
 
 NS_ASSUME_NONNULL_END
