@@ -11,36 +11,36 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    func converter(option: ChineseConverter.Options) -> ChineseConverter {
+    func converter(option: ChineseConverter.Options) throws -> ChineseConverter {
         let url = Bundle.current.url(forResource: "OpenCCDictionary", withExtension: "bundle")!
         let bundle = Bundle(url: url)!
-        return try! ChineseConverter(bundle: bundle, option: option)
+        return try ChineseConverter(bundle: bundle, option: option)
     }
     
-    func testConversion() {
+    func testConversion() throws {
         func testCase(name: String, ext: String) -> String {
             let url = Bundle.current.url(forResource: name, withExtension: ext, subdirectory: "testcases")!
             return try! String(contentsOf: url)
         }
         for (name, opt) in testCases {
-            let cov = converter(option: opt)
+            let cov = try converter(option: opt)
             let i = testCase(name: name, ext: "in")
             let o = testCase(name: name, ext: "ans")
             XCTAssert(cov.convert(i) == o, "Conversion \(name) fails")
         }
     }
     
-    func testConverterCreationPerformance() {
-        self.measure {
+    func testConverterCreationPerformance() throws {
+        measure {
             for (_, opt) in testCases {
-                _ = converter(option: opt)
+                XCTAssertNoThrow({ _ = try self.converter(option: opt) })
             }
         }
     }
     
-    func testConversionPerformance() {
-        let testConverter = converter(option: [.traditionalize, .TWStandard, .TWIdiom])
-        self.measure {
+    func testConversionPerformance() throws {
+        let testConverter = try converter(option: [.traditionalize, .TWStandard, .TWIdiom])
+        measure {
             _ = testConverter.convert(self.testText)
         }
     }
