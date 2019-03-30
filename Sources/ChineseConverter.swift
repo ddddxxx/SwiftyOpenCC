@@ -62,7 +62,7 @@ public class ChineseConverter {
     /// conversion option.
     ///
     /// - Parameter bundle: The bundle used to store the dictionary file. Pass
-    ///   nil for the main bundle
+    ///   nil for the main bundle.
     /// - Parameter option: The convert’s option.
     public convenience init(bundle: Bundle? = nil, option: Options) throws {
         let loader = DictionaryLoader(bundle: bundle ?? .main)
