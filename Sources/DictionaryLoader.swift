@@ -2,7 +2,7 @@
 //  DictionaryLoader.swift
 //  OpenCC
 //
-//  Created by 邓翔 on 2018/5/5.
+//  Created by ddddxxx on 2018/5/5.
 //
 
 import Foundation

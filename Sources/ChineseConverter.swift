@@ -2,7 +2,7 @@
 //  ChineseConverter.swift
 //  OpenCC
 //
-//  Created by 邓翔 on 2017/3/9.
+//  Created by ddddxxx on 2017/3/9.
 //
 
 import Foundation
@@ -53,15 +53,19 @@ public class ChineseConverter {
     private init(loader: DictionaryLoader, option: Options) throws {
         let seg = try loader.segmentation(options: option)
         let chain = try loader.conversionChain(options: option)
-        converter = CCConverter(name: "OpenCC", segmentation: seg, conversionChain: chain)
+        converter = CCConverter(name: "SwiftyOpenCC",
+                                segmentation: seg,
+                                conversionChain: chain)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
     /// conversion option.
     ///
+    /// - Parameter bundle: The bundle used to store the dictionary file. Pass
+    ///   nil for the main bundle
     /// - Parameter option: The convert’s option.
-    public convenience init(bundle: Bundle, option: Options) throws {
-        let loader = DictionaryLoader(bundle: bundle)
+    public convenience init(bundle: Bundle? = nil, option: Options) throws {
+        let loader = DictionaryLoader(bundle: bundle ?? .main)
         try self.init(loader: loader, option: option)
     }
     
