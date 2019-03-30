@@ -11,8 +11,8 @@ Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC)
 ## Requirements
 
 - macOS 10.9+ / iOS 8.0+ / tvOS 9.0+
-- Xcode 9+
-- Swift 4.0+
+- Xcode 10.2
+- Swift 5.0
 
 ## Installation
 

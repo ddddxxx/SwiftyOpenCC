@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:OpenCC.playground">
+      location = "container:OpenCC.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:OpenCC.xcodeproj">
+      location = "group:OpenCC.playground">
    </FileRef>
 </Workspace>

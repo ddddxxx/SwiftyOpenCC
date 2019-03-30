@@ -2,8 +2,7 @@
 //  ChineseConverter.swift
 //  OpenCC
 //
-//  Created by 邓翔 on 2017/3/9.
-//
+//  Created by ddddxxx on 2017/3/9.
 //
 
 import Foundation
@@ -24,20 +23,50 @@ import OpenCCBridge
 /// during the course of a conversion.
 public class ChineseConverter {
     
-    let converter: ObjcConverter
+    /// These constants define the ChineseConverter options.
+    public struct Options: OptionSet {
+        
+        public let rawValue: Int
+        
+        public init(rawValue: Int) {
+            self.rawValue = rawValue
+        }
+        
+        /// Convert to Traditional Chinese. (default)
+        public static let traditionalize = Options(rawValue: 1 << 0)
+        
+        /// Convert to Simplified Chinese.
+        public static let simplify = Options(rawValue: 1 << 1)
+        
+        /// Using Taiwan standard.
+        public static let TWStandard = Options(rawValue: 1 << 5)
+        
+        /// Using HongKong standard.
+        public static let HKStandard = Options(rawValue: 1 << 6)
+        
+        /// Taiwanese idiom conversion. Only effective with `.TWStandard`.
+        public static let TWIdiom = Options(rawValue: 1 << 10)
+    }
+    
+    private let converter: CCConverter
+    
+    private init(loader: DictionaryLoader, option: Options) throws {
+        let seg = try loader.segmentation(options: option)
+        let chain = try loader.conversionChain(options: option)
+        converter = CCConverter(name: "SwiftyOpenCC",
+                                segmentation: seg,
+                                conversionChain: chain)
+    }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
     /// conversion option.
     ///
+    /// - Parameter bundle: The bundle used to store the dictionary file. Pass
+    ///   nil for the main bundle
     /// - Parameter option: The convert’s option.
-    public init(option: Options) {
-        let configUrl = option.configUrl
-        let config = try! String(contentsOf: configUrl)
-        do {
-            converter = try ObjcConverter(config: config)
-        } catch let error as NSError {
-            fatalError(error.localizedDescription)
-        }
+    public convenience init(bundle: Bundle? = nil, option: Options) throws {
+        let loader = DictionaryLoader(bundle: bundle ?? .main)
+        try self.init(loader: loader, option: option)
     }
     
     /// Return a converted string using the convert’s current option.
@@ -50,114 +79,6 @@ public class ChineseConverter {
         } catch let error {
             fatalError(error.localizedDescription)
         }
-    }
-    
-}
-
-extension ChineseConverter {
-    
-    /// These constants define the ChineseConverter options.
-    /// These constants are used to initialize `ChineseConverter`.
-    public struct Options: OptionSet {
-        
-        public let rawValue: Int
-        
-        public init(rawValue: Int) {
-            self.rawValue = rawValue
-        }
-        
-        /// Conversion direction.
-        /// not compatible with `.simplify`.
-        ///
-        /// If direction is conflictive, using `.traditionalize`.
-        public static let traditionalize = Options(rawValue: 1 << 0)
-        
-        /// Conversion direction.
-        /// not compatible with `.traditionalize`.
-        ///
-        /// If direction is conflictive, using `.traditionalize`.
-        public static let simplify = Options(rawValue: 1 << 1)
-        
-        /// Use Taiwan standard.
-        /// not compatible with `.HKStandard`.
-        ///
-        /// If standard is absent or conflictive, using OpenCC standard.
-        public static let TWStandard = Options(rawValue: 1 << 5)
-        
-        /// Use HongKong standard.
-        /// not compatible with `.TWStandard`.
-        ///
-        /// If standard is absent or conflictive, using OpenCC standard.
-        public static let HKStandard = Options(rawValue: 1 << 6)
-        
-        /// Taiwanese idiom conversion.
-        /// Both available in traditionalization and simplification.
-        ///
-        /// - Precondition: Only effective with direction and `.TWStandard`.
-        public static let TWIdiom = Options(rawValue: 1 << 10)
-        
-        /// Use text format dictionary.
-        /// Text dictionary is smaller than default Datrie dictionary,
-        /// and therefore consume less memory, But **much slower**.
-        ///
-        /// 50x slower than default Datrie dictionary!!!
-        public static let textDict = Options(rawValue: 1 << 15)
-        
-        func normalizing() -> Options {
-            var options = self
-            if options.contains([.traditionalize, .simplify]) {
-                options.remove(.simplify)
-            }
-            if options.contains([.HKStandard, .TWStandard]) {
-                options.remove([.HKStandard, .TWStandard])
-            }
-            if options.contains(.TWIdiom),
-                options.isDisjoint(with: .TWStandard) || options.isDisjoint(with: [.traditionalize, .simplify]) {
-                options.remove(.TWIdiom)
-            }
-            
-            // FIXME: missing reverse dictionary of text format, temporary remove it to avoid crash.
-            if options.contains([.simplify, .textDict]), !options.isDisjoint(with: [.HKStandard, .TWStandard]) {
-                options.remove([.HKStandard, .TWStandard, .TWIdiom])
-            }
-            
-            return options
-        }
-        
-        var configUrl: URL {
-            let options = normalizing().subtracting(.textDict)
-            var name: String
-            switch options {
-            case [.traditionalize], []:
-                name = "s2t"
-            case [.simplify]:
-                name = "t2s"
-            case [.traditionalize, .TWStandard]:
-                name = "s2tw"
-            case [.simplify, .TWStandard]:
-                name = "tw2s"
-            case [.traditionalize, .HKStandard]:
-                name = "s2hk"
-            case [.simplify, .HKStandard]:
-                name = "hk2s"
-            case [.traditionalize, .TWStandard, .TWIdiom]:
-                name = "s2twp"
-            case [.simplify, .TWStandard, .TWIdiom]:
-                name = "tw2sp"
-            case [.TWStandard]:
-                name = "t2tw"
-            case [.HKStandard]:
-                name = "t2hk"
-            default:
-                name = "s2t"
-            }
-            if contains(.textDict) {
-                name += "_txt"
-            }
-            let bundle = Bundle(for: ChineseConverter.self)
-            return bundle.url(forResource: name, withExtension: "json")!
-        }
-        
     }
     
 }
