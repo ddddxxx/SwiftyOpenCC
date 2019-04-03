@@ -61,11 +61,12 @@ public class ChineseConverter {
     /// Returns an initialized `ChineseConverter` instance with the specified
     /// conversion option.
     ///
-    /// - Parameter bundle: The bundle used to store the dictionary file. Pass
-    ///   nil for the main bundle.
+    /// - Parameter bundle: The bundle in which to search for the dictionary
+    ///   file. This method looks for the dictionary file in the bundle's
+    ///   `Resources/Dictionary/` directory. Default to the main bundle.
     /// - Parameter option: The convert’s option.
-    public convenience init(bundle: Bundle? = nil, option: Options) throws {
-        let loader = DictionaryLoader(bundle: bundle ?? .main)
+    public convenience init(bundle: Bundle = .main, option: Options) throws {
+        let loader = DictionaryLoader(bundle: bundle)
         try self.init(loader: loader, option: option)
     }
     
