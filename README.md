@@ -32,16 +32,18 @@ github "ddddxxx/SwiftyOpenCC"
 import OpenCC
 
 let str = "鼠标里面的硅二极管坏了，导致光标分辨率降低。"
-let converter = ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
+let converter = try! ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
 converter.convert(str)
 // 滑鼠裡面的矽二極體壞了，導致游標解析度降低。
 ```
 
-### Documentation
+Note: The resource files is **not** shipped with the framework (as you may want to download it while needed). You are responsible for passing a valid resource bundle. 
 
-[Github Pages](http://ddddxxx.github.io/SwiftyOpenCC)
+Here is a [precompiled bundle](./OpenCCDictionary.bundle). or you may put the [dictionary files](./OpenCCDictionary/Dictionary) into the main bundle.
 
-100% Documented
+## Documentation
+
+[Github Pages](http://ddddxxx.github.io/SwiftyOpenCC) (100% Documented)
 
 ## License
 
