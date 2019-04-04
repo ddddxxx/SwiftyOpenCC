@@ -1,7 +1,7 @@
 import XCTest
 
-import SwiftyOpenCCTests
+import OpenCCTests
 
 var tests = [XCTestCaseEntry]()
-tests += SwiftyOpenCCTests.allTests()
+tests += OpenCCTests.allTests()
 XCTMain(tests)

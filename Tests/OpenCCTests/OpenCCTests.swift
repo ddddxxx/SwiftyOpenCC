@@ -1,5 +1,5 @@
 import XCTest
-@testable import SwiftyOpenCC
+@testable import OpenCC
 
 let projectRootURL = URL(fileURLWithPath: #file)
     .deletingLastPathComponent()
@@ -10,7 +10,7 @@ let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionar
 let testCaseRootURL = projectRootURL.appendingPathComponent("TestResources/testcases")
 let testTextURL = projectRootURL.appendingPathComponent("TestResources/孔乙己.txt")
 
-class Tests: XCTestCase {
+class OpenCCTests: XCTestCase {
     
     func converter(option: ChineseConverter.Options) throws -> ChineseConverter {
         let bundle = Bundle(url: dictionaryBundleURL)!

@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftyOpenCC::SwiftyOpenCC"
-               BuildableName = "SwiftyOpenCC.framework"
-               BlueprintName = "SwiftyOpenCC"
+               BlueprintIdentifier = "SwiftyOpenCC::OpenCC"
+               BuildableName = "OpenCC.framework"
+               BlueprintName = "OpenCC"
                ReferencedContainer = "container:SwiftyOpenCC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftyOpenCC::SwiftyOpenCCTests"
-               BuildableName = "SwiftyOpenCCTests.xctest"
-               BlueprintName = "SwiftyOpenCCTests"
+               BlueprintIdentifier = "SwiftyOpenCC::OpenCCTests"
+               BuildableName = "OpenCCTests.xctest"
+               BlueprintName = "OpenCCTests"
                ReferencedContainer = "container:SwiftyOpenCC.xcodeproj">
             </BuildableReference>
          </TestableReference>

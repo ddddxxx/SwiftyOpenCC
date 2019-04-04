@@ -10,19 +10,19 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftyOpenCC",
-            targets: ["SwiftyOpenCC"]),
+            name: "OpenCC",
+            targets: ["OpenCC"]),
     ],
     targets: [
         .target(
             name: "OpenCCBridge",
             dependencies: []),
         .target(
-            name: "SwiftyOpenCC",
+            name: "OpenCC",
             dependencies: ["OpenCCBridge"]),
         .testTarget(
-            name: "SwiftyOpenCCTests",
-            dependencies: ["SwiftyOpenCC"]),
+            name: "OpenCCTests",
+            dependencies: ["OpenCC"]),
     ],
     cLanguageStandard: .gnu99,
     cxxLanguageStandard: .gnucxx11
