@@ -33,66 +33,90 @@
          sourceTree = "<group>";
       };
       "OBJ_100" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_101" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_102"
+            "OBJ_101"
          );
       };
-      "OBJ_102" = {
+      "OBJ_101" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_6";
       };
-      "OBJ_104" = {
+      "OBJ_103" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_105",
-            "OBJ_106"
+            "OBJ_104",
+            "OBJ_105"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_105" = {
+      "OBJ_104" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
          };
          name = "Debug";
       };
-      "OBJ_106" = {
+      "OBJ_105" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
          };
          name = "Release";
       };
-      "OBJ_107" = {
+      "OBJ_106" = {
          isa = "PBXTargetDependency";
          target = "SwiftyOpenCC::SwiftyOpenCCTests";
       };
-      "OBJ_109" = {
+      "OBJ_108" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_110",
-            "OBJ_111"
+            "OBJ_109",
+            "OBJ_110"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
+      };
+      "OBJ_109" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/Sources/OpenCCBridge/include"
+            );
+            INFOPLIST_FILE = "SwiftyOpenCC.xcodeproj/SwiftyOpenCCTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Sources/OpenCCBridge/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "SwiftyOpenCCTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
       };
       "OBJ_11" = {
          isa = "PBXFileReference";
@@ -139,85 +163,43 @@
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
-         name = "Debug";
-      };
-      "OBJ_111" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/Sources/OpenCCBridge/include"
-            );
-            INFOPLIST_FILE = "SwiftyOpenCC.xcodeproj/SwiftyOpenCCTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/Sources/OpenCCBridge/include/module.modulemap"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "SwiftyOpenCCTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
          name = "Release";
       };
-      "OBJ_112" = {
+      "OBJ_111" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_113",
-            "OBJ_114"
+            "OBJ_112",
+            "OBJ_113"
          );
       };
-      "OBJ_113" = {
+      "OBJ_112" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_51";
       };
-      "OBJ_114" = {
+      "OBJ_113" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_52";
       };
-      "OBJ_115" = {
+      "OBJ_114" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
-            "OBJ_116",
-            "OBJ_117"
+            "OBJ_115",
+            "OBJ_116"
          );
       };
-      "OBJ_116" = {
+      "OBJ_115" = {
          isa = "PBXBuildFile";
          fileRef = "SwiftyOpenCC::SwiftyOpenCC::Product";
       };
-      "OBJ_117" = {
+      "OBJ_116" = {
          isa = "PBXBuildFile";
          fileRef = "SwiftyOpenCC::OpenCCBridge::Product";
       };
-      "OBJ_118" = {
+      "OBJ_117" = {
          isa = "PBXTargetDependency";
          target = "SwiftyOpenCC::SwiftyOpenCC";
       };
-      "OBJ_119" = {
+      "OBJ_118" = {
          isa = "PBXTargetDependency";
          target = "SwiftyOpenCC::OpenCCBridge";
       };
@@ -548,8 +530,7 @@
             "OBJ_59",
             "OBJ_60",
             "OBJ_61",
-            "OBJ_62",
-            "OBJ_63"
+            "OBJ_62"
          );
          path = "";
          sourceTree = "<group>";
@@ -578,8 +559,8 @@
          isa = "PBXGroup";
          children = (
             "SwiftyOpenCC::SwiftyOpenCCTests::Product",
-            "SwiftyOpenCC::SwiftyOpenCC::Product",
-            "SwiftyOpenCC::OpenCCBridge::Product"
+            "SwiftyOpenCC::OpenCCBridge::Product",
+            "SwiftyOpenCC::SwiftyOpenCC::Product"
          );
          name = "Products";
          path = "";
@@ -592,7 +573,7 @@
       };
       "OBJ_58" = {
          isa = "PBXFileReference";
-         path = "OpenCC";
+         path = "TestResources";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_59" = {
@@ -613,27 +594,66 @@
       };
       "OBJ_61" = {
          isa = "PBXFileReference";
-         path = "OpenCC.xcworkspace";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_62" = {
-         isa = "PBXFileReference";
          path = "LICENSE";
          sourceTree = "<group>";
       };
-      "OBJ_63" = {
+      "OBJ_62" = {
          isa = "PBXFileReference";
          path = "README.md";
          sourceTree = "<group>";
       };
-      "OBJ_65" = {
+      "OBJ_64" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_66",
-            "OBJ_67"
+            "OBJ_65",
+            "OBJ_66"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
+      };
+      "OBJ_65" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_CXX_LANGUAGE_STANDARD = "gnu++11";
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_C_LANGUAGE_STANDARD = "gnu99";
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/Sources/OpenCCBridge/include"
+            );
+            INFOPLIST_FILE = "SwiftyOpenCC.xcodeproj/OpenCCBridge_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "OpenCCBridge";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "OpenCCBridge";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
       };
       "OBJ_66" = {
          isa = "XCBuildConfiguration";
@@ -677,55 +697,12 @@
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
-         name = "Debug";
-      };
-      "OBJ_67" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_CXX_LANGUAGE_STANDARD = "gnu++11";
-            DEFINES_MODULE = "NO";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            GCC_C_LANGUAGE_STANDARD = "gnu99";
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/Sources/OpenCCBridge/include"
-            );
-            INFOPLIST_FILE = "SwiftyOpenCC.xcodeproj/OpenCCBridge_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "OpenCCBridge";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            TARGET_NAME = "OpenCCBridge";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
          name = "Release";
       };
-      "OBJ_68" = {
+      "OBJ_67" = {
          isa = "PBXSourcesBuildPhase";
          files = (
+            "OBJ_68",
             "OBJ_69",
             "OBJ_70",
             "OBJ_71",
@@ -741,13 +718,16 @@
             "OBJ_81",
             "OBJ_82",
             "OBJ_83",
-            "OBJ_84",
-            "OBJ_85"
+            "OBJ_84"
          );
+      };
+      "OBJ_68" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
       };
       "OBJ_69" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_9";
+         fileRef = "OBJ_10";
       };
       "OBJ_7" = {
          isa = "PBXGroup";
@@ -761,43 +741,43 @@
       };
       "OBJ_70" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
+         fileRef = "OBJ_11";
       };
       "OBJ_71" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_11";
+         fileRef = "OBJ_12";
       };
       "OBJ_72" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
+         fileRef = "OBJ_13";
       };
       "OBJ_73" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
+         fileRef = "OBJ_14";
       };
       "OBJ_74" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
+         fileRef = "OBJ_15";
       };
       "OBJ_75" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
+         fileRef = "OBJ_16";
       };
       "OBJ_76" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_16";
+         fileRef = "OBJ_17";
       };
       "OBJ_77" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
+         fileRef = "OBJ_18";
       };
       "OBJ_78" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
+         fileRef = "OBJ_19";
       };
       "OBJ_79" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
+         fileRef = "OBJ_20";
       };
       "OBJ_8" = {
          isa = "PBXGroup";
@@ -827,41 +807,81 @@
       };
       "OBJ_80" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
+         fileRef = "OBJ_21";
       };
       "OBJ_81" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
+         fileRef = "OBJ_22";
       };
       "OBJ_82" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
+         fileRef = "OBJ_23";
       };
       "OBJ_83" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
+         fileRef = "OBJ_24";
       };
       "OBJ_84" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_85" = {
-         isa = "PBXBuildFile";
          fileRef = "OBJ_25";
       };
-      "OBJ_86" = {
+      "OBJ_85" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
          );
       };
-      "OBJ_88" = {
+      "OBJ_87" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_89",
-            "OBJ_90"
+            "OBJ_88",
+            "OBJ_89"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
+      };
+      "OBJ_88" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/Sources/OpenCCBridge/include"
+            );
+            INFOPLIST_FILE = "SwiftyOpenCC.xcodeproj/SwiftyOpenCC_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Sources/OpenCCBridge/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "SwiftyOpenCC";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "SwiftyOpenCC";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
       };
       "OBJ_89" = {
          isa = "XCBuildConfiguration";
@@ -905,7 +925,7 @@
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
-         name = "Debug";
+         name = "Release";
       };
       "OBJ_9" = {
          isa = "PBXFileReference";
@@ -913,88 +933,44 @@
          sourceTree = "<group>";
       };
       "OBJ_90" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(SRCROOT)/Sources/OpenCCBridge/include"
-            );
-            INFOPLIST_FILE = "SwiftyOpenCC.xcodeproj/SwiftyOpenCC_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-Xcc",
-               "-fmodule-map-file=$(SRCROOT)/Sources/OpenCCBridge/include/module.modulemap"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "SwiftyOpenCC";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "SwiftyOpenCC";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_91" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_92",
-            "OBJ_93"
+            "OBJ_91",
+            "OBJ_92"
          );
       };
-      "OBJ_92" = {
+      "OBJ_91" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_47";
       };
-      "OBJ_93" = {
+      "OBJ_92" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_48";
       };
-      "OBJ_94" = {
+      "OBJ_93" = {
          isa = "PBXFrameworksBuildPhase";
          files = (
-            "OBJ_95"
+            "OBJ_94"
          );
       };
-      "OBJ_95" = {
+      "OBJ_94" = {
          isa = "PBXBuildFile";
          fileRef = "SwiftyOpenCC::OpenCCBridge::Product";
       };
-      "OBJ_96" = {
+      "OBJ_95" = {
          isa = "PBXTargetDependency";
          target = "SwiftyOpenCC::OpenCCBridge";
       };
-      "OBJ_98" = {
+      "OBJ_97" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_99",
-            "OBJ_100"
+            "OBJ_98",
+            "OBJ_99"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_99" = {
+      "OBJ_98" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -1012,12 +988,30 @@
          };
          name = "Debug";
       };
+      "OBJ_99" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
       "SwiftyOpenCC::OpenCCBridge" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_65";
+         buildConfigurationList = "OBJ_64";
          buildPhases = (
-            "OBJ_68",
-            "OBJ_86"
+            "OBJ_67",
+            "OBJ_85"
          );
          dependencies = (
          );
@@ -1033,9 +1027,9 @@
       };
       "SwiftyOpenCC::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_98";
+         buildConfigurationList = "OBJ_97";
          buildPhases = (
-            "OBJ_101"
+            "OBJ_100"
          );
          dependencies = (
          );
@@ -1045,13 +1039,13 @@
       };
       "SwiftyOpenCC::SwiftyOpenCC" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_88";
+         buildConfigurationList = "OBJ_87";
          buildPhases = (
-            "OBJ_91",
-            "OBJ_94"
+            "OBJ_90",
+            "OBJ_93"
          );
          dependencies = (
-            "OBJ_96"
+            "OBJ_95"
          );
          name = "SwiftyOpenCC";
          productName = "SwiftyOpenCC";
@@ -1065,25 +1059,25 @@
       };
       "SwiftyOpenCC::SwiftyOpenCCPackageTests::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_104";
+         buildConfigurationList = "OBJ_103";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_107"
+            "OBJ_106"
          );
          name = "SwiftyOpenCCPackageTests";
          productName = "SwiftyOpenCCPackageTests";
       };
       "SwiftyOpenCC::SwiftyOpenCCTests" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_109";
+         buildConfigurationList = "OBJ_108";
          buildPhases = (
-            "OBJ_112",
-            "OBJ_115"
+            "OBJ_111",
+            "OBJ_114"
          );
          dependencies = (
-            "OBJ_118",
-            "OBJ_119"
+            "OBJ_117",
+            "OBJ_118"
          );
          name = "SwiftyOpenCCTests";
          productName = "SwiftyOpenCCTests";
