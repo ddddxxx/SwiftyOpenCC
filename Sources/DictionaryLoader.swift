@@ -58,7 +58,7 @@ private extension DictionaryLoader {
     }
     
     func dict(_ name: DictionaryName) throws -> CCDict {
-        guard let url = bundle.url(forResource: name.rawValue, withExtension: "ocd", subdirectory: subdirectory) else {
+        guard let url = bundle.url(forResource: name.rawValue, withExtension: "ocd") else {
             let desc = "File \"\(name)\" not found"
             throw NSError(domain: kOpenCCErrorDomain,
                           code: OpenCCErrorCode.fileNotFound.rawValue,
