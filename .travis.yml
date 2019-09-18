@@ -3,8 +3,8 @@ osx_image: xcode10.2
 
 env:
   global:
-    - WORKSPACE="OpenCC.xcworkspace"
-    - SCHEME="OpenCC"
+    - PROJECT="SwiftyOpenCC.xcodeproj"
+    - SCHEME="SwiftyOpenCC-Package"
   matrix:
     - ACTION=test   PLATFORM=macOS      DESTINATION='platform=OS X'
     - ACTION=test   PLATFORM=iOS        DESTINATION='platform=iOS Simulator,name=iPhone 8'
@@ -15,6 +15,6 @@ before_script:
 
 script:
   - xcodebuild $ACTION
-    -workspace "$WORKSPACE"
+    -project "$PROJECT"
     -scheme "$SCHEME"
     -destination "$DESTINATION" | xcpretty

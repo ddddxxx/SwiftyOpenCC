@@ -3,11 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18E226</string>
+	<string>18D109</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleExecutable</key>
-	<string>OpenCCDictionary</string>
 	<key>CFBundleIdentifier</key>
 	<string>ddddxxx.OpenCC.Dictionary</string>
 	<key>CFBundleInfoDictionaryVersion</key>

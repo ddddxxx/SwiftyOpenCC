@@ -1,7 +1,7 @@
 # Swifty Open Chinese Convert
 
 [![Build Status](https://travis-ci.org/ddddxxx/SwiftyOpenCC.svg?branch=master)](https://travis-ci.org/ddddxxx/SwiftyOpenCC)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?)](https://github.com/Carthage/Carthage)
+![pm](https://img.shields.io/badge/supports-SwiftPM%20%7C%20Carthage-brightgreen.svg?)
 ![platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS%20%7C%20tvOS-lightgrey.svg)
 [![license](https://img.shields.io/github/license/ddddxxx/SwiftyOpenCC.svg)](LICENSE)
 [![codebeat badge](https://codebeat.co/badges/39f17620-4f1c-4a46-b3f9-8f5b248ac28f)](https://codebeat.co/projects/github-com-ddddxxx-swiftyopencc-master)
@@ -10,19 +10,8 @@ Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC)
 
 ## Requirements
 
-- macOS 10.9+ / iOS 8.0+ / tvOS 9.0+
-- Xcode 10.2
+- macOS 10.10+ / iOS 8.0+ / tvOS 9.0+
 - Swift 5.0
-
-## Installation
-
-### [Carthage](https://github.com/Carthage/Carthage)
-
-Add the project to your `Cartfile`:
-
-```
-github "ddddxxx/SwiftyOpenCC"
-```
 
 ## Usage
 
