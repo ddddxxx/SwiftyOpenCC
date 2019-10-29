@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+    paths: 
+      - '.github/workflows/ci.yml'
+      - 'Package*'
+      - 'Sources/**'
+      - 'Tests/**'
+  pull_request:
+    paths: 
+      - '.github/workflows/ci.yml'
+      - 'Package*'
+      - 'Sources/**'
+      - 'Tests/**'
+
+jobs:
+  Xcode:
+    strategy:
+      matrix:
+        # xcode_version: ['10','10.1','10.2','10.2.1','10.3','11']
+        env:
+          - platform: macOS
+            destination: "platform=OS X"
+            action: test
+          - platform: iOS
+            destination: "platform=iOS Simulator,name=iPhone 8"
+            action: test
+          - platform: tvOS
+            destination: "platform=tvOS Simulator,name=Apple TV 4K"
+            action: test
+          - platform: watchOS
+            destination: "platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm"
+            action: build
+    runs-on: macOS-10.14
+    env:
+      # DEVELOPER_DIR: /Applications/Xcode_${{ matrix.xcode_version }}.app
+      ACTION: ${{ matrix.env.action }}
+      PROJECT: SwiftyOpenCC.xcodeproj
+      SCHEME: SwiftyOpenCC-Package
+      DESTINATION: ${{ matrix.env.destination }}
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Xcode Version
+        run: xcodebuild -version
+      - name: Build and Test
+        run: |
+          set -o pipefail
+          xcodebuild "$ACTION" \
+            -project "$PROJECT" \
+            -scheme "$SCHEME" \
+            -destination "$DESTINATION" | xcpretty
+
+  SPMMac:
+    # strategy:
+    #   matrix:
+    #     xcode_version: ['10.1','10.2','10.2.1','10.3','11']
+    runs-on: macOS-10.14
+    # env:
+    #   DEVELOPER_DIR: /Applications/Xcode_${{ matrix.xcode_version }}.app
+    steps:
+      - uses: actions/checkout@v1
+      - name: Swift Version
+        run: swift -version
+      - name: Build and Test
+        run: swift test
+
+  # SPMLinux:
+  #   strategy:
+  #     matrix:
+  #       tag: ['5.0', '5.1']
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: swift:${{ matrix.tag }}
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - run: swift test
