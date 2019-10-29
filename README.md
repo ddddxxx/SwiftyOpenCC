@@ -1,9 +1,8 @@
 # Swifty Open Chinese Convert
 
-[![Build Status](https://travis-ci.org/ddddxxx/SwiftyOpenCC.svg?branch=master)](https://travis-ci.org/ddddxxx/SwiftyOpenCC)
+[![Github CI Status](https://github.com/ddddxxx/SwiftyOpenCC/workflows/CI/badge.svg)](https://github.com/ddddxxx/SwiftyOpenCC/actions)
 ![pm](https://img.shields.io/badge/supports-SwiftPM%20%7C%20Carthage-brightgreen.svg?)
-![platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS%20%7C%20tvOS-lightgrey.svg)
-[![license](https://img.shields.io/github/license/ddddxxx/SwiftyOpenCC.svg)](LICENSE)
+![platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
 [![codebeat badge](https://codebeat.co/badges/39f17620-4f1c-4a46-b3f9-8f5b248ac28f)](https://codebeat.co/projects/github-com-ddddxxx-swiftyopencc-master)
 
 Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC)
