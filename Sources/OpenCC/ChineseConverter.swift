@@ -48,14 +48,12 @@ public class ChineseConverter {
         public static let TWIdiom = Options(rawValue: 1 << 10)
     }
     
-    private let converter: CCConverter
+    private let converter: CCConverterRef
     
     private init(loader: DictionaryLoader, option: Options) throws {
         let seg = try loader.segmentation(options: option)
-        let chain = try loader.conversionChain(options: option)
-        converter = CCConverter(name: "SwiftyOpenCC",
-                                segmentation: seg,
-                                conversionChain: chain)
+        var chain = try loader.conversionChain(options: option)
+        converter = CCConverterCreate("SwiftyOpenCC", seg, &chain, chain.count)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
@@ -75,11 +73,9 @@ public class ChineseConverter {
     /// - Parameter text: The string to convert.
     /// - Returns: A converted string using the convert’s current option.
     public func convert(_ text: String) -> String {
-        do {
-            return try converter.convert(text)
-        } catch let error {
-            fatalError(error.localizedDescription)
-        }
+        let stlStr = CCConverterCreateConvertedStringFromString(converter, text)!
+        defer { STLStringDestroy(stlStr) }
+        return String(utf8String: STLStringGetUTF8String(stlStr))!
     }
     
 }

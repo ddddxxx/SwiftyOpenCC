@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "OpenCCBridge",
-            dependencies: []),
+            cSettings: [.headerSearchPath("opencc")]),
         .target(
             name: "OpenCC",
             dependencies: ["OpenCCBridge"]),
