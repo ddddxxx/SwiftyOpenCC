@@ -10,6 +10,17 @@ let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionar
 let testCaseRootURL = projectRootURL.appendingPathComponent("TestResources/testcases")
 let testTextURL = projectRootURL.appendingPathComponent("TestResources/孔乙己.txt")
 
+let testCases: [(String, ChineseConverter.Options)] = [
+    ("s2t", [.traditionalize]),
+    ("t2s", [.simplify]),
+    ("s2hk", [.traditionalize, .HKStandard]),
+    ("hk2s", [.simplify, .HKStandard]),
+    ("s2tw", [.traditionalize, .TWStandard]),
+    ("tw2s", [.simplify, .TWStandard]),
+    ("s2twp", [.traditionalize, .TWStandard, .TWIdiom]),
+    ("tw2sp", [.simplify, .TWStandard, .TWIdiom]),
+]
+
 class OpenCCTests: XCTestCase {
     
     func converter(option: ChineseConverter.Options) throws -> ChineseConverter {
@@ -24,13 +35,13 @@ class OpenCCTests: XCTestCase {
         }
         for (name, opt) in testCases {
             let cov = try converter(option: opt)
-            let i = testCase(name: name, ext: "in")
-            let o = testCase(name: name, ext: "ans")
-            XCTAssert(cov.convert(i) == o, "Conversion \(name) fails")
+            let input = testCase(name: name, ext: "in")
+            let output = testCase(name: name, ext: "ans")
+            XCTAssert(cov.convert(input) == output, "Conversion \(name) fails")
         }
     }
     
-    func testConverterCreationPerformance() throws {
+    func testConverterCreationPerformance() {
         measure {
             for (_, opt) in testCases {
                 XCTAssertNoThrow({ _ = try self.converter(option: opt) })
@@ -39,25 +50,13 @@ class OpenCCTests: XCTestCase {
     }
     
     func testConversionPerformance() throws {
-        let testConverter = try converter(option: [.traditionalize, .TWStandard, .TWIdiom])
+        let cov = try converter(option: [.traditionalize, .TWStandard, .TWIdiom])
         // 2654 characters
-        let testText = try String(contentsOf: testTextURL)
+        let str = try String(contentsOf: testTextURL)
         measure {
-            _ = testConverter.convert(testText)
+            _ = cov.convert(str)
         }
     }
-    
-    let testCases: [(String, ChineseConverter.Options)] = [
-        ("s2t", [.traditionalize]),
-        ("t2s", [.simplify]),
-        ("s2hk", [.traditionalize, .HKStandard]),
-        ("hk2s", [.simplify, .HKStandard]),
-        ("s2tw", [.traditionalize, .TWStandard]),
-        ("tw2s", [.simplify, .TWStandard]),
-        ("s2twp", [.traditionalize, .TWStandard, .TWIdiom]),
-        ("tw2sp", [.simplify, .TWStandard, .TWIdiom]),
-    ]
-    
     
     static var allTests = [
         ("testConversion", testConversion),
