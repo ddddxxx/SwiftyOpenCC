@@ -1,0 +1,42 @@
+name: Jazzy
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_11.app/Contents/Developer
+    steps:
+      - name: Get Version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/v}
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install Jazzy
+        run: gem install jazzy
+      - name: Run Jazzy
+        run: |
+          jazzy \
+            --clean \
+            --author ddddxxx \
+            --github_url https://github.com/$GITHUB_REPOSITORY \
+            --module-version $VERSION \
+            --module OpenCC \
+            --output docs
+        env:
+          VERSION: ${{ steps.get_version.outputs.VERSION }}
+      - name: Deploy
+        run: |
+          cd docs
+          git init
+          git config user.name  "CI"
+          git config user.email "jazzy-ci@github.com"
+          git remote add secure-origin https://${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Updated docs"
+          git push --force secure-origin gh-pages
