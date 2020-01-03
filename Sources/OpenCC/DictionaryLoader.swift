@@ -15,7 +15,7 @@ extension ChineseConverter {
     class DictionaryLoader {
         
         private static let subdirectory = "Dictionary"
-//        private static let dictCache = NSMapTable<NSURL, CCDictRef>(valueOptions: .weakMemory)
+        private static let dictCache = WeakValueCache<URL, ConversionDictionary>()
         
         private let bundle: Bundle
         
@@ -23,30 +23,25 @@ extension ChineseConverter {
             self.bundle = bundle
         }
         
-        func dict(_ name: ChineseConverter.DictionaryName) throws -> CCDictRef {
+        func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
             guard let url = bundle.url(forResource: name.rawValue, withExtension: "ocd", subdirectory: DictionaryLoader.subdirectory) else {
                 throw OpenCCBridge.CCErrorCode.fileNotFound
             }
-//            if let dict = DictionaryLoader.dictCache.object(forKey: url as NSURL) {
-//                return dict
-//            }
-            guard let dict = CCDictCreateWithPath(url.path) else {
-                throw ccErrorno
+            return try DictionaryLoader.dictCache.value(for: url) {
+                return try ConversionDictionary(contentOf: url)
             }
-//            DictionaryLoader.dictCache.setObject(dict, forKey: url as NSURL)
-            return dict
         }
     }
 }
 
 extension ChineseConverter.DictionaryLoader {
     
-    func segmentation(options: ChineseConverter.Options) throws -> CCDictRef {
+    func segmentation(options: ChineseConverter.Options) throws -> ConversionDictionary {
         let dictName = options.segmentationDictName
         return try dict(dictName)
     }
     
-    func conversionChain(options: ChineseConverter.Options) throws -> [CCDictRef] {
+    func conversionChain(options: ChineseConverter.Options) throws -> [ConversionDictionary] {
         return try options.conversionChain.compactMap { names in
             switch names.count {
             case 0:
@@ -54,8 +49,8 @@ extension ChineseConverter.DictionaryLoader {
             case 1:
                 return try dict(names.first!)
             case _:
-                var dicts = try names.map(dict)
-                return CCDictCreateWithGroup(&dicts, dicts.count)
+                let dicts = try names.map(dict)
+                return ConversionDictionary(group: dicts)
             }
         }
     }

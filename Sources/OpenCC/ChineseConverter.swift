@@ -52,8 +52,8 @@ public class ChineseConverter {
     
     private init(loader: DictionaryLoader, option: Options) throws {
         let seg = try loader.segmentation(options: option)
-        var chain = try loader.conversionChain(options: option)
-        converter = CCConverterCreate("SwiftyOpenCC", seg, &chain, chain.count)
+        var chain = try loader.conversionChain(options: option).map { $0.dict }
+        converter = CCConverterCreate("SwiftyOpenCC", seg.dict, &chain, chain.count)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
