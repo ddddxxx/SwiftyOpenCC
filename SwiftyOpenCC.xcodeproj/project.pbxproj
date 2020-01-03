@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		BB947E1223BF456100C43BF2 /* ConversionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB947E1123BF456100C43BF2 /* ConversionError.swift */; };
 		OBJ_100 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PhraseExtract.cpp */; };
 		OBJ_101 /* Segmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Segmentation.cpp */; };
 		OBJ_102 /* TextDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* TextDict.cpp */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB947E1123BF456100C43BF2 /* ConversionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionError.swift; sourceTree = "<group>"; };
 		OBJ_10 /* ConversionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDictionary.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
@@ -216,7 +218,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -230,7 +232,6 @@
 				OBJ_47 /* LICENSE */,
 				OBJ_48 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -247,6 +248,7 @@
 			children = (
 				OBJ_9 /* ChineseConverter.swift */,
 				OBJ_10 /* ConversionDictionary.swift */,
+				BB947E1123BF456100C43BF2 /* ConversionError.swift */,
 				OBJ_11 /* Deprecated.swift */,
 				OBJ_12 /* DictionaryLoader.swift */,
 				OBJ_13 /* DictionaryName.swift */,
@@ -340,7 +342,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +365,7 @@
 				OBJ_55 /* ConversionDictionary.swift in Sources */,
 				OBJ_56 /* Deprecated.swift in Sources */,
 				OBJ_57 /* DictionaryLoader.swift in Sources */,
+				BB947E1223BF456100C43BF2 /* ConversionError.swift in Sources */,
 				OBJ_58 /* DictionaryName.swift in Sources */,
 				OBJ_59 /* WeakValueCache.swift in Sources */,
 			);
