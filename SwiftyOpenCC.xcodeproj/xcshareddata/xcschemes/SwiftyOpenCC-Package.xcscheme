@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftyOpenCC::OpenCCBridge"
-               BuildableName = "OpenCCBridge.framework"
-               BlueprintName = "OpenCCBridge"
+               BlueprintIdentifier = "SwiftyOpenCC::OpenCC"
+               BuildableName = "OpenCC.framework"
+               BlueprintName = "OpenCC"
                ReferencedContainer = "container:SwiftyOpenCC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftyOpenCC::OpenCC"
-               BuildableName = "OpenCC.framework"
-               BlueprintName = "OpenCC"
+               BlueprintIdentifier = "SwiftyOpenCC::copencc"
+               BuildableName = "copencc.framework"
+               BlueprintName = "copencc"
                ReferencedContainer = "container:SwiftyOpenCC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -53,8 +53,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -66,17 +64,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "SwiftyOpenCC::OpenCCBridge"
-            BuildableName = "OpenCCBridge.framework"
-            BlueprintName = "OpenCCBridge"
-            ReferencedContainer = "container:SwiftyOpenCC.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

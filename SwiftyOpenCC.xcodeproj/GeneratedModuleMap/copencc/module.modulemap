@@ -1,0 +1,4 @@
+module copencc {
+    umbrella "/Users/dengxiang/Developer/OpenCC/Sources/copencc/include"
+    export *
+}
