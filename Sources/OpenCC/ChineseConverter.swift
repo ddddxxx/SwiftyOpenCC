@@ -48,12 +48,16 @@ public class ChineseConverter {
         public static let twIdiom = Options(rawValue: 1 << 10)
     }
     
+    private let seg: ConversionDictionary
+    private let chain: [ConversionDictionary]
+    
     private let converter: CCConverterRef
     
     private init(loader: DictionaryLoader, option: Options) throws {
-        let seg = try loader.segmentation(options: option)
-        var chain = try loader.conversionChain(options: option).map { $0.dict }
-        converter = CCConverterCreate("SwiftyOpenCC", seg.dict, &chain, chain.count)
+        seg = try loader.segmentation(options: option)
+        chain = try loader.conversionChain(options: option)
+        var rawChain = chain.map { $0.dict }
+        converter = CCConverterCreate("SwiftyOpenCC", seg.dict, &rawChain, rawChain.count)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified

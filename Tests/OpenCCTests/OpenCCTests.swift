@@ -9,6 +9,7 @@ let projectRootURL = URL(fileURLWithPath: #file)
 let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionary.bundle")
 let testCaseRootURL = projectRootURL.appendingPathComponent("TestResources/testcases")
 let testTextURL = projectRootURL.appendingPathComponent("TestResources/孔乙己.txt")
+let dictionaryBundle = Bundle(url: dictionaryBundleURL)!
 
 let testCases: [(String, ChineseConverter.Options)] = [
     ("s2t", [.traditionalize]),
@@ -24,8 +25,7 @@ let testCases: [(String, ChineseConverter.Options)] = [
 class OpenCCTests: XCTestCase {
     
     func converter(option: ChineseConverter.Options) throws -> ChineseConverter {
-        let bundle = Bundle(url: dictionaryBundleURL)!
-        return try ChineseConverter(bundle: bundle, option: option)
+        return try ChineseConverter(bundle: dictionaryBundle, option: option)
     }
     
     func testConversion() throws {
@@ -34,19 +34,32 @@ class OpenCCTests: XCTestCase {
             return try! String(contentsOf: url)
         }
         for (name, opt) in testCases {
-            let cov = try converter(option: opt)
+            let coverter = try ChineseConverter(bundle: dictionaryBundle, option: opt)
             let input = testCase(name: name, ext: "in")
+            let converted = coverter.convert(input)
             let output = testCase(name: name, ext: "ans")
-            XCTAssert(cov.convert(input) == output, "Conversion \(name) fails")
+            XCTAssertEqual(converted, output, "Conversion \(name) fails")
         }
     }
     
     func testConverterCreationPerformance() {
+        let options: ChineseConverter.Options = [.traditionalize, .twStandard, .twIdiom]
         measure {
-            for (_, opt) in testCases {
-                XCTAssertNoThrow({ _ = try self.converter(option: opt) })
+            for _ in 0..<10 {
+                _ = try! ChineseConverter(bundle: dictionaryBundle, option: options)
             }
         }
+    }
+    
+    func testDictionaryCache() {
+        let options: ChineseConverter.Options = [.traditionalize, .twStandard, .twIdiom]
+        let holder = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+        measure {
+            for _ in 0..<1_000 {
+                _ = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+            }
+        }
+        _ = holder.convert("foo")
     }
     
     func testConversionPerformance() throws {
@@ -61,6 +74,7 @@ class OpenCCTests: XCTestCase {
     static var allTests = [
         ("testConversion", testConversion),
         ("testConverterCreationPerformance", testConverterCreationPerformance),
+        ("testDictionaryCache", testDictionaryCache),
         ("testConversionPerformance", testConversionPerformance),
     ]
 }

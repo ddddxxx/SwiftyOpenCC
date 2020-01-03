@@ -13,7 +13,7 @@ extension ChineseConverter {
     class DictionaryLoader {
         
         private static let subdirectory = "Dictionary"
-        private static let dictCache = WeakValueCache<URL, ConversionDictionary>()
+        private static let dictCache = WeakValueCache<String, ConversionDictionary>()
         
         private let bundle: Bundle
         
@@ -22,11 +22,11 @@ extension ChineseConverter {
         }
         
         func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
-            guard let url = bundle.url(forResource: name.description, withExtension: "ocd", subdirectory: DictionaryLoader.subdirectory) else {
+            guard let path = bundle.path(forResource: name.description, ofType: "ocd", inDirectory: DictionaryLoader.subdirectory) else {
                 throw ConversionError.fileNotFound
             }
-            return try DictionaryLoader.dictCache.value(for: url) {
-                return try ConversionDictionary(contentOf: url)
+            return try DictionaryLoader.dictCache.value(for: path) {
+                return try ConversionDictionary(path: path)
             }
         }
     }

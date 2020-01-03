@@ -10,17 +10,21 @@ import copencc
 
 class ConversionDictionary {
     
+    let group: [ConversionDictionary]
+    
     let dict: CCDictRef
     
-    init(contentOf url: URL) throws {
-        guard let dict = CCDictCreateWithPath(url.path) else {
+    init(path: String) throws {
+        guard let dict = CCDictCreateWithPath(path) else {
             throw ConversionError(ccErrorno)
         }
+        self.group = []
         self.dict = dict
     }
     
     init(group: [ConversionDictionary]) {
         var rawGroup = group.map { $0.dict }
+        self.group = group
         self.dict = CCDictCreateWithGroup(&rawGroup, rawGroup.count)
     }
 }
