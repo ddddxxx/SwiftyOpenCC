@@ -14,7 +14,7 @@ class ConversionDictionary {
     
     init(contentOf url: URL) throws {
         guard let dict = CCDictCreateWithPath(url.path) else {
-            throw ccErrorno
+            throw ConversionError(ccErrorno)
         }
         self.dict = dict
     }

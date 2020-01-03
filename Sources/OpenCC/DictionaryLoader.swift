@@ -8,8 +8,6 @@
 import Foundation
 import copencc
 
-extension CCErrorCode: Error {}
-
 extension ChineseConverter {
 
     class DictionaryLoader {
@@ -25,7 +23,7 @@ extension ChineseConverter {
         
         func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
             guard let url = bundle.url(forResource: name.description, withExtension: "ocd", subdirectory: DictionaryLoader.subdirectory) else {
-                throw CCErrorCode.fileNotFound
+                throw ConversionError.fileNotFound
             }
             return try DictionaryLoader.dictCache.value(for: url) {
                 return try ConversionDictionary(contentOf: url)
