@@ -24,7 +24,7 @@ extension ChineseConverter {
         }
         
         func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
-            guard let url = bundle.url(forResource: name.rawValue, withExtension: "ocd", subdirectory: DictionaryLoader.subdirectory) else {
+            guard let url = bundle.url(forResource: name.description, withExtension: "ocd", subdirectory: DictionaryLoader.subdirectory) else {
                 throw CCErrorCode.fileNotFound
             }
             return try DictionaryLoader.dictCache.value(for: url) {

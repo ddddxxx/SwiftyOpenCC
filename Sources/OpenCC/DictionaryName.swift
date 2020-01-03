@@ -9,7 +9,8 @@ import Foundation
 
 extension ChineseConverter {
     
-    enum DictionaryName: String {
+    enum DictionaryName: CustomStringConvertible {
+        
         case hkVariants
         case hkVariantsPhrases
         case hkVariantsRev
@@ -24,6 +25,25 @@ extension ChineseConverter {
         case twVariants
         case twVariantsRev
         case twVariantsRevPhrases
+        
+        var description: String {
+            switch self {
+            case .hkVariants: return "HKVariants"
+            case .hkVariantsPhrases: return "HKVariantsPhrases"
+            case .hkVariantsRev: return "HKVariantsRev"
+            case .hkVariantsRevPhrases: return "HKVariantsRevPhrases"
+            case .jpVariants: return "JPVariants"
+            case .stCharacters: return "STCharacters"
+            case .stPhrases: return "STPhrases"
+            case .tsCharacters: return "TSCharacters"
+            case .tsPhrases: return "TSPhrases"
+            case .twPhrases: return "TWPhrases"
+            case .twPhrasesRev: return "TWPhrasesRev"
+            case .twVariants: return "TWVariants"
+            case .twVariantsRev: return "TWVariantsRev"
+            case .twVariantsRevPhrases: return "TWVariantsRevPhrases"
+            }
+        }
     }
 }
 
