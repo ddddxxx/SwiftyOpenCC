@@ -13,12 +13,12 @@ let testTextURL = projectRootURL.appendingPathComponent("TestResources/孔乙己
 let testCases: [(String, ChineseConverter.Options)] = [
     ("s2t", [.traditionalize]),
     ("t2s", [.simplify]),
-    ("s2hk", [.traditionalize, .HKStandard]),
-    ("hk2s", [.simplify, .HKStandard]),
-    ("s2tw", [.traditionalize, .TWStandard]),
-    ("tw2s", [.simplify, .TWStandard]),
-    ("s2twp", [.traditionalize, .TWStandard, .TWIdiom]),
-    ("tw2sp", [.simplify, .TWStandard, .TWIdiom]),
+    ("s2hk", [.traditionalize, .hkStandard]),
+    ("hk2s", [.simplify, .hkStandard]),
+    ("s2tw", [.traditionalize, .twStandard]),
+    ("tw2s", [.simplify, .twStandard]),
+    ("s2twp", [.traditionalize, .twStandard, .twIdiom]),
+    ("tw2sp", [.simplify, .twStandard, .twIdiom]),
 ]
 
 class OpenCCTests: XCTestCase {
@@ -50,7 +50,7 @@ class OpenCCTests: XCTestCase {
     }
     
     func testConversionPerformance() throws {
-        let cov = try converter(option: [.traditionalize, .TWStandard, .TWIdiom])
+        let cov = try converter(option: [.traditionalize, .twStandard, .twIdiom])
         // 2654 characters
         let str = try String(contentsOf: testTextURL)
         measure {

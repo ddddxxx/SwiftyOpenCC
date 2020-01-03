@@ -10,20 +10,20 @@ import Foundation
 extension ChineseConverter {
     
     enum DictionaryName: String {
-        case HKVariants
-        case HKVariantsPhrases
-        case HKVariantsRev
-        case HKVariantsRevPhrases
-        case JPVariants
-        case STCharacters
-        case STPhrases
-        case TSCharacters
-        case TSPhrases
-        case TWPhrases
-        case TWPhrasesRev
-        case TWVariants
-        case TWVariantsRev
-        case TWVariantsRevPhrases
+        case hkVariants
+        case hkVariantsPhrases
+        case hkVariantsRev
+        case hkVariantsRevPhrases
+        case jpVariants
+        case stCharacters
+        case stPhrases
+        case tsCharacters
+        case tsPhrases
+        case twPhrases
+        case twPhrasesRev
+        case twVariants
+        case twVariantsRev
+        case twVariantsRevPhrases
     }
 }
 
@@ -31,49 +31,49 @@ extension ChineseConverter.Options {
     
     var segmentationDictName: ChineseConverter.DictionaryName {
         if contains(.traditionalize) {
-            return .STPhrases
+            return .stPhrases
         } else if contains(.simplify) {
-            return .TSPhrases
-        } else if contains(.HKStandard) {
-            return .HKVariants
-        } else if contains(.TWStandard) {
-            return .TWVariants
+            return .tsPhrases
+        } else if contains(.hkStandard) {
+            return .hkVariants
+        } else if contains(.twStandard) {
+            return .twVariants
         } else {
-            return .STPhrases
+            return .stPhrases
         }
     }
     
     var conversionChain: [[ChineseConverter.DictionaryName]] {
         var result: [[ChineseConverter.DictionaryName]] = []
         if contains(.traditionalize) {
-            result.append([.STPhrases, .STCharacters])
-            if contains(.TWIdiom) {
-                result.append([.TWPhrases])
+            result.append([.stPhrases, .stCharacters])
+            if contains(.twIdiom) {
+                result.append([.twPhrases])
             }
-            if contains(.HKStandard) {
-                result.append([.HKVariantsPhrases, .HKVariants])
-            } else if contains(.TWStandard) {
-                result.append([.TWVariants])
+            if contains(.hkStandard) {
+                result.append([.hkVariantsPhrases, .hkVariants])
+            } else if contains(.twStandard) {
+                result.append([.twVariants])
             }
         } else if contains(.simplify) {
-            if contains(.HKStandard) {
-                result.append([.HKVariantsRevPhrases, .HKVariantsRev])
-            } else if contains(.TWStandard) {
-                result.append([.TWVariantsRevPhrases, .TWVariantsRev])
+            if contains(.hkStandard) {
+                result.append([.hkVariantsRevPhrases, .hkVariantsRev])
+            } else if contains(.twStandard) {
+                result.append([.twVariantsRevPhrases, .twVariantsRev])
             }
-            if contains(.TWIdiom) {
-                result.append([.TWPhrasesRev])
+            if contains(.twIdiom) {
+                result.append([.twPhrasesRev])
             }
-            result.append([.TSPhrases, .TSCharacters])
+            result.append([.tsPhrases, .tsCharacters])
         } else {
-            if contains(.HKStandard) {
-                result.append([.HKVariants])
-            } else if contains(.TWStandard) {
-                result.append([.TWVariants])
+            if contains(.hkStandard) {
+                result.append([.hkVariants])
+            } else if contains(.twStandard) {
+                result.append([.twVariants])
             }
         }
         if result.isEmpty {
-            return [[.STPhrases, .STCharacters]]
+            return [[.stPhrases, .stCharacters]]
         }
         return result
     }

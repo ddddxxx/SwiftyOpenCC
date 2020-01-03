@@ -38,14 +38,14 @@ public class ChineseConverter {
         /// Convert to Simplified Chinese.
         public static let simplify = Options(rawValue: 1 << 1)
         
-        /// Using Taiwan standard.
-        public static let TWStandard = Options(rawValue: 1 << 5)
+        /// Use Taiwan standard.
+        public static let twStandard = Options(rawValue: 1 << 5)
         
-        /// Using HongKong standard.
-        public static let HKStandard = Options(rawValue: 1 << 6)
+        /// Use HongKong standard.
+        public static let hkStandard = Options(rawValue: 1 << 6)
         
         /// Taiwanese idiom conversion. Only effective with `.TWStandard`.
-        public static let TWIdiom = Options(rawValue: 1 << 10)
+        public static let twIdiom = Options(rawValue: 1 << 10)
     }
     
     private let converter: CCConverterRef
