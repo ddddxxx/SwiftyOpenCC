@@ -12,11 +12,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "OpenCCBridge",
+            name: "copencc",
             cSettings: [.headerSearchPath("opencc")]),
         .target(
             name: "OpenCC",
-            dependencies: ["OpenCCBridge"]),
+            dependencies: ["copencc"]),
         .testTarget(
             name: "OpenCCTests",
             dependencies: ["OpenCC"]),

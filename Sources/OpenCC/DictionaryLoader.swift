@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import OpenCCBridge
+import copencc
 
-extension OpenCCBridge.CCErrorCode: Error {}
+extension CCErrorCode: Error {}
 
 extension ChineseConverter {
 
@@ -25,7 +25,7 @@ extension ChineseConverter {
         
         func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
             guard let url = bundle.url(forResource: name.rawValue, withExtension: "ocd", subdirectory: DictionaryLoader.subdirectory) else {
-                throw OpenCCBridge.CCErrorCode.fileNotFound
+                throw CCErrorCode.fileNotFound
             }
             return try DictionaryLoader.dictCache.value(for: url) {
                 return try ConversionDictionary(contentOf: url)

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import OpenCCBridge
+import copencc
 
 /// The `ChineseConverter` class is used to represent and apply conversion
 /// between Traditional Chinese and Simplified Chinese to Unicode strings.

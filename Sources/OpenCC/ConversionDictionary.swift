@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import OpenCCBridge
+import copencc
 
 class ConversionDictionary {
     
