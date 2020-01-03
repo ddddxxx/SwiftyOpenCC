@@ -63,7 +63,7 @@ public class ChineseConverter {
     ///   file. This method looks for the dictionary file in the bundle's
     ///   `Resources/Dictionary/` directory. Default to the main bundle.
     /// - Parameter option: The convert’s option.
-    public convenience init(bundle: Bundle = .main, option: Options) throws {
+    public convenience init(bundle: Bundle, option: Options) throws {
         let loader = DictionaryLoader(bundle: bundle)
         try self.init(loader: loader, option: option)
     }
