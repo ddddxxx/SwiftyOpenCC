@@ -1,4 +1,0 @@
-module OpenCCBridge {
-    umbrella "/Users/dengxiang/Developer/OpenCC/Sources/OpenCCBridge/include"
-    export *
-}

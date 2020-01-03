@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"SwiftyOpenCC::SwiftyOpenCCPackageTests::ProductTarget" /* SwiftyOpenCCPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_81 /* Build configuration list for PBXAggregateTarget "SwiftyOpenCCPackageTests" */;
+			buildConfigurationList = OBJ_83 /* Build configuration list for PBXAggregateTarget "SwiftyOpenCCPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_84 /* PBXTargetDependency */,
+				OBJ_86 /* PBXTargetDependency */,
 			);
 			name = SwiftyOpenCCPackageTests;
 			productName = SwiftyOpenCCPackageTests;
@@ -21,57 +21,58 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_100 /* TextDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* TextDict.cpp */; };
-		OBJ_101 /* UTF8StringSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* UTF8StringSlice.cpp */; };
-		OBJ_102 /* UTF8Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* UTF8Util.cpp */; };
-		OBJ_103 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* source.cpp */; };
-		OBJ_53 /* ChineseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ChineseConverter.swift */; };
-		OBJ_54 /* ConversionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConversionDictionary.swift */; };
-		OBJ_55 /* DictionaryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DictionaryLoader.swift */; };
-		OBJ_56 /* DictionaryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DictionaryName.swift */; };
-		OBJ_57 /* WeakValueCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* WeakValueCache.swift */; };
-		OBJ_59 /* copencc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyOpenCC::copencc::Product" /* copencc.framework */; };
-		OBJ_67 /* OpenCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* OpenCCTests.swift */; };
-		OBJ_68 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* XCTestManifests.swift */; };
-		OBJ_70 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyOpenCC::OpenCC::Product" /* OpenCC.framework */; };
-		OBJ_71 /* copencc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyOpenCC::copencc::Product" /* copencc.framework */; };
-		OBJ_79 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_89 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* BinaryDict.cpp */; };
-		OBJ_90 /* Conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Conversion.cpp */; };
-		OBJ_91 /* ConversionChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ConversionChain.cpp */; };
-		OBJ_92 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Converter.cpp */; };
-		OBJ_93 /* DartsDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DartsDict.cpp */; };
-		OBJ_94 /* Dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Dict.cpp */; };
-		OBJ_95 /* DictEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* DictEntry.cpp */; };
-		OBJ_96 /* DictGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DictGroup.cpp */; };
-		OBJ_97 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MaxMatchSegmentation.cpp */; };
-		OBJ_98 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PhraseExtract.cpp */; };
-		OBJ_99 /* Segmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Segmentation.cpp */; };
+		OBJ_100 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PhraseExtract.cpp */; };
+		OBJ_101 /* Segmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Segmentation.cpp */; };
+		OBJ_102 /* TextDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* TextDict.cpp */; };
+		OBJ_103 /* UTF8StringSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* UTF8StringSlice.cpp */; };
+		OBJ_104 /* UTF8Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* UTF8Util.cpp */; };
+		OBJ_105 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* source.cpp */; };
+		OBJ_54 /* ChineseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ChineseConverter.swift */; };
+		OBJ_55 /* ConversionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConversionDictionary.swift */; };
+		OBJ_56 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Deprecated.swift */; };
+		OBJ_57 /* DictionaryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DictionaryLoader.swift */; };
+		OBJ_58 /* DictionaryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DictionaryName.swift */; };
+		OBJ_59 /* WeakValueCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* WeakValueCache.swift */; };
+		OBJ_61 /* copencc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyOpenCC::copencc::Product" /* copencc.framework */; };
+		OBJ_69 /* OpenCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* OpenCCTests.swift */; };
+		OBJ_70 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* XCTestManifests.swift */; };
+		OBJ_72 /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyOpenCC::OpenCC::Product" /* OpenCC.framework */; };
+		OBJ_73 /* copencc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyOpenCC::copencc::Product" /* copencc.framework */; };
+		OBJ_81 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_91 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* BinaryDict.cpp */; };
+		OBJ_92 /* Conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Conversion.cpp */; };
+		OBJ_93 /* ConversionChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ConversionChain.cpp */; };
+		OBJ_94 /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Converter.cpp */; };
+		OBJ_95 /* DartsDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DartsDict.cpp */; };
+		OBJ_96 /* Dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Dict.cpp */; };
+		OBJ_97 /* DictEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DictEntry.cpp */; };
+		OBJ_98 /* DictGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DictGroup.cpp */; };
+		OBJ_99 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MaxMatchSegmentation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BB947E0923BEECD200C43BF2 /* PBXContainerItemProxy */ = {
+		BB947E0D23BF404100C43BF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyOpenCC::copencc";
 			remoteInfo = copencc;
 		};
-		BB947E0A23BEECD200C43BF2 /* PBXContainerItemProxy */ = {
+		BB947E0E23BF404100C43BF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyOpenCC::OpenCC";
 			remoteInfo = OpenCC;
 		};
-		BB947E0B23BEECD200C43BF2 /* PBXContainerItemProxy */ = {
+		BB947E0F23BF404100C43BF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyOpenCC::copencc";
 			remoteInfo = copencc;
 		};
-		BB947E0C23BEECD300C43BF2 /* PBXContainerItemProxy */ = {
+		BB947E1023BF404200C43BF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -82,34 +83,35 @@
 
 /* Begin PBXFileReference section */
 		OBJ_10 /* ConversionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDictionary.swift; sourceTree = "<group>"; };
-		OBJ_11 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
-		OBJ_12 /* DictionaryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryName.swift; sourceTree = "<group>"; };
-		OBJ_13 /* WeakValueCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakValueCache.swift; sourceTree = "<group>"; };
-		OBJ_16 /* BinaryDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryDict.cpp; sourceTree = "<group>"; };
-		OBJ_17 /* Conversion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Conversion.cpp; sourceTree = "<group>"; };
-		OBJ_18 /* ConversionChain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConversionChain.cpp; sourceTree = "<group>"; };
-		OBJ_19 /* Converter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
-		OBJ_20 /* DartsDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DartsDict.cpp; sourceTree = "<group>"; };
-		OBJ_21 /* Dict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dict.cpp; sourceTree = "<group>"; };
-		OBJ_22 /* DictEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DictEntry.cpp; sourceTree = "<group>"; };
-		OBJ_23 /* DictGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DictGroup.cpp; sourceTree = "<group>"; };
-		OBJ_24 /* MaxMatchSegmentation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxMatchSegmentation.cpp; sourceTree = "<group>"; };
-		OBJ_25 /* PhraseExtract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PhraseExtract.cpp; sourceTree = "<group>"; };
-		OBJ_26 /* Segmentation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Segmentation.cpp; sourceTree = "<group>"; };
-		OBJ_27 /* TextDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextDict.cpp; sourceTree = "<group>"; };
-		OBJ_28 /* UTF8StringSlice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8StringSlice.cpp; sourceTree = "<group>"; };
-		OBJ_29 /* UTF8Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8Util.cpp; sourceTree = "<group>"; };
-		OBJ_30 /* source.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = source.cpp; sourceTree = "<group>"; };
-		OBJ_32 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
-		OBJ_33 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/dengxiang/Developer/OpenCC/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc/module.modulemap; sourceTree = "<group>"; };
-		OBJ_36 /* OpenCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCCTests.swift; sourceTree = "<group>"; };
-		OBJ_37 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_42 /* OpenCC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenCC; sourceTree = SOURCE_ROOT; };
-		OBJ_43 /* TestResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestResources; sourceTree = SOURCE_ROOT; };
-		OBJ_44 /* OpenCCDictionary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OpenCCDictionary.bundle; sourceTree = SOURCE_ROOT; };
-		OBJ_45 /* OpenCCDictionary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenCCDictionary; sourceTree = SOURCE_ROOT; };
-		OBJ_46 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		OBJ_47 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_11 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		OBJ_12 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
+		OBJ_13 /* DictionaryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryName.swift; sourceTree = "<group>"; };
+		OBJ_14 /* WeakValueCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakValueCache.swift; sourceTree = "<group>"; };
+		OBJ_17 /* BinaryDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryDict.cpp; sourceTree = "<group>"; };
+		OBJ_18 /* Conversion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Conversion.cpp; sourceTree = "<group>"; };
+		OBJ_19 /* ConversionChain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConversionChain.cpp; sourceTree = "<group>"; };
+		OBJ_20 /* Converter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
+		OBJ_21 /* DartsDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DartsDict.cpp; sourceTree = "<group>"; };
+		OBJ_22 /* Dict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dict.cpp; sourceTree = "<group>"; };
+		OBJ_23 /* DictEntry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DictEntry.cpp; sourceTree = "<group>"; };
+		OBJ_24 /* DictGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DictGroup.cpp; sourceTree = "<group>"; };
+		OBJ_25 /* MaxMatchSegmentation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MaxMatchSegmentation.cpp; sourceTree = "<group>"; };
+		OBJ_26 /* PhraseExtract.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PhraseExtract.cpp; sourceTree = "<group>"; };
+		OBJ_27 /* Segmentation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Segmentation.cpp; sourceTree = "<group>"; };
+		OBJ_28 /* TextDict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextDict.cpp; sourceTree = "<group>"; };
+		OBJ_29 /* UTF8StringSlice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8StringSlice.cpp; sourceTree = "<group>"; };
+		OBJ_30 /* UTF8Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UTF8Util.cpp; sourceTree = "<group>"; };
+		OBJ_31 /* source.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = source.cpp; sourceTree = "<group>"; };
+		OBJ_33 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		OBJ_34 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		OBJ_37 /* OpenCCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCCTests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* OpenCC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenCC; sourceTree = SOURCE_ROOT; };
+		OBJ_44 /* TestResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestResources; sourceTree = SOURCE_ROOT; };
+		OBJ_45 /* OpenCCDictionary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OpenCCDictionary.bundle; sourceTree = SOURCE_ROOT; };
+		OBJ_46 /* OpenCCDictionary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenCCDictionary; sourceTree = SOURCE_ROOT; };
+		OBJ_47 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_48 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* ChineseConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseConverter.swift; sourceTree = "<group>"; };
 		"SwiftyOpenCC::OpenCC::Product" /* OpenCC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,98 +120,98 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_104 /* Frameworks */ = {
+		OBJ_106 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_58 /* Frameworks */ = {
+		OBJ_60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_59 /* copencc.framework in Frameworks */,
+				OBJ_61 /* copencc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_69 /* Frameworks */ = {
+		OBJ_71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_70 /* OpenCC.framework in Frameworks */,
-				OBJ_71 /* copencc.framework in Frameworks */,
+				OBJ_72 /* OpenCC.framework in Frameworks */,
+				OBJ_73 /* copencc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_14 /* copencc */ = {
+		OBJ_15 /* copencc */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* opencc */,
-				OBJ_30 /* source.cpp */,
-				OBJ_31 /* include */,
+				OBJ_16 /* opencc */,
+				OBJ_31 /* source.cpp */,
+				OBJ_32 /* include */,
 			);
 			name = copencc;
 			path = Sources/copencc;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_15 /* opencc */ = {
+		OBJ_16 /* opencc */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* BinaryDict.cpp */,
-				OBJ_17 /* Conversion.cpp */,
-				OBJ_18 /* ConversionChain.cpp */,
-				OBJ_19 /* Converter.cpp */,
-				OBJ_20 /* DartsDict.cpp */,
-				OBJ_21 /* Dict.cpp */,
-				OBJ_22 /* DictEntry.cpp */,
-				OBJ_23 /* DictGroup.cpp */,
-				OBJ_24 /* MaxMatchSegmentation.cpp */,
-				OBJ_25 /* PhraseExtract.cpp */,
-				OBJ_26 /* Segmentation.cpp */,
-				OBJ_27 /* TextDict.cpp */,
-				OBJ_28 /* UTF8StringSlice.cpp */,
-				OBJ_29 /* UTF8Util.cpp */,
+				OBJ_17 /* BinaryDict.cpp */,
+				OBJ_18 /* Conversion.cpp */,
+				OBJ_19 /* ConversionChain.cpp */,
+				OBJ_20 /* Converter.cpp */,
+				OBJ_21 /* DartsDict.cpp */,
+				OBJ_22 /* Dict.cpp */,
+				OBJ_23 /* DictEntry.cpp */,
+				OBJ_24 /* DictGroup.cpp */,
+				OBJ_25 /* MaxMatchSegmentation.cpp */,
+				OBJ_26 /* PhraseExtract.cpp */,
+				OBJ_27 /* Segmentation.cpp */,
+				OBJ_28 /* TextDict.cpp */,
+				OBJ_29 /* UTF8StringSlice.cpp */,
+				OBJ_30 /* UTF8Util.cpp */,
 			);
 			path = opencc;
 			sourceTree = "<group>";
 		};
-		OBJ_31 /* include */ = {
+		OBJ_32 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_32 /* header.h */,
-				OBJ_33 /* module.modulemap */,
+				OBJ_33 /* header.h */,
+				OBJ_34 /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		OBJ_34 /* Tests */ = {
+		OBJ_35 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_35 /* OpenCCTests */,
+				OBJ_36 /* OpenCCTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_35 /* OpenCCTests */ = {
+		OBJ_36 /* OpenCCTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_36 /* OpenCCTests.swift */,
-				OBJ_37 /* XCTestManifests.swift */,
+				OBJ_37 /* OpenCCTests.swift */,
+				OBJ_38 /* XCTestManifests.swift */,
 			);
 			name = OpenCCTests;
 			path = Tests/OpenCCTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_38 /* Products */ = {
+		OBJ_39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"SwiftyOpenCC::OpenCC::Product" /* OpenCC.framework */,
 				"SwiftyOpenCC::OpenCCTests::Product" /* OpenCCTests.xctest */,
 				"SwiftyOpenCC::copencc::Product" /* copencc.framework */,
+				"SwiftyOpenCC::OpenCC::Product" /* OpenCC.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -219,14 +221,14 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_34 /* Tests */,
-				OBJ_38 /* Products */,
-				OBJ_42 /* OpenCC */,
-				OBJ_43 /* TestResources */,
-				OBJ_44 /* OpenCCDictionary.bundle */,
-				OBJ_45 /* OpenCCDictionary */,
-				OBJ_46 /* LICENSE */,
-				OBJ_47 /* README.md */,
+				OBJ_35 /* Tests */,
+				OBJ_39 /* Products */,
+				OBJ_43 /* OpenCC */,
+				OBJ_44 /* TestResources */,
+				OBJ_45 /* OpenCCDictionary.bundle */,
+				OBJ_46 /* OpenCCDictionary */,
+				OBJ_47 /* LICENSE */,
+				OBJ_48 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -235,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* OpenCC */,
-				OBJ_14 /* copencc */,
+				OBJ_15 /* copencc */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -245,9 +247,10 @@
 			children = (
 				OBJ_9 /* ChineseConverter.swift */,
 				OBJ_10 /* ConversionDictionary.swift */,
-				OBJ_11 /* DictionaryLoader.swift */,
-				OBJ_12 /* DictionaryName.swift */,
-				OBJ_13 /* WeakValueCache.swift */,
+				OBJ_11 /* Deprecated.swift */,
+				OBJ_12 /* DictionaryLoader.swift */,
+				OBJ_13 /* DictionaryName.swift */,
+				OBJ_14 /* WeakValueCache.swift */,
 			);
 			name = OpenCC;
 			path = Sources/OpenCC;
@@ -258,15 +261,15 @@
 /* Begin PBXNativeTarget section */
 		"SwiftyOpenCC::OpenCC" /* OpenCC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_49 /* Build configuration list for PBXNativeTarget "OpenCC" */;
+			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "OpenCC" */;
 			buildPhases = (
-				OBJ_52 /* Sources */,
-				OBJ_58 /* Frameworks */,
+				OBJ_53 /* Sources */,
+				OBJ_60 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_60 /* PBXTargetDependency */,
+				OBJ_62 /* PBXTargetDependency */,
 			);
 			name = OpenCC;
 			productName = OpenCC;
@@ -275,16 +278,16 @@
 		};
 		"SwiftyOpenCC::OpenCCTests" /* OpenCCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_63 /* Build configuration list for PBXNativeTarget "OpenCCTests" */;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "OpenCCTests" */;
 			buildPhases = (
-				OBJ_66 /* Sources */,
-				OBJ_69 /* Frameworks */,
+				OBJ_68 /* Sources */,
+				OBJ_71 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_72 /* PBXTargetDependency */,
-				OBJ_73 /* PBXTargetDependency */,
+				OBJ_74 /* PBXTargetDependency */,
+				OBJ_75 /* PBXTargetDependency */,
 			);
 			name = OpenCCTests;
 			productName = OpenCCTests;
@@ -293,9 +296,9 @@
 		};
 		"SwiftyOpenCC::SwiftPMPackageDescription" /* SwiftyOpenCCPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_75 /* Build configuration list for PBXNativeTarget "SwiftyOpenCCPackageDescription" */;
+			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "SwiftyOpenCCPackageDescription" */;
 			buildPhases = (
-				OBJ_78 /* Sources */,
+				OBJ_80 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -307,10 +310,10 @@
 		};
 		"SwiftyOpenCC::copencc" /* copencc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_85 /* Build configuration list for PBXNativeTarget "copencc" */;
+			buildConfigurationList = OBJ_87 /* Build configuration list for PBXNativeTarget "copencc" */;
 			buildPhases = (
-				OBJ_88 /* Sources */,
-				OBJ_104 /* Frameworks */,
+				OBJ_90 /* Sources */,
+				OBJ_106 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,7 +341,7 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_38 /* Products */;
+			productRefGroup = OBJ_39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -352,79 +355,80 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_52 /* Sources */ = {
+		OBJ_53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_53 /* ChineseConverter.swift in Sources */,
-				OBJ_54 /* ConversionDictionary.swift in Sources */,
-				OBJ_55 /* DictionaryLoader.swift in Sources */,
-				OBJ_56 /* DictionaryName.swift in Sources */,
-				OBJ_57 /* WeakValueCache.swift in Sources */,
+				OBJ_54 /* ChineseConverter.swift in Sources */,
+				OBJ_55 /* ConversionDictionary.swift in Sources */,
+				OBJ_56 /* Deprecated.swift in Sources */,
+				OBJ_57 /* DictionaryLoader.swift in Sources */,
+				OBJ_58 /* DictionaryName.swift in Sources */,
+				OBJ_59 /* WeakValueCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_66 /* Sources */ = {
+		OBJ_68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_67 /* OpenCCTests.swift in Sources */,
-				OBJ_68 /* XCTestManifests.swift in Sources */,
+				OBJ_69 /* OpenCCTests.swift in Sources */,
+				OBJ_70 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_78 /* Sources */ = {
+		OBJ_80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_79 /* Package.swift in Sources */,
+				OBJ_81 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_88 /* Sources */ = {
+		OBJ_90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_89 /* BinaryDict.cpp in Sources */,
-				OBJ_90 /* Conversion.cpp in Sources */,
-				OBJ_91 /* ConversionChain.cpp in Sources */,
-				OBJ_92 /* Converter.cpp in Sources */,
-				OBJ_93 /* DartsDict.cpp in Sources */,
-				OBJ_94 /* Dict.cpp in Sources */,
-				OBJ_95 /* DictEntry.cpp in Sources */,
-				OBJ_96 /* DictGroup.cpp in Sources */,
-				OBJ_97 /* MaxMatchSegmentation.cpp in Sources */,
-				OBJ_98 /* PhraseExtract.cpp in Sources */,
-				OBJ_99 /* Segmentation.cpp in Sources */,
-				OBJ_100 /* TextDict.cpp in Sources */,
-				OBJ_101 /* UTF8StringSlice.cpp in Sources */,
-				OBJ_102 /* UTF8Util.cpp in Sources */,
-				OBJ_103 /* source.cpp in Sources */,
+				OBJ_91 /* BinaryDict.cpp in Sources */,
+				OBJ_92 /* Conversion.cpp in Sources */,
+				OBJ_93 /* ConversionChain.cpp in Sources */,
+				OBJ_94 /* Converter.cpp in Sources */,
+				OBJ_95 /* DartsDict.cpp in Sources */,
+				OBJ_96 /* Dict.cpp in Sources */,
+				OBJ_97 /* DictEntry.cpp in Sources */,
+				OBJ_98 /* DictGroup.cpp in Sources */,
+				OBJ_99 /* MaxMatchSegmentation.cpp in Sources */,
+				OBJ_100 /* PhraseExtract.cpp in Sources */,
+				OBJ_101 /* Segmentation.cpp in Sources */,
+				OBJ_102 /* TextDict.cpp in Sources */,
+				OBJ_103 /* UTF8StringSlice.cpp in Sources */,
+				OBJ_104 /* UTF8Util.cpp in Sources */,
+				OBJ_105 /* source.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_60 /* PBXTargetDependency */ = {
+		OBJ_62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyOpenCC::copencc" /* copencc */;
-			targetProxy = BB947E0923BEECD200C43BF2 /* PBXContainerItemProxy */;
+			targetProxy = BB947E0D23BF404100C43BF2 /* PBXContainerItemProxy */;
 		};
-		OBJ_72 /* PBXTargetDependency */ = {
+		OBJ_74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyOpenCC::OpenCC" /* OpenCC */;
-			targetProxy = BB947E0A23BEECD200C43BF2 /* PBXContainerItemProxy */;
+			targetProxy = BB947E0E23BF404100C43BF2 /* PBXContainerItemProxy */;
 		};
-		OBJ_73 /* PBXTargetDependency */ = {
+		OBJ_75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyOpenCC::copencc" /* copencc */;
-			targetProxy = BB947E0B23BEECD200C43BF2 /* PBXContainerItemProxy */;
+			targetProxy = BB947E0F23BF404100C43BF2 /* PBXContainerItemProxy */;
 		};
-		OBJ_84 /* PBXTargetDependency */ = {
+		OBJ_86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyOpenCC::OpenCCTests" /* OpenCCTests */;
-			targetProxy = BB947E0C23BEECD300C43BF2 /* PBXContainerItemProxy */;
+			targetProxy = BB947E1023BF404200C43BF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -480,7 +484,7 @@
 			};
 			name = Release;
 		};
-		OBJ_50 /* Debug */ = {
+		OBJ_51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -491,7 +495,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/copencc/include",
-					"$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc",
 				);
 				INFOPLIST_FILE = SwiftyOpenCC.xcodeproj/OpenCC_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -499,7 +502,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/copencc/include/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCC;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -512,7 +515,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_51 /* Release */ = {
+		OBJ_52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -523,7 +526,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/copencc/include",
-					"$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc",
 				);
 				INFOPLIST_FILE = SwiftyOpenCC.xcodeproj/OpenCC_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -531,7 +533,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/copencc/include/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCC;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -544,7 +546,7 @@
 			};
 			name = Release;
 		};
-		OBJ_64 /* Debug */ = {
+		OBJ_66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -556,7 +558,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/copencc/include",
-					"$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc",
 				);
 				INFOPLIST_FILE = SwiftyOpenCC.xcodeproj/OpenCCTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -564,7 +565,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/copencc/include/module.modulemap";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = OpenCCTests;
@@ -573,7 +574,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_65 /* Release */ = {
+		OBJ_67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -585,7 +586,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/copencc/include",
-					"$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc",
 				);
 				INFOPLIST_FILE = SwiftyOpenCC.xcodeproj/OpenCCTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -593,7 +593,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftyOpenCC.xcodeproj/GeneratedModuleMap/copencc/module.modulemap";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Sources/copencc/include/module.modulemap";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = OpenCCTests;
@@ -602,7 +602,7 @@
 			};
 			name = Release;
 		};
-		OBJ_76 /* Debug */ = {
+		OBJ_78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -611,7 +611,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_77 /* Release */ = {
+		OBJ_79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -620,19 +620,19 @@
 			};
 			name = Release;
 		};
-		OBJ_82 /* Debug */ = {
+		OBJ_84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_83 /* Release */ = {
+		OBJ_85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_86 /* Debug */ = {
+		OBJ_88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++11";
@@ -666,7 +666,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_87 /* Release */ = {
+		OBJ_89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++11";
@@ -712,47 +712,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_49 /* Build configuration list for PBXNativeTarget "OpenCC" */ = {
+		OBJ_50 /* Build configuration list for PBXNativeTarget "OpenCC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_50 /* Debug */,
-				OBJ_51 /* Release */,
+				OBJ_51 /* Debug */,
+				OBJ_52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_63 /* Build configuration list for PBXNativeTarget "OpenCCTests" */ = {
+		OBJ_65 /* Build configuration list for PBXNativeTarget "OpenCCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_64 /* Debug */,
-				OBJ_65 /* Release */,
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_75 /* Build configuration list for PBXNativeTarget "SwiftyOpenCCPackageDescription" */ = {
+		OBJ_77 /* Build configuration list for PBXNativeTarget "SwiftyOpenCCPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_76 /* Debug */,
-				OBJ_77 /* Release */,
+				OBJ_78 /* Debug */,
+				OBJ_79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_81 /* Build configuration list for PBXAggregateTarget "SwiftyOpenCCPackageTests" */ = {
+		OBJ_83 /* Build configuration list for PBXAggregateTarget "SwiftyOpenCCPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_82 /* Debug */,
-				OBJ_83 /* Release */,
+				OBJ_84 /* Debug */,
+				OBJ_85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_85 /* Build configuration list for PBXNativeTarget "copencc" */ = {
+		OBJ_87 /* Build configuration list for PBXNativeTarget "copencc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_86 /* Debug */,
-				OBJ_87 /* Release */,
+				OBJ_88 /* Debug */,
+				OBJ_89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
