@@ -13,7 +13,10 @@ let package = Package(
     targets: [
         .target(
             name: "copencc",
-            cSettings: [.headerSearchPath("opencc")]),
+            cSettings: [
+                .headerSearchPath("opencc"),
+                .headerSearchPath("darts"),
+            ]),
         .target(
             name: "OpenCC",
             dependencies: ["copencc"]),
