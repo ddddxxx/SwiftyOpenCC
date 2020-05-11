@@ -83,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB53AF6A2469612300F153E1 /* darts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = darts.h; sourceTree = "<group>"; };
 		BB947E1123BF456100C43BF2 /* ConversionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionError.swift; sourceTree = "<group>"; };
 		OBJ_10 /* ConversionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDictionary.swift; sourceTree = "<group>"; };
 		OBJ_11 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
@@ -149,9 +150,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB53AF692469612300F153E1 /* darts */ = {
+			isa = PBXGroup;
+			children = (
+				BB53AF6A2469612300F153E1 /* darts.h */,
+			);
+			path = darts;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* copencc */ = {
 			isa = PBXGroup;
 			children = (
+				BB53AF692469612300F153E1 /* darts */,
 				OBJ_16 /* opencc */,
 				OBJ_31 /* source.cpp */,
 				OBJ_32 /* include */,
@@ -649,6 +659,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/copencc/include",
+					"$(SRCROOT)/Sources/copencc/darts",
 					"$(SRCROOT)/Sources/copencc/opencc",
 				);
 				INFOPLIST_FILE = SwiftyOpenCC.xcodeproj/copencc_Info.plist;
@@ -683,6 +694,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/copencc/include",
+					"$(SRCROOT)/Sources/copencc/darts",
 					"$(SRCROOT)/Sources/copencc/opencc",
 				);
 				INFOPLIST_FILE = SwiftyOpenCC.xcodeproj/copencc_Info.plist;
