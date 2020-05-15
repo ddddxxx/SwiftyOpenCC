@@ -1,6 +1,7 @@
 #include "DartsDict.hpp"
 #include "DictGroup.hpp"
 #include "Converter.hpp"
+#include "MarisaDict.hpp"
 #include "MaxMatchSegmentation.hpp"
 #include "Conversion.hpp"
 #include "ConversionChain.hpp"
@@ -32,9 +33,17 @@ void* catchOpenCCException(void* (^block)()) {
 
 // MARK: CCDict
 
-CCDictRef _Nullable CCDictCreateWithPath(const char * _Nonnull path) {
+CCDictRef _Nullable CCDictCreateDartsWithPath(const char * _Nonnull path) {
     return catchOpenCCException(^{
         auto dict = opencc::SerializableDict::NewFromFile<opencc::DartsDict>(std::string(path));
+        auto dictPtr = new opencc::DictPtr(dict);
+        return static_cast<void*>(dictPtr);
+    });
+}
+
+CCDictRef _Nullable CCDictCreateMarisaWithPath(const char * _Nonnull path) {
+    return catchOpenCCException(^{
+        auto dict = opencc::SerializableDict::NewFromFile<opencc::MarisaDict>(std::string(path));
         auto dictPtr = new opencc::DictPtr(dict);
         return static_cast<void*>(dictPtr);
     });

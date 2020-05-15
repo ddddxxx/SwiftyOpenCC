@@ -23,7 +23,9 @@ CCErrorCode ccErrorno;
 
 typedef void* CCDictRef;
 
-CCDictRef _Nullable CCDictCreateWithPath(const char * _Nonnull path);
+CCDictRef _Nullable CCDictCreateDartsWithPath(const char * _Nonnull path);
+
+CCDictRef _Nullable CCDictCreateMarisaWithPath(const char * _Nonnull path);
 
 CCDictRef _Nonnull CCDictCreateWithGroup(CCDictRef _Nonnull * const _Nonnull dictGroup, intptr_t count);
 
