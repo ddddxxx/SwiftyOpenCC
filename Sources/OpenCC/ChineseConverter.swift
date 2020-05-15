@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import OpenCCBridge
+import copencc
 
 /// The `ChineseConverter` class is used to represent and apply conversion
 /// between Traditional Chinese and Simplified Chinese to Unicode strings.
@@ -38,24 +38,26 @@ public class ChineseConverter {
         /// Convert to Simplified Chinese.
         public static let simplify = Options(rawValue: 1 << 1)
         
-        /// Using Taiwan standard.
-        public static let TWStandard = Options(rawValue: 1 << 5)
+        /// Use Taiwan standard.
+        public static let twStandard = Options(rawValue: 1 << 5)
         
-        /// Using HongKong standard.
-        public static let HKStandard = Options(rawValue: 1 << 6)
+        /// Use HongKong standard.
+        public static let hkStandard = Options(rawValue: 1 << 6)
         
         /// Taiwanese idiom conversion. Only effective with `.TWStandard`.
-        public static let TWIdiom = Options(rawValue: 1 << 10)
+        public static let twIdiom = Options(rawValue: 1 << 10)
     }
     
-    private let converter: CCConverter
+    private let seg: ConversionDictionary
+    private let chain: [ConversionDictionary]
+    
+    private let converter: CCConverterRef
     
     private init(loader: DictionaryLoader, option: Options) throws {
-        let seg = try loader.segmentation(options: option)
-        let chain = try loader.conversionChain(options: option)
-        converter = CCConverter(name: "SwiftyOpenCC",
-                                segmentation: seg,
-                                conversionChain: chain)
+        seg = try loader.segmentation(options: option)
+        chain = try loader.conversionChain(options: option)
+        var rawChain = chain.map { $0.dict }
+        converter = CCConverterCreate("SwiftyOpenCC", seg.dict, &rawChain, rawChain.count)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
@@ -65,7 +67,7 @@ public class ChineseConverter {
     ///   file. This method looks for the dictionary file in the bundle's
     ///   `Resources/Dictionary/` directory. Default to the main bundle.
     /// - Parameter option: The convert’s option.
-    public convenience init(bundle: Bundle = .main, option: Options) throws {
+    public convenience init(bundle: Bundle, option: Options) throws {
         let loader = DictionaryLoader(bundle: bundle)
         try self.init(loader: loader, option: option)
     }
@@ -75,11 +77,9 @@ public class ChineseConverter {
     /// - Parameter text: The string to convert.
     /// - Returns: A converted string using the convert’s current option.
     public func convert(_ text: String) -> String {
-        do {
-            return try converter.convert(text)
-        } catch let error {
-            fatalError(error.localizedDescription)
-        }
+        let stlStr = CCConverterCreateConvertedStringFromString(converter, text)!
+        defer { STLStringDestroy(stlStr) }
+        return String(utf8String: STLStringGetUTF8String(stlStr))!
     }
     
 }

@@ -20,7 +20,7 @@ Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC)
 import OpenCC
 
 let str = "鼠标里面的硅二极管坏了，导致光标分辨率降低。"
-let converter = try! ChineseConverter(option: [.traditionalize, .TWStandard, .TWIdiom])
+let converter = try! ChineseConverter(option: [.traditionalize, .twStandard, .twIdiom])
 converter.convert(str)
 // 滑鼠裡面的矽二極體壞了，導致游標解析度降低。
 ```
