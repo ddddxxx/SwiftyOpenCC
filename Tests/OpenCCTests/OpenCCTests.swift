@@ -1,14 +1,12 @@
 import XCTest
 @testable import OpenCC
 
-let projectRootURL = URL(fileURLWithPath: #file)
-    .deletingLastPathComponent()
-    .deletingLastPathComponent()
-    .deletingLastPathComponent()
+let targetRootURL = URL(fileURLWithPath: #file).deletingLastPathComponent()
+let projectRootURL = targetRootURL.deletingLastPathComponent().deletingLastPathComponent()
 
 let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionary.bundle")
-let testCaseRootURL = projectRootURL.appendingPathComponent("TestResources/testcases")
-let testTextURL = projectRootURL.appendingPathComponent("TestResources/孔乙己.txt")
+let testCaseRootURL = targetRootURL.appendingPathComponent("testcases")
+let testTextURL = targetRootURL.appendingPathComponent("benchmark/zuozhuan.txt")
 let dictionaryBundle = Bundle(url: dictionaryBundleURL)!
 
 let testCases: [(String, ChineseConverter.Options)] = [
@@ -64,7 +62,6 @@ class OpenCCTests: XCTestCase {
     
     func testConversionPerformance() throws {
         let cov = try converter(option: [.traditionalize, .twStandard, .twIdiom])
-        // 2654 characters
         let str = try String(contentsOf: testTextURL)
         measure {
             _ = cov.convert(str)
