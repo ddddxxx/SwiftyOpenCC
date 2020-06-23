@@ -11,6 +11,19 @@ let package = Package(
     ],
     targets: [
         .target(
+            name: "OpenCC",
+            dependencies: ["copencc"],
+            resources: [
+                .copy("Dictionary")
+            ]),
+        .testTarget(
+            name: "OpenCCTests",
+            dependencies: ["OpenCC"],
+            resources: [
+                .copy("benchmark"),
+                .copy("testcases"),
+            ]),
+        .target(
             name: "copencc",
             exclude: [
                 "src/benchmark",
@@ -49,20 +62,7 @@ let package = Package(
                 .headerSearchPath("deps/marisa-0.2.5/lib"),
                 .define("ENABLE_DARTS"),
             ]),
-        .target(
-            name: "OpenCC",
-            dependencies: ["copencc"],
-            resources: [
-                .copy("Dictionary")
-            ]),
-        .testTarget(
-            name: "OpenCCTests",
-            dependencies: ["OpenCC"],
-            resources: [
-                .copy("benchmark"),
-                .copy("testcases"),
-            ]),
     ],
     cLanguageStandard: .gnu99,
-    cxxLanguageStandard: .gnucxx11
+    cxxLanguageStandard: .cxx14
 )

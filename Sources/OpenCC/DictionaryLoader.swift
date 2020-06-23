@@ -9,7 +9,7 @@ import Foundation
 import copencc
 
 extension ChineseConverter {
-
+    
     class DictionaryLoader {
         
         private static let subdirectory = "Dictionary"
