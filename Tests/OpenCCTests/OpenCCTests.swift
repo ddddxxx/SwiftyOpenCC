@@ -1,14 +1,6 @@
 import XCTest
 @testable import OpenCC
 
-let projectRootURL = URL(fileURLWithPath: #filePath)
-    .deletingLastPathComponent()
-    .deletingLastPathComponent()
-    .deletingLastPathComponent()
-
-let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionary.bundle")
-let dictionaryBundle = Bundle(url: dictionaryBundleURL)!
-
 let testCases: [(String, ChineseConverter.Options)] = [
     ("s2t", [.traditionalize]),
     ("t2s", [.simplify]),
@@ -23,7 +15,7 @@ let testCases: [(String, ChineseConverter.Options)] = [
 class OpenCCTests: XCTestCase {
     
     func converter(option: ChineseConverter.Options) throws -> ChineseConverter {
-        return try ChineseConverter(bundle: dictionaryBundle, option: option)
+        return try ChineseConverter(option: option)
     }
     
     func testConversion() throws {
@@ -32,7 +24,7 @@ class OpenCCTests: XCTestCase {
             return try! String(contentsOf: url)
         }
         for (name, opt) in testCases {
-            let coverter = try ChineseConverter(bundle: dictionaryBundle, option: opt)
+            let coverter = try ChineseConverter(option: opt)
             let input = testCase(name: name, ext: "in")
             let converted = coverter.convert(input)
             let output = testCase(name: name, ext: "ans")
@@ -44,17 +36,17 @@ class OpenCCTests: XCTestCase {
         let options: ChineseConverter.Options = [.traditionalize, .twStandard, .twIdiom]
         measure {
             for _ in 0..<10 {
-                _ = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+                _ = try! ChineseConverter(option: options)
             }
         }
     }
     
     func testDictionaryCache() {
         let options: ChineseConverter.Options = [.traditionalize, .twStandard, .twIdiom]
-        let holder = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+        let holder = try! ChineseConverter(option: options)
         measure {
             for _ in 0..<1_000 {
-                _ = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+                _ = try! ChineseConverter(option: options)
             }
         }
         _ = holder.convert("foo")

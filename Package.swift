@@ -51,7 +51,10 @@ let package = Package(
             ]),
         .target(
             name: "OpenCC",
-            dependencies: ["copencc"]),
+            dependencies: ["copencc"],
+            resources: [
+                .copy("Dictionary")
+            ]),
         .testTarget(
             name: "OpenCCTests",
             dependencies: ["OpenCC"],
