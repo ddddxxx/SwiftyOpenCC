@@ -1,12 +1,12 @@
 import XCTest
 @testable import OpenCC
 
-let targetRootURL = URL(fileURLWithPath: #file).deletingLastPathComponent()
-let projectRootURL = targetRootURL.deletingLastPathComponent().deletingLastPathComponent()
+let projectRootURL = URL(fileURLWithPath: #filePath)
+    .deletingLastPathComponent()
+    .deletingLastPathComponent()
+    .deletingLastPathComponent()
 
 let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionary.bundle")
-let testCaseRootURL = targetRootURL.appendingPathComponent("testcases")
-let testTextURL = targetRootURL.appendingPathComponent("benchmark/zuozhuan.txt")
 let dictionaryBundle = Bundle(url: dictionaryBundleURL)!
 
 let testCases: [(String, ChineseConverter.Options)] = [
@@ -28,7 +28,7 @@ class OpenCCTests: XCTestCase {
     
     func testConversion() throws {
         func testCase(name: String, ext: String) -> String {
-            let url = testCaseRootURL.appendingPathComponent("\(name).\(ext)")
+            let url = Bundle.module.url(forResource: name, withExtension: ext, subdirectory: "testcases")!
             return try! String(contentsOf: url)
         }
         for (name, opt) in testCases {
@@ -62,7 +62,8 @@ class OpenCCTests: XCTestCase {
     
     func testConversionPerformance() throws {
         let cov = try converter(option: [.traditionalize, .twStandard, .twIdiom])
-        let str = try String(contentsOf: testTextURL)
+        let url = Bundle.module.url(forResource: "zuozhuan", withExtension: "txt", subdirectory: "benchmark")!
+        let str = try String(contentsOf: url)
         measure {
             _ = cov.convert(str)
         }

@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -37,6 +37,11 @@ let package = Package(
                 "deps/rapidjson-1.1.0",
                 "deps/tclap-1.2.2",
             ],
+            sources: [
+                "source.cpp",
+                "src",
+                "deps/marisa-0.2.5",
+            ],
             cSettings: [
                 .headerSearchPath("src"),
                 .headerSearchPath("deps/darts-clone"),
@@ -49,7 +54,11 @@ let package = Package(
             dependencies: ["copencc"]),
         .testTarget(
             name: "OpenCCTests",
-            dependencies: ["OpenCC"]),
+            dependencies: ["OpenCC"],
+            resources: [
+                .copy("benchmark"),
+                .copy("testcases"),
+            ]),
     ],
     cLanguageStandard: .gnu99,
     cxxLanguageStandard: .gnucxx11
