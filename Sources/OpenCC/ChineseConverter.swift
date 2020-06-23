@@ -53,20 +53,20 @@ public class ChineseConverter {
     
     private let converter: CCConverterRef
     
-    private init(loader: DictionaryLoader, option: Options) throws {
-        seg = try loader.segmentation(options: option)
-        chain = try loader.conversionChain(options: option)
+    private init(loader: DictionaryLoader, options: Options) throws {
+        seg = try loader.segmentation(options: options)
+        chain = try loader.conversionChain(options: options)
         var rawChain = chain.map { $0.dict }
         converter = CCConverterCreate("SwiftyOpenCC", seg.dict, &rawChain, rawChain.count)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
-    /// conversion option.
+    /// conversion options.
     ///
-    /// - Parameter option: The convert’s option.
-    public convenience init(option: Options) throws {
+    /// - Parameter options: The convert’s options.
+    public convenience init(options: Options) throws {
         let loader = DictionaryLoader()
-        try self.init(loader: loader, option: option)
+        try self.init(loader: loader, options: options)
     }
     
     /// Return a converted string using the convert’s current option.
