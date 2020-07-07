@@ -10,15 +10,19 @@ import copencc
 
 extension ChineseConverter {
     
-    class DictionaryLoader {
+    struct DictionaryLoader {
         
         private static let subdirectory = "Dictionary"
         private static let dictCache = WeakValueCache<String, ConversionDictionary>()
         
-        init() {}
+        private let bundle: Bundle
+        
+        init(bundle: Bundle) {
+            self.bundle = bundle
+        }
         
         func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
-            guard let path = Bundle.module.path(forResource: name.description, ofType: "ocd2", inDirectory: DictionaryLoader.subdirectory) else {
+            guard let path = bundle.path(forResource: name.description, ofType: "ocd2", inDirectory: DictionaryLoader.subdirectory) else {
                 throw ConversionError.fileNotFound
             }
             return try DictionaryLoader.dictCache.value(for: path) {
