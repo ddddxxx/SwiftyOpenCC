@@ -44,7 +44,7 @@ public class ChineseConverter {
         /// Use HongKong standard.
         public static let hkStandard = Options(rawValue: 1 << 6)
         
-        /// Taiwanese idiom conversion. Only effective with `.TWStandard`.
+        /// Taiwanese idiom conversion.
         public static let twIdiom = Options(rawValue: 1 << 10)
     }
     

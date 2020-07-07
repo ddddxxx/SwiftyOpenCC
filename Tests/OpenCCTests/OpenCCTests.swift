@@ -55,6 +55,7 @@ class OpenCCTests: XCTestCase {
     func testConversionPerformance() throws {
         let cov = try converter(option: [.traditionalize, .twStandard, .twIdiom])
         let url = Bundle.module.url(forResource: "zuozhuan", withExtension: "txt", subdirectory: "benchmark")!
+        // 1.9 MB, 624k word
         let str = try String(contentsOf: url)
         measure {
             _ = cov.convert(str)
