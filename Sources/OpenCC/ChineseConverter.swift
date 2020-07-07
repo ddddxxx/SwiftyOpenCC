@@ -64,6 +64,7 @@ public class ChineseConverter {
     /// conversion options.
     ///
     /// - Parameter options: The convert’s options.
+    /// - Throws: Throws `ConversionError` if failed.
     public convenience init(options: Options) throws {
         let loader = DictionaryLoader(bundle: .module)
         try self.init(loader: loader, options: options)
