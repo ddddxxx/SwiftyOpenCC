@@ -24,8 +24,6 @@ jobs:
     runs-on: macOS-latest
     env:
       ACTION: ${{ matrix.env.action }}
-      PROJECT: SwiftyOpenCC.xcodeproj
-      SCHEME: SwiftyOpenCC-Package
       DESTINATION: ${{ matrix.env.destination }}
 
     steps:
@@ -38,8 +36,7 @@ jobs:
         run: |
           set -o pipefail
           xcodebuild "$ACTION" \
-            -project "$PROJECT" \
-            -scheme "$SCHEME" \
+            -scheme SwiftyOpenCC \
             -destination "$DESTINATION" | xcpretty
 
   SPMMac:
