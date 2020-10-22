@@ -49,13 +49,22 @@ let package = Package(
                 "deps/pybind11-2.5.0",
                 "deps/rapidjson-1.1.0",
                 "deps/tclap-1.2.2",
+                
+                "src/CmdLineOutput.hpp",
+                "src/Config.hpp",
+                "src/ConfigTestBase.hpp",
+                "src/DictGroupTestBase.hpp",
+                "src/SimpleConverter.hpp",
+                "src/TestUtils.hpp",
+                "src/TestUtilsUTF8.hpp",
+                "src/TextDictTestBase.hpp",
             ],
             sources: [
                 "source.cpp",
                 "src",
                 "deps/marisa-0.2.5",
             ],
-            cSettings: [
+            cxxSettings: [
                 .headerSearchPath("src"),
                 .headerSearchPath("deps/darts-clone"),
                 .headerSearchPath("deps/marisa-0.2.5/include"),
@@ -63,6 +72,5 @@ let package = Package(
                 .define("ENABLE_DARTS"),
             ]),
     ],
-    cLanguageStandard: .gnu99,
     cxxLanguageStandard: .cxx14
 )

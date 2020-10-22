@@ -1,8 +1,8 @@
 name: CI
 
 on:
-  # push:
-  # pull_request:
+  push:
+  pull_request:
 
 jobs:
   Xcode:
@@ -18,14 +18,14 @@ jobs:
           - platform: tvOS
             destination: "platform=tvOS Simulator,name=Apple TV 4K"
             action: test
-          - platform: watchOS
-            destination: "platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm"
-            action: build
+          # - platform: watchOS
+          #   destination: "platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm"
+          #   action: build
     runs-on: macOS-latest
     env:
       ACTION: ${{ matrix.env.action }}
       DESTINATION: ${{ matrix.env.destination }}
-
+      DEVELOPER_DIR: /Applications/Xcode_12.app/Contents/Developer
     steps:
       - uses: actions/checkout@v2
         with:
@@ -39,33 +39,33 @@ jobs:
             -scheme SwiftyOpenCC \
             -destination "$DESTINATION" | xcpretty
 
-  SPMMac:
-    strategy:
-      matrix:
-        xcode_version: ['12']
-    runs-on: macOS-latest
-    env:
-      DEVELOPER_DIR: /Applications/Xcode_${{ matrix.xcode_version }}.app/Contents/Developer
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: Swift Version
-        run: swift -version
-      - name: Build and Test
-        run: swift test
+  # SPMMac:
+  #   strategy:
+  #     matrix:
+  #       xcode_version: ['12']
+  #   runs-on: macOS-latest
+  #   env:
+  #     DEVELOPER_DIR: /Applications/Xcode_${{ matrix.xcode_version }}.app/Contents/Developer
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       with:
+  #         submodules: true
+  #     - name: Swift Version
+  #       run: swift -version
+  #     - name: Build and Test
+  #       run: swift test
 
-  SPMLinux:
-    strategy:
-      matrix:
-        tag: ['5.3']
-    runs-on: ubuntu-latest
-    container:
-      image: swift:${{ matrix.tag }}
-    steps:
-      - uses: actions/checkout@v1
-      - run: git submodule update --init
-      - name: Swift Version
-        run: swift -version
-      - name: Build and Test
-        run: swift test
+  # SPMLinux:
+  #   strategy:
+  #     matrix:
+  #       tag: ['5.3']
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: swift:${{ matrix.tag }}
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - run: git submodule update --init
+  #     - name: Swift Version
+  #       run: swift -version
+  #     - name: Build and Test
+  #       run: swift test
