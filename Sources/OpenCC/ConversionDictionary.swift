@@ -15,7 +15,7 @@ class ConversionDictionary {
     let dict: CCDictRef
     
     init(path: String) throws {
-        guard let dict = CCDictCreateDartsWithPath(path) else {
+        guard let dict = CCDictCreateMarisaWithPath(path) else {
             throw ConversionError(ccErrorno)
         }
         self.group = []

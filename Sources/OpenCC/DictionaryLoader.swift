@@ -9,8 +9,8 @@ import Foundation
 import copencc
 
 extension ChineseConverter {
-
-    class DictionaryLoader {
+    
+    struct DictionaryLoader {
         
         private static let subdirectory = "Dictionary"
         private static let dictCache = WeakValueCache<String, ConversionDictionary>()
@@ -22,7 +22,7 @@ extension ChineseConverter {
         }
         
         func dict(_ name: ChineseConverter.DictionaryName) throws -> ConversionDictionary {
-            guard let path = bundle.path(forResource: name.description, ofType: "ocd", inDirectory: DictionaryLoader.subdirectory) else {
+            guard let path = bundle.path(forResource: name.description, ofType: "ocd2", inDirectory: DictionaryLoader.subdirectory) else {
                 throw ConversionError.fileNotFound
             }
             return try DictionaryLoader.dictCache.value(for: path) {

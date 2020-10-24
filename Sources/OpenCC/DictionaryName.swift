@@ -12,7 +12,6 @@ extension ChineseConverter {
     enum DictionaryName: CustomStringConvertible {
         
         case hkVariants
-        case hkVariantsPhrases
         case hkVariantsRev
         case hkVariantsRevPhrases
         case jpVariants
@@ -29,7 +28,6 @@ extension ChineseConverter {
         var description: String {
             switch self {
             case .hkVariants: return "HKVariants"
-            case .hkVariantsPhrases: return "HKVariantsPhrases"
             case .hkVariantsRev: return "HKVariantsRev"
             case .hkVariantsRevPhrases: return "HKVariantsRevPhrases"
             case .jpVariants: return "JPVariants"
@@ -71,7 +69,7 @@ extension ChineseConverter.Options {
                 result.append([.twPhrases])
             }
             if contains(.hkStandard) {
-                result.append([.hkVariantsPhrases, .hkVariants])
+                result.append([.hkVariants])
             } else if contains(.twStandard) {
                 result.append([.twVariants])
             }

@@ -44,7 +44,7 @@ public class ChineseConverter {
         /// Use HongKong standard.
         public static let hkStandard = Options(rawValue: 1 << 6)
         
-        /// Taiwanese idiom conversion. Only effective with `.TWStandard`.
+        /// Taiwanese idiom conversion.
         public static let twIdiom = Options(rawValue: 1 << 10)
     }
     
@@ -53,23 +53,21 @@ public class ChineseConverter {
     
     private let converter: CCConverterRef
     
-    private init(loader: DictionaryLoader, option: Options) throws {
-        seg = try loader.segmentation(options: option)
-        chain = try loader.conversionChain(options: option)
+    private init(loader: DictionaryLoader, options: Options) throws {
+        seg = try loader.segmentation(options: options)
+        chain = try loader.conversionChain(options: options)
         var rawChain = chain.map { $0.dict }
         converter = CCConverterCreate("SwiftyOpenCC", seg.dict, &rawChain, rawChain.count)
     }
     
     /// Returns an initialized `ChineseConverter` instance with the specified
-    /// conversion option.
+    /// conversion options.
     ///
-    /// - Parameter bundle: The bundle in which to search for the dictionary
-    ///   file. This method looks for the dictionary file in the bundle's
-    ///   `Resources/Dictionary/` directory. Default to the main bundle.
-    /// - Parameter option: The convert’s option.
-    public convenience init(bundle: Bundle, option: Options) throws {
-        let loader = DictionaryLoader(bundle: bundle)
-        try self.init(loader: loader, option: option)
+    /// - Parameter options: The convert’s options.
+    /// - Throws: Throws `ConversionError` if failed.
+    public convenience init(options: Options) throws {
+        let loader = DictionaryLoader(bundle: .module)
+        try self.init(loader: loader, options: options)
     }
     
     /// Return a converted string using the convert’s current option.

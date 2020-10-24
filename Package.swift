@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -10,6 +10,19 @@ let package = Package(
             targets: ["OpenCC"]),
     ],
     targets: [
+        .target(
+            name: "OpenCC",
+            dependencies: ["copencc"],
+            resources: [
+                .copy("Dictionary")
+            ]),
+        .testTarget(
+            name: "OpenCCTests",
+            dependencies: ["OpenCC"],
+            resources: [
+                .copy("benchmark"),
+                .copy("testcases"),
+            ]),
         .target(
             name: "copencc",
             exclude: [
@@ -36,21 +49,28 @@ let package = Package(
                 "deps/pybind11-2.5.0",
                 "deps/rapidjson-1.1.0",
                 "deps/tclap-1.2.2",
+                
+                "src/CmdLineOutput.hpp",
+                "src/Config.hpp",
+                "src/ConfigTestBase.hpp",
+                "src/DictGroupTestBase.hpp",
+                "src/SimpleConverter.hpp",
+                "src/TestUtils.hpp",
+                "src/TestUtilsUTF8.hpp",
+                "src/TextDictTestBase.hpp",
             ],
-            cSettings: [
+            sources: [
+                "source.cpp",
+                "src",
+                "deps/marisa-0.2.5",
+            ],
+            cxxSettings: [
                 .headerSearchPath("src"),
                 .headerSearchPath("deps/darts-clone"),
                 .headerSearchPath("deps/marisa-0.2.5/include"),
                 .headerSearchPath("deps/marisa-0.2.5/lib"),
                 .define("ENABLE_DARTS"),
             ]),
-        .target(
-            name: "OpenCC",
-            dependencies: ["copencc"]),
-        .testTarget(
-            name: "OpenCCTests",
-            dependencies: ["OpenCC"]),
     ],
-    cLanguageStandard: .gnu99,
-    cxxLanguageStandard: .gnucxx11
+    cxxLanguageStandard: .cxx14
 )

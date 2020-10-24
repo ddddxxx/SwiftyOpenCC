@@ -8,16 +8,16 @@
 import Foundation
 import copencc
 
-enum ConversionError: Error {
-
+public enum ConversionError: Error {
+    
     case fileNotFound
-
+    
     case invalidFormat
-
+    
     case invalidTextDictionary
-
+    
     case invalidUTF8
-
+    
     case unknown
     
     init(_ code: CCErrorCode) {

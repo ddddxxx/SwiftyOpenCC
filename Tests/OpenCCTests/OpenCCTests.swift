@@ -1,14 +1,6 @@
 import XCTest
 @testable import OpenCC
 
-let targetRootURL = URL(fileURLWithPath: #file).deletingLastPathComponent()
-let projectRootURL = targetRootURL.deletingLastPathComponent().deletingLastPathComponent()
-
-let dictionaryBundleURL = projectRootURL.appendingPathComponent("OpenCCDictionary.bundle")
-let testCaseRootURL = targetRootURL.appendingPathComponent("testcases")
-let testTextURL = targetRootURL.appendingPathComponent("benchmark/zuozhuan.txt")
-let dictionaryBundle = Bundle(url: dictionaryBundleURL)!
-
 let testCases: [(String, ChineseConverter.Options)] = [
     ("s2t", [.traditionalize]),
     ("t2s", [.simplify]),
@@ -23,16 +15,16 @@ let testCases: [(String, ChineseConverter.Options)] = [
 class OpenCCTests: XCTestCase {
     
     func converter(option: ChineseConverter.Options) throws -> ChineseConverter {
-        return try ChineseConverter(bundle: dictionaryBundle, option: option)
+        return try ChineseConverter(options: option)
     }
     
     func testConversion() throws {
         func testCase(name: String, ext: String) -> String {
-            let url = testCaseRootURL.appendingPathComponent("\(name).\(ext)")
+            let url = Bundle.module.url(forResource: name, withExtension: ext, subdirectory: "testcases")!
             return try! String(contentsOf: url)
         }
         for (name, opt) in testCases {
-            let coverter = try ChineseConverter(bundle: dictionaryBundle, option: opt)
+            let coverter = try ChineseConverter(options: opt)
             let input = testCase(name: name, ext: "in")
             let converted = coverter.convert(input)
             let output = testCase(name: name, ext: "ans")
@@ -44,17 +36,17 @@ class OpenCCTests: XCTestCase {
         let options: ChineseConverter.Options = [.traditionalize, .twStandard, .twIdiom]
         measure {
             for _ in 0..<10 {
-                _ = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+                _ = try! ChineseConverter(options: options)
             }
         }
     }
     
     func testDictionaryCache() {
         let options: ChineseConverter.Options = [.traditionalize, .twStandard, .twIdiom]
-        let holder = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+        let holder = try! ChineseConverter(options: options)
         measure {
             for _ in 0..<1_000 {
-                _ = try! ChineseConverter(bundle: dictionaryBundle, option: options)
+                _ = try! ChineseConverter(options: options)
             }
         }
         _ = holder.convert("foo")
@@ -62,7 +54,9 @@ class OpenCCTests: XCTestCase {
     
     func testConversionPerformance() throws {
         let cov = try converter(option: [.traditionalize, .twStandard, .twIdiom])
-        let str = try String(contentsOf: testTextURL)
+        let url = Bundle.module.url(forResource: "zuozhuan", withExtension: "txt", subdirectory: "benchmark")!
+        // 1.9 MB, 624k word
+        let str = try String(contentsOf: url)
         measure {
             _ = cov.convert(str)
         }
