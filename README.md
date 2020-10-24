@@ -27,7 +27,7 @@ converter.convert(str)
 
 Note: The resource files is **not** shipped with the framework (as you may want to download it while needed). You are responsible for passing a valid resource bundle. 
 
-Here is a [precompiled bundle](./OpenCCDictionary.bundle). or you may put the [dictionary files](./OpenCCDictionary/Dictionary) into the main bundle.
+Here is a [precompiled bundle](https://github.com/ddddxxx/SwiftyOpenCC/tree/v1.0.1/OpenCCDictionary.bundle). or you may put the [dictionary files](https://github.com/ddddxxx/SwiftyOpenCC/tree/v1.0.1/OpenCCDictionary/Dictionary) into the main bundle.
 
 ## Documentation
 
