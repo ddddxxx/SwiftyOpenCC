@@ -1,7 +1,1 @@
-import XCTest
-
-import OpenCCTests
-
-var tests = [XCTestCaseEntry]()
-tests += OpenCCTests.allTests()
-XCTMain(tests)
+fatalError("Run the tests with `swift test --enable-test-discovery`.")

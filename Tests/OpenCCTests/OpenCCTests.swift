@@ -61,11 +61,4 @@ class OpenCCTests: XCTestCase {
             _ = cov.convert(str)
         }
     }
-    
-    static var allTests = [
-        ("testConversion", testConversion),
-        ("testConverterCreationPerformance", testConverterCreationPerformance),
-        ("testDictionaryCache", testDictionaryCache),
-        ("testConversionPerformance", testConversionPerformance),
-    ]
 }
