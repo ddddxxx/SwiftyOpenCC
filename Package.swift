@@ -58,6 +58,12 @@ let package = Package(
                 "src/TestUtils.hpp",
                 "src/TestUtilsUTF8.hpp",
                 "src/TextDictTestBase.hpp",
+                
+                // ???
+                "src/README.md",
+                "src/CMakeLists.txt",
+                "deps/marisa-0.2.5/AUTHORS",
+                "deps/marisa-0.2.5/CMakeLists.txt",
             ],
             sources: [
                 "source.cpp",
