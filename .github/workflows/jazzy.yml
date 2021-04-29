@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     runs-on: macOS-latest
-    env:
-      DEVELOPER_DIR: /Applications/Xcode_11.app/Contents/Developer
     steps:
       - name: Get Version
         id: get_version
@@ -17,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install Jazzy
-        run: gem install jazzy
+        run: gem install jazzy --user-install
       - name: Run Jazzy
         run: |
           jazzy \

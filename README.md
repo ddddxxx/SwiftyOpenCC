@@ -1,8 +1,7 @@
 # Swifty Open Chinese Convert
 
 [![Github CI Status](https://github.com/ddddxxx/SwiftyOpenCC/workflows/CI/badge.svg)](https://github.com/ddddxxx/SwiftyOpenCC/actions)
-![pm](https://img.shields.io/badge/supports-SwiftPM%20%7C%20Carthage-brightgreen.svg?)
-![platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20iOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
+![platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20macOS%20%7C%20iOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
 [![codebeat badge](https://codebeat.co/badges/39f17620-4f1c-4a46-b3f9-8f5b248ac28f)](https://codebeat.co/projects/github-com-ddddxxx-swiftyopencc-master)
 
 Swift port of [Open Chinese Convert](https://github.com/BYVoid/OpenCC)
@@ -24,10 +23,6 @@ let converter = try! ChineseConverter(option: [.traditionalize, .twStandard, .tw
 converter.convert(str)
 // 滑鼠裡面的矽二極體壞了，導致游標解析度降低。
 ```
-
-Note: The resource files is **not** shipped with the framework (as you may want to download it while needed). You are responsible for passing a valid resource bundle. 
-
-Here is a [precompiled bundle](https://github.com/ddddxxx/SwiftyOpenCC/tree/v1.0.1/OpenCCDictionary.bundle). or you may put the [dictionary files](https://github.com/ddddxxx/SwiftyOpenCC/tree/v1.0.1/OpenCCDictionary/Dictionary) into the main bundle.
 
 ## Documentation
 
